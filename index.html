@@ -21,6 +21,7 @@
       }
     }
   </script>
+  <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body class="bg-black text-slate-100 antialiased">
 
@@ -59,21 +60,33 @@
             </div>
 
             <div class="mt-6 grid grid-cols-2 sm:flex sm:flex-row sm:flex-wrap gap-4 text-xs sm:text-sm text-slate-300">
-              <div>
-                <p class="font-semibold text-white">99.98% uptime</p>
-                <p class="text-slate-400 text-[11px] sm:text-xs">Across managed infrastructure</p>
+              <div class="flex items-start gap-2">
+                <span class="mt-0.5 text-primary shrink-0"><i data-feather="activity" class="w-4 h-4"></i></span>
+                <div>
+                  <p class="font-semibold text-white">99.98% uptime</p>
+                  <p class="text-slate-400 text-[11px] sm:text-xs">Across managed infrastructure</p>
+                </div>
               </div>
-              <div>
-                <p class="font-semibold text-white">24/7 monitoring</p>
-                <p class="text-slate-400 text-[11px] sm:text-xs">NOC‑backed response</p>
+              <div class="flex items-start gap-2">
+                <span class="mt-0.5 text-primary shrink-0"><i data-feather="monitor" class="w-4 h-4"></i></span>
+                <div>
+                  <p class="font-semibold text-white">24/7 monitoring</p>
+                  <p class="text-slate-400 text-[11px] sm:text-xs">NOC‑backed response</p>
+                </div>
               </div>
-              <div>
-                <p class="font-semibold text-white">Security‑first</p>
-                <p class="text-slate-400 text-[11px] sm:text-xs">Aligned to best practices</p>
+              <div class="flex items-start gap-2">
+                <span class="mt-0.5 text-primary shrink-0"><i data-feather="shield" class="w-4 h-4"></i></span>
+                <div>
+                  <p class="font-semibold text-white">Security‑first</p>
+                  <p class="text-slate-400 text-[11px] sm:text-xs">Aligned to best practices</p>
+                </div>
               </div>
-              <div>
-                <p class="font-semibold text-white">Web & hosting</p>
-                <p class="text-slate-400 text-[11px] sm:text-xs">Design, build, and host</p>
+              <div class="flex items-start gap-2">
+                <span class="mt-0.5 text-primary shrink-0"><i data-feather="globe" class="w-4 h-4"></i></span>
+                <div>
+                  <p class="font-semibold text-white">Web & hosting</p>
+                  <p class="text-slate-400 text-[11px] sm:text-xs">Design, build, and host</p>
+                </div>
               </div>
             </div>
           </div>
@@ -146,14 +159,18 @@
               From strategy to implementation, SSD Technologies delivers secure, scalable, and cost‑effective solutions.
             </p>
           </div>
-          <a href="services.html" class="text-sm font-medium text-primary hover:text-red-400">
-            Explore all services →
+          <a href="services.html" class="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-red-400">
+            Explore all services
+            <i data-feather="arrow-right" class="w-4 h-4"></i>
           </a>
         </div>
 
         <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <article class="group rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 hover:border-primary hover:shadow-lg hover:shadow-red-500/30 transition">
-            <h3 class="text-lg font-semibold text-white">Managed IT Services</h3>
+            <div class="flex items-center gap-3 mb-2">
+              <span class="flex h-9 w-9 items-center justify-center rounded-xl bg-red-500/10 text-primary"><i data-feather="headphones" class="w-4 h-4"></i></span>
+              <h3 class="text-lg font-semibold text-white">Managed IT Services</h3>
+            </div>
             <p class="mt-2 text-sm text-slate-300">
               Proactive monitoring, patching, backup, and support to keep your systems healthy and your team productive.
             </p>
@@ -165,7 +182,10 @@
           </article>
 
           <article class="group rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 hover:border-primary hover:shadow-lg hover:shadow-red-500/30 transition">
-            <h3 class="text-lg font-semibold text-white">Cloud & Infrastructure</h3>
+            <div class="flex items-center gap-3 mb-2">
+              <span class="flex h-9 w-9 items-center justify-center rounded-xl bg-red-500/10 text-primary"><i data-feather="cloud" class="w-4 h-4"></i></span>
+              <h3 class="text-lg font-semibold text-white">Cloud & Infrastructure</h3>
+            </div>
             <p class="mt-2 text-sm text-slate-300">
               Design, migrate, and optimize your cloud and hybrid environments for performance and reliability.
             </p>
@@ -177,7 +197,10 @@
           </article>
 
           <article class="group rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 hover:border-primary hover:shadow-lg hover:shadow-red-500/30 transition">
-            <h3 class="text-lg font-semibold text-white">Cybersecurity</h3>
+            <div class="flex items-center gap-3 mb-2">
+              <span class="flex h-9 w-9 items-center justify-center rounded-xl bg-red-500/10 text-primary"><i data-feather="shield" class="w-4 h-4"></i></span>
+              <h3 class="text-lg font-semibold text-white">Cybersecurity</h3>
+            </div>
             <p class="mt-2 text-sm text-slate-300">
               Protect your data and operations with layered security, best practices, and continuous monitoring.
             </p>

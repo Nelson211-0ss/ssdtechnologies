@@ -53,8 +53,16 @@ function initializeFooterUtilities() {
   }
 }
 
+function replaceFeatherIcons() {
+  if (typeof feather !== 'undefined') {
+    feather.replace({ 'stroke-width': 1.5 });
+  }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
-  loadPartial('site-header', 'partials/header.html');
-  loadPartial('site-footer', 'partials/footer.html');
+  Promise.all([
+    loadPartial('site-header', 'partials/header.html'),
+    loadPartial('site-footer', 'partials/footer.html')
+  ]).then(replaceFeatherIcons);
 });
 
