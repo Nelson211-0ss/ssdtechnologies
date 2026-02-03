@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services – SSD Technologies</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#ef4444',
+            secondary: '#020617',
+            accent: '#f97316',
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-black text-slate-100 antialiased">
+
+  <div id="site-header"></div>
+
+  <main class="pt-28 pb-20 bg-black">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 mb-10">
+        <div>
+          <h1 class="text-3xl sm:text-4xl font-semibold text-white mb-2">Our Services</h1>
+          <p class="text-slate-300 text-sm sm:text-base max-w-2xl">
+            SSD Technologies provides end‑to‑end IT services tailored to your industry, size, and roadmap. Combine
+            managed services, cloud, cybersecurity, and strategic consulting under one partner.
+          </p>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="hidden sm:flex -space-x-3">
+            <div class="h-9 w-9 rounded-full border border-neutral-700 bg-[url('https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=200&q=80')] bg-cover bg-center"></div>
+            <div class="h-9 w-9 rounded-full border border-neutral-700 bg-[url('https://images.unsplash.com/photo-1525130413817-d45c1d127c42?auto=format&fit=crop&w=200&q=80')] bg-cover bg-center"></div>
+            <div class="h-9 w-9 rounded-full border border-neutral-700 bg-[url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=200&q=80')] bg-cover bg-center"></div>
+          </div>
+          <p class="text-xs text-slate-400 max-w-xs">
+            Delivered by a senior team of cloud, network, and security engineers.
+          </p>
+        </div>
+      </div>
+
+      <!-- Service grid -->
+      <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3 mb-12">
+        <!-- Managed IT & Helpdesk -->
+        <section class="rounded-2xl border border-neutral-800 bg-neutral-900/80 p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="h-9 w-9 rounded-xl bg-red-500/10 flex items-center justify-center text-red-400">
+              <i data-feather="headphones" class="w-4 h-4"></i>
+            </div>
+            <h2 class="text-xl font-semibold text-white">Managed IT & Helpdesk</h2>
+          </div>
+          <p class="text-sm text-slate-300">
+            Comprehensive support for desktops, servers, and business‑critical apps, delivered with clear SLAs and
+            proactive monitoring.
+          </p>
+          <ul class="mt-3 space-y-1 text-xs text-slate-300">
+            <li>• 24/7 remote & on‑site support</li>
+            <li>• Endpoint and server management</li>
+            <li>• Patch management and asset tracking</li>
+          </ul>
+        </section>
+
+        <!-- Cloud Transformation -->
+        <section class="rounded-2xl border border-neutral-800 bg-neutral-900/80 p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="h-9 w-9 rounded-xl bg-red-500/10 flex items-center justify-center text-red-400">
+              <i data-feather="cloud" class="w-4 h-4"></i>
+            </div>
+            <h2 class="text-xl font-semibold text-white">Cloud Transformation</h2>
+          </div>
+          <p class="text-sm text-slate-300">
+            Assessment, migration, and optimization for AWS, Azure, and hybrid environments, with a focus on security
+            and cost control.
+          </p>
+          <ul class="mt-3 space-y-1 text-xs text-slate-300">
+            <li>• Cloud readiness assessments</li>
+            <li>• Migration planning and execution</li>
+            <li>• Ongoing cost and performance tuning</li>
+          </ul>
+        </section>
+
+        <!-- Network & Security -->
+        <section class="rounded-2xl border border-neutral-800 bg-neutral-900/80 p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="h-9 w-9 rounded-xl bg-red-500/10 flex items-center justify-center text-red-400">
+              <i data-feather="shield" class="w-4 h-4"></i>
+            </div>
+            <h2 class="text-xl font-semibold text-white">Network & Security</h2>
+          </div>
+          <p class="text-sm text-slate-300">
+            Secure, high‑availability networks with next‑gen firewalls, VPNs, and zero‑trust access to protect your
+            data and people.
+          </p>
+          <ul class="mt-3 space-y-1 text-xs text-slate-300">
+            <li>• Network design and implementation</li>
+            <li>• Firewall, VPN, and secure remote access</li>
+            <li>• Zero‑trust and identity management</li>
+          </ul>
+        </section>
+
+        <!-- Cybersecurity & Compliance -->
+        <section class="rounded-2xl border border-neutral-800 bg-neutral-900/80 p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="h-9 w-9 rounded-xl bg-red-500/10 flex items-center justify-center text-red-400">
+              <i data-feather="lock" class="w-4 h-4"></i>
+            </div>
+            <h2 class="text-xl font-semibold text-white">Cybersecurity & Compliance</h2>
+          </div>
+          <p class="text-sm text-slate-300">
+            Reduce risk with layered security, security awareness, and frameworks that keep you aligned with
+            industry and regulatory standards.
+          </p>
+          <ul class="mt-3 space-y-1 text-xs text-slate-300">
+            <li>• Security assessments and hardening</li>
+            <li>• SOC‑aligned monitoring and alerting</li>
+            <li>• Policy, compliance, and awareness training</li>
+          </ul>
+        </section>
+
+        <!-- Backup, DR & Business Continuity -->
+        <section class="rounded-2xl border border-neutral-800 bg-neutral-900/80 p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="h-9 w-9 rounded-xl bg-red-500/10 flex items-center justify-center text-red-400">
+              <i data-feather="refresh-cw" class="w-4 h-4"></i>
+            </div>
+            <h2 class="text-xl font-semibold text-white">Backup & Business Continuity</h2>
+          </div>
+          <p class="text-sm text-slate-300">
+            Protect critical data and keep operations online with resilient backup, disaster recovery, and continuity
+            planning.
+          </p>
+          <ul class="mt-3 space-y-1 text-xs text-slate-300">
+            <li>• Modern, encrypted backup solutions</li>
+            <li>• Disaster recovery runbooks and testing</li>
+            <li>• RPO/RTO aligned to your business</li>
+          </ul>
+        </section>
+
+        <!-- IT Strategy & vCIO -->
+        <section class="rounded-2xl border border-neutral-800 bg-neutral-900/80 p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="h-9 w-9 rounded-xl bg-red-500/10 flex items-center justify-center text-red-400">
+              <i data-feather="compass" class="w-4 h-4"></i>
+            </div>
+            <h2 class="text-xl font-semibold text-white">IT Strategy & vCIO</h2>
+          </div>
+          <p class="text-sm text-slate-300">
+            Turn IT into a strategic asset with virtual CIO services, budgeting support, and a roadmap aligned to
+            your growth plans.
+          </p>
+          <ul class="mt-3 space-y-1 text-xs text-slate-300">
+            <li>• Technology roadmaps and budgeting</li>
+            <li>• Vendor and license management</li>
+            <li>• Quarterly business reviews and planning</li>
+          </ul>
+        </section>
+
+        <!-- Web Design & Hosting -->
+        <section class="rounded-2xl border border-neutral-800 bg-neutral-900/80 p-6 md:col-span-2 xl:col-span-1">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="h-9 w-9 rounded-xl bg-red-500/10 flex items-center justify-center text-red-400">
+              <i data-feather="monitor" class="w-4 h-4"></i>
+            </div>
+            <h2 class="text-xl font-semibold text-white">Web Design & Hosting</h2>
+          </div>
+          <p class="text-sm text-slate-300">
+            Modern, secure, and fast websites built for your brand—fully managed by SSD Technologies from design and
+            development to hosting, updates, and monitoring.
+          </p>
+          <ul class="mt-3 space-y-1 text-xs text-slate-300">
+            <li>• UX‑focused, mobile‑first website design</li>
+            <li>• Secure, high‑performance hosting and SSL</li>
+            <li>• Ongoing maintenance, backups, and monitoring</li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- Visual / highlight section -->
+      <section class="grid gap-8 lg:grid-cols-2 items-center">
+        <div class="relative order-2 lg:order-1">
+          <div class="absolute -inset-4 bg-gradient-to-tr from-red-600/30 via-red-500/10 to-orange-500/10 blur-3xl"></div>
+          <div class="relative rounded-2xl border border-neutral-800 bg-neutral-900/80 p-5 sm:p-6">
+            <p class="text-xs font-semibold tracking-wide text-red-400 uppercase mb-2">Typical engagement</p>
+            <h3 class="text-lg sm:text-xl font-semibold text-white mb-3">From assessment to steady‑state support</h3>
+            <ol class="space-y-2 text-sm text-slate-300 list-decimal list-inside">
+              <li>Discovery workshop and environment assessment.</li>
+              <li>Prioritized roadmap with quick wins and long‑term initiatives.</li>
+              <li>Implementation of foundational security and reliability.</li>
+              <li>Ongoing monitoring, reporting, and optimization.</li>
+            </ol>
+            <p class="mt-3 text-xs text-slate-400">
+              We adapt our approach to your size and industry, from startups to established enterprises.
+            </p>
+          </div>
+        </div>
+
+        <div class="order-1 lg:order-2">
+          <div class="aspect-[4/3] rounded-2xl border border-neutral-800 bg-[url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=900&q=80')] bg-cover bg-center shadow-xl shadow-black/40"></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/main.js"></script>
+  <script>
+    if (window.feather) {
+      feather.replace();
+    }
+  </script>
+</body>
+</html>

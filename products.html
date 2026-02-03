@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Products – SSD Technologies</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#ef4444',
+            secondary: '#020617',
+            accent: '#f97316',
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-black text-slate-100 antialiased">
+
+  <div id="site-header"></div>
+
+  <main class="pt-28 pb-20 bg-black">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 mb-10">
+        <div>
+          <h1 class="text-3xl sm:text-4xl font-semibold text-white mb-2">Our Products</h1>
+          <p class="text-slate-300 text-sm sm:text-base max-w-2xl">
+            SSD Technologies offers a focused suite of products that extend our managed services—giving you visibility,
+            control, and reliability across your IT environment.
+          </p>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="h-10 w-10 rounded-xl border border-neutral-700 bg-gradient-to-tr from-red-600 via-red-500 to-orange-500 flex items-center justify-center text-black">
+            <i data-feather="grid" class="w-4 h-4"></i>
+          </div>
+          <p class="text-xs text-slate-400 max-w-xs">
+            Bundle products with our services for a unified, single‑partner experience.
+          </p>
+        </div>
+      </div>
+
+      <!-- Product categories -->
+      <section class="grid gap-6 lg:grid-cols-3 mb-12">
+        <!-- SSD Monitor -->
+        <article class="rounded-2xl border border-neutral-800 bg-neutral-900/80 p-6 flex flex-col">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="h-9 w-9 rounded-xl bg-red-500/10 flex items-center justify-center text-red-400">
+              <i data-feather="activity" class="w-4 h-4"></i>
+            </div>
+            <div>
+              <h2 class="text-lg font-semibold text-white">SSD Monitor</h2>
+              <p class="text-[11px] uppercase tracking-wide text-slate-400">Infrastructure & uptime monitoring</p>
+            </div>
+          </div>
+          <p class="text-sm text-slate-300 mb-3">
+            A real‑time monitoring and alerting platform for servers, cloud workloads, and network devices—fully
+            managed by our NOC.
+          </p>
+          <ul class="text-xs text-slate-300 space-y-1 mb-4">
+            <li>• Live dashboards for health and performance</li>
+            <li>• Custom alert thresholds and runbooks</li>
+            <li>• Monthly reports with recommendations</li>
+          </ul>
+          <div class="mt-auto flex items-center justify-between text-xs text-slate-400">
+            <span>Best for: 20+ users</span>
+            <span class="text-primary font-semibold">From $ /mo</span>
+          </div>
+        </article>
+
+        <!-- SSD SecureMail -->
+        <article class="rounded-2xl border border-neutral-800 bg-neutral-900/80 p-6 flex flex-col">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="h-9 w-9 rounded-xl bg-red-500/10 flex items-center justify-center text-red-400">
+              <i data-feather="mail" class="w-4 h-4"></i>
+            </div>
+            <div>
+              <h2 class="text-lg font-semibold text-white">SSD SecureMail</h2>
+              <p class="text-[11px] uppercase tracking-wide text-slate-400">Email security & continuity</p>
+            </div>
+          </div>
+          <p class="text-sm text-slate-300 mb-3">
+            Advanced email filtering, encryption, and continuity to protect your team from phishing, spam, and data
+            loss—integrated with Microsoft 365 or Google Workspace.
+          </p>
+          <ul class="text-xs text-slate-300 space-y-1 mb-4">
+            <li>• Spam and phishing protection</li>
+            <li>• Email encryption and DLP options</li>
+            <li>• Failover mail continuity</li>
+          </ul>
+          <div class="mt-auto flex items-center justify-between text-xs text-slate-400">
+            <span>Best for: Compliance‑sensitive teams</span>
+            <span class="text-primary font-semibold">Per‑mailbox pricing</span>
+          </div>
+        </article>
+
+        <!-- SSD WebStack -->
+        <article class="rounded-2xl border border-neutral-800 bg-neutral-900/80 p-6 flex flex-col">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="h-9 w-9 rounded-xl bg-red-500/10 flex items-center justify-center text-red-400">
+              <i data-feather="layers" class="w-4 h-4"></i>
+            </div>
+            <div>
+              <h2 class="text-lg font-semibold text-white">SSD WebStack</h2>
+              <p class="text-[11px] uppercase tracking-wide text-slate-400">Managed website platform</p>
+            </div>
+          </div>
+          <p class="text-sm text-slate-300 mb-3">
+            A secure, fully managed hosting stack for your corporate website, landing pages, and microsites—paired
+            with our web design and maintenance services.
+          </p>
+          <ul class="text-xs text-slate-300 space-y-1 mb-4">
+            <li>• Optimized, secure hosting with SSL</li>
+            <li>• Staging environments and safe deployments</li>
+            <li>• Monitoring, backups, and uptime SLAs</li>
+          </ul>
+          <div class="mt-auto flex items-center justify-between text-xs text-slate-400">
+            <span>Best for: Marketing & corporate sites</span>
+            <span class="text-primary font-semibold">Bundle with design</span>
+          </div>
+        </article>
+      </section>
+
+      <!-- Bundled plans -->
+      <section class="rounded-2xl border border-neutral-800 bg-neutral-900/80 p-6 sm:p-7">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-4">
+          <div>
+            <p class="text-xs font-semibold tracking-wide text-red-400 uppercase mb-1">Bundles</p>
+            <h2 class="text-lg sm:text-xl font-semibold text-white">Service & product bundles</h2>
+            <p class="mt-2 text-sm text-slate-300 max-w-xl">
+              Combine our products with managed services in simple tiers that scale with your organization.
+            </p>
+          </div>
+          <a href="index.html#contact" class="inline-flex items-center justify-center rounded-full bg-primary px-4 py-2 text-xs font-semibold text-white hover:bg-red-600 transition">
+            Talk to sales
+          </a>
+        </div>
+
+        <div class="grid gap-4 md:grid-cols-3 text-xs text-slate-300">
+          <div class="rounded-xl border border-neutral-800 bg-black/60 p-4">
+            <p class="text-[11px] font-semibold tracking-wide text-slate-400 uppercase mb-1">Starter</p>
+            <p class="mb-2 text-sm text-white">For small teams getting organized.</p>
+            <ul class="space-y-1">
+              <li>• Basic Managed IT support</li>
+              <li>• SSD Monitor (core endpoints)</li>
+              <li>• Optional SSD SecureMail add‑on</li>
+            </ul>
+          </div>
+          <div class="rounded-xl border border-primary bg-black/70 p-4">
+            <p class="text-[11px] font-semibold tracking-wide text-primary uppercase mb-1">Business</p>
+            <p class="mb-2 text-sm text-white">For growing organizations with hybrid environments.</p>
+            <ul class="space-y-1">
+              <li>• Managed IT & Helpdesk</li>
+              <li>• SSD Monitor + SecureMail</li>
+              <li>• SSD WebStack for main website</li>
+            </ul>
+          </div>
+          <div class="rounded-xl border border-neutral-800 bg-black/60 p-4">
+            <p class="text-[11px] font-semibold tracking-wide text-slate-400 uppercase mb-1">Enterprise</p>
+            <p class="mb-2 text-sm text-white">For complex, multi‑site environments.</p>
+            <ul class="space-y-1">
+              <li>• All Business features</li>
+              <li>• Custom monitoring packs</li>
+              <li>• vCIO strategy sessions</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/main.js"></script>
+  <script>
+    if (window.feather) {
+      feather.replace();
+    }
+  </script>
+</body>
+</html>
+

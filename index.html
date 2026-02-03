@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SSD Technologies – IT Solutions</title>
+  <meta name="description" content="SSD Technologies provides modern IT solutions, cloud services, and managed infrastructure for growing businesses.">
+
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#ef4444',   // red-500
+            secondary: '#020617', // almost black
+            accent: '#f97316',    // orange accent
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-black text-slate-100 antialiased">
+
+  <!-- Header gets injected here -->
+  <div id="site-header"></div>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="pt-28 pb-20 bg-gradient-to-b from-black via-neutral-900 to-black min-h-screen flex items-center">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] items-center">
+          <!-- Text / value prop -->
+          <div>
+            <div class="inline-flex items-center gap-2 rounded-full border border-red-500/30 bg-red-500/5 px-3 py-1 text-[11px] font-medium uppercase tracking-wide text-red-300">
+              <span class="h-1.5 w-1.5 rounded-full bg-red-500 animate-pulse"></span>
+              Always‑on IT operations, secured.
+            </div>
+
+            <h1 class="mt-4 text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white">
+              Enterprise‑grade IT,
+              <span class="block text-primary mt-1">built for growing teams.</span>
+            </h1>
+
+            <p class="mt-4 text-sm sm:text-base lg:text-lg text-slate-300 max-w-xl">
+              SSD Technologies designs, secures, and runs your IT—from cloud and networks to endpoints and
+              websites—so your business stays fast, available, and protected.
+            </p>
+
+            <div class="mt-6 flex flex-wrap gap-3">
+              <a href="#contact" class="inline-flex items-center justify-center rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-white shadow-lg shadow-red-500/40 hover:bg-red-600 transition">
+                Book a free assessment
+              </a>
+              <a href="services.html" class="inline-flex items-center justify-center rounded-full border border-slate-700 px-6 py-2.5 text-sm font-semibold text-slate-100 hover:border-primary hover:text-primary transition">
+                View all services
+              </a>
+            </div>
+
+            <div class="mt-6 grid grid-cols-2 sm:flex sm:flex-row sm:flex-wrap gap-4 text-xs sm:text-sm text-slate-300">
+              <div>
+                <p class="font-semibold text-white">99.98% uptime</p>
+                <p class="text-slate-400 text-[11px] sm:text-xs">Across managed infrastructure</p>
+              </div>
+              <div>
+                <p class="font-semibold text-white">24/7 monitoring</p>
+                <p class="text-slate-400 text-[11px] sm:text-xs">NOC‑backed response</p>
+              </div>
+              <div>
+                <p class="font-semibold text-white">Security‑first</p>
+                <p class="text-slate-400 text-[11px] sm:text-xs">Aligned to best practices</p>
+              </div>
+              <div>
+                <p class="font-semibold text-white">Web & hosting</p>
+                <p class="text-slate-400 text-[11px] sm:text-xs">Design, build, and host</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual / mini dashboard + logos -->
+          <div class="space-y-4">
+            <div class="relative">
+              <div class="absolute -inset-4 bg-gradient-to-tr from-red-500/25 via-red-500/5 to-orange-500/10 blur-3xl"></div>
+              <div class="relative rounded-2xl border border-neutral-800 bg-neutral-900/70 backdrop-blur p-6 shadow-2xl">
+                <div class="flex justify-between items-center mb-4">
+                  <div>
+                    <p class="text-xs text-slate-400 uppercase tracking-wide">Operations overview</p>
+                    <p class="text-sm font-semibold text-slate-100">SSD Control Panel</p>
+                  </div>
+                  <span class="inline-flex items-center gap-1 rounded-full bg-red-500/10 px-3 py-1 text-[11px] text-red-300">
+                    Healthy
+                    <span class="h-1.5 w-1.5 rounded-full bg-red-500"></span>
+                  </span>
+                </div>
+                <div class="grid grid-cols-2 gap-3 text-xs">
+                  <div class="rounded-xl border border-neutral-800 bg-black/70 p-3">
+                    <p class="text-slate-400 mb-1">Infrastructure</p>
+                    <p class="text-lg font-semibold text-red-300">47 systems</p>
+                    <p class="mt-1 text-[11px] text-slate-500">0 critical alerts</p>
+                  </div>
+                  <div class="rounded-xl border border-neutral-800 bg-black/70 p-3">
+                    <p class="text-slate-400 mb-1">Websites</p>
+                    <p class="text-lg font-semibold text-rose-300">12 online</p>
+                    <p class="mt-1 text-[11px] text-slate-500">AVG response 120 ms</p>
+                  </div>
+                  <div class="col-span-2 rounded-xl border border-neutral-800 bg-gradient-to-r from-black/80 to-neutral-900/60 p-3">
+                    <p class="text-slate-400 mb-1 text-xs">Security posture</p>
+                    <div class="flex items-center justify-between">
+                      <div class="flex gap-2">
+                        <span class="h-1.5 w-10 rounded-full bg-red-500/90"></span>
+                        <span class="h-1.5 w-10 rounded-full bg-red-500/70"></span>
+                        <span class="h-1.5 w-10 rounded-full bg-orange-500/70"></span>
+                      </div>
+                      <span class="text-[11px] text-slate-400">Patching & backups on</span>
+                    </div>
+                  </div>
+                </div>
+                <p class="mt-4 text-[11px] text-slate-500">
+                  One view of your cloud, network, endpoints, and web presence—managed by SSD Technologies.
+                </p>
+              </div>
+            </div>
+
+            <div class="hidden sm:block">
+              <p class="text-[11px] uppercase tracking-wide text-slate-500 mb-2">Trusted by teams that depend on IT</p>
+              <div class="flex flex-wrap gap-3 text-[11px] text-slate-400">
+                <span class="rounded-full border border-neutral-800 bg-black/60 px-3 py-1">Professional services</span>
+                <span class="rounded-full border border-neutral-800 bg-black/60 px-3 py-1">Finance & fintech</span>
+                <span class="rounded-full border border-neutral-800 bg-black/60 px-3 py-1">Healthcare</span>
+                <span class="rounded-full border border-neutral-800 bg-black/60 px-3 py-1">SaaS & startups</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 sm:py-20 bg-black">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
+          <div>
+            <h2 class="text-2xl sm:text-3xl font-semibold text-white">IT solutions built for growth</h2>
+            <p class="mt-2 text-sm sm:text-base text-slate-400 max-w-xl">
+              From strategy to implementation, SSD Technologies delivers secure, scalable, and cost‑effective solutions.
+            </p>
+          </div>
+          <a href="services.html" class="text-sm font-medium text-primary hover:text-red-400">
+            Explore all services →
+          </a>
+        </div>
+
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="group rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 hover:border-primary hover:shadow-lg hover:shadow-red-500/30 transition">
+            <h3 class="text-lg font-semibold text-white">Managed IT Services</h3>
+            <p class="mt-2 text-sm text-slate-300">
+              Proactive monitoring, patching, backup, and support to keep your systems healthy and your team productive.
+            </p>
+            <ul class="mt-4 space-y-1 text-xs text-slate-200">
+              <li>• 24/7 monitoring & support</li>
+              <li>• Endpoint & server management</li>
+              <li>• Backup & disaster recovery</li>
+            </ul>
+          </article>
+
+          <article class="group rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 hover:border-primary hover:shadow-lg hover:shadow-red-500/30 transition">
+            <h3 class="text-lg font-semibold text-white">Cloud & Infrastructure</h3>
+            <p class="mt-2 text-sm text-slate-300">
+              Design, migrate, and optimize your cloud and hybrid environments for performance and reliability.
+            </p>
+            <ul class="mt-4 space-y-1 text-xs text-slate-200">
+              <li>• Cloud architecture & migration</li>
+              <li>• Network design & security</li>
+              <li>• Cost optimization</li>
+            </ul>
+          </article>
+
+          <article class="group rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 hover:border-primary hover:shadow-lg hover:shadow-red-500/30 transition">
+            <h3 class="text-lg font-semibold text-white">Cybersecurity</h3>
+            <p class="mt-2 text-sm text-slate-300">
+              Protect your data and operations with layered security, best practices, and continuous monitoring.
+            </p>
+            <ul class="mt-4 space-y-1 text-xs text-slate-200">
+              <li>• Security assessments</li>
+              <li>• Zero‑trust & access control</li>
+              <li>• Incident response planning</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 sm:py-20 bg-neutral-900">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-xl">
+          <h2 class="text-2xl sm:text-3xl font-semibold text-white">Let’s talk about your IT strategy</h2>
+          <p class="mt-2 text-sm sm:text-base text-slate-300">
+            Share a bit about your environment and goals. Our team will respond within one business day.
+          </p>
+        </div>
+
+        <form class="mt-8 grid gap-4">
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div>
+              <label class="block text-xs font-medium text-slate-300 mb-1">Name</label>
+              <input type="text" class="w-full rounded-lg border border-neutral-700 bg-black/70 px-3 py-2 text-sm text-slate-100 placeholder-slate-500 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Jane Doe" />
+            </div>
+            <div>
+              <label class="block text-xs font-medium text-slate-300 mb-1">Company</label>
+              <input type="text" class="w-full rounded-lg border border-neutral-700 bg-black/70 px-3 py-2 text-sm text-slate-100 placeholder-slate-500 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Acme Inc." />
+            </div>
+          </div>
+
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div>
+              <label class="block text-xs font-medium text-slate-300 mb-1">Email</label>
+              <input type="email" class="w-full rounded-lg border border-neutral-700 bg-black/70 px-3 py-2 text-sm text-slate-100 placeholder-slate-500 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" placeholder="you@company.com" />
+            </div>
+            <div>
+              <label class="block text-xs font-medium text-slate-300 mb-1">Phone (optional)</label>
+              <input type="tel" class="w-full rounded-lg border border-neutral-700 bg-black/70 px-3 py-2 text-sm text-slate-100 placeholder-slate-500 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" placeholder="+1 (555) 123‑4567" />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-medium text-slate-300 mb-1">What can we help you with?</label>
+            <textarea rows="4" class="w-full rounded-lg border border-neutral-700 bg-black/70 px-3 py-2 text-sm text-slate-100 placeholder-slate-500 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Tell us about your current challenges or upcoming projects."></textarea>
+          </div>
+
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mt-2">
+            <button type="submit" class="inline-flex items-center justify-center rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-white shadow-lg shadow-red-500/40 hover:bg-red-600 transition w-full sm:w-auto">
+              Submit Request
+            </button>
+            <p class="text-xs text-slate-400 max-w-sm">
+              By submitting, you agree to be contacted by SSD Technologies about services and offers. We respect your privacy.
+            </p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer gets injected here -->
+  <div id="site-footer"></div>
+
+  <!-- Main JS -->
+  <script src="assets/main.js"></script>
+</body>
+</html>
