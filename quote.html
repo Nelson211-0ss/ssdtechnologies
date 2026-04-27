@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Get a Quote — SSD-iT Solutions</title>
+  <meta name="description" content="Tell us about your project and get a clear, no-obligation quote from SSD-iT Solutions within 1–2 business days." />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
+  <meta name="theme-color" content="#03130a" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/theme.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="bg-forest-950 text-slate-100 antialiased overflow-x-hidden">
+
+  <div id="site-header"></div>
+
+  <main class="relative isolate overflow-hidden bg-tech pt-28 sm:pt-32 pb-20">
+    <div aria-hidden="true" class="absolute inset-0 bg-grid"></div>
+    <div aria-hidden="true" class="glow-accent w-[34rem] h-[34rem] -top-32 -right-32 bg-primary/15"></div>
+
+    <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Header -->
+      <div class="reveal text-center max-w-2xl mx-auto">
+        <span class="eyebrow"><i data-feather="file-text" class="w-3 h-3"></i> Request a quote</span>
+        <h1 class="mt-4 font-display text-4xl sm:text-5xl font-bold text-white leading-tight">
+          Get a <span class="text-gradient">clear quote</span> in 1–2 days.
+        </h1>
+        <p class="mt-4 text-slate-300/85">
+          Tell us a little about your project — we'll send back a transparent estimate with scope and timeline.
+          No commitment.
+        </p>
+      </div>
+
+      <!-- How it works (3 simple steps) -->
+      <div class="reveal mt-10 grid sm:grid-cols-3 gap-3" data-delay="100">
+        <div class="rounded-xl border border-white/5 bg-forest-900/60 p-4 flex items-start gap-3">
+          <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-primary/15 text-primary text-xs font-bold">1</span>
+          <div>
+            <p class="text-sm font-semibold text-white">Fill in the form</p>
+            <p class="text-xs text-slate-400">A few quick questions about your project.</p>
+          </div>
+        </div>
+        <div class="rounded-xl border border-white/5 bg-forest-900/60 p-4 flex items-start gap-3">
+          <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-primary/15 text-primary text-xs font-bold">2</span>
+          <div>
+            <p class="text-sm font-semibold text-white">We review it</p>
+            <p class="text-xs text-slate-400">Usually within one business day.</p>
+          </div>
+        </div>
+        <div class="rounded-xl border border-white/5 bg-forest-900/60 p-4 flex items-start gap-3">
+          <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-primary/15 text-primary text-xs font-bold">3</span>
+          <div>
+            <p class="text-sm font-semibold text-white">You get a quote</p>
+            <p class="text-xs text-slate-400">Scope, price &amp; timeline — no surprises.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quote form -->
+      <div class="reveal mt-8" data-delay="200">
+        <div class="rounded-3xl border border-white/5 bg-forest-900/70 backdrop-blur-xl p-6 sm:p-10">
+          <form id="quote-form"
+                action="https://formsubmit.co/nelsonochan@gmail.com"
+                method="POST"
+                class="grid gap-5">
+            <input type="hidden" name="_subject" value="New SSD-iT quote request" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_next" value="quote.html?sent=1" />
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+
+            <!-- 1. Contact -->
+            <div>
+              <p class="text-[11px] font-semibold uppercase tracking-[0.2em] text-emerald-200/60 mb-3">1 · About you</p>
+              <div class="grid gap-4 sm:grid-cols-2">
+                <div>
+                  <label for="q-name" class="block text-xs font-medium text-slate-300 mb-1.5">Full name *</label>
+                  <input id="q-name" required type="text" name="name" class="form-input" placeholder="Jane Doe" />
+                </div>
+                <div>
+                  <label for="q-company" class="block text-xs font-medium text-slate-300 mb-1.5">Company / organization</label>
+                  <input id="q-company" type="text" name="company" class="form-input" placeholder="Acme Inc." />
+                </div>
+                <div>
+                  <label for="q-email" class="block text-xs font-medium text-slate-300 mb-1.5">Email *</label>
+                  <input id="q-email" required type="email" name="email" class="form-input" placeholder="you@company.com" />
+                </div>
+                <div>
+                  <label for="q-phone" class="block text-xs font-medium text-slate-300 mb-1.5">Phone / WhatsApp</label>
+                  <input id="q-phone" type="tel" name="phone" class="form-input" placeholder="+256 700 000 000" />
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. Project -->
+            <div>
+              <p class="text-[11px] font-semibold uppercase tracking-[0.2em] text-emerald-200/60 mb-3">2 · Project details</p>
+              <div class="grid gap-4 sm:grid-cols-2">
+                <div>
+                  <label for="q-type" class="block text-xs font-medium text-slate-300 mb-1.5">Project type *</label>
+                  <select id="q-type" required name="project_type" class="form-input">
+                    <option value="">Select one…</option>
+                    <option>Website / landing page</option>
+                    <option>Web application</option>
+                    <option>E-commerce / online store</option>
+                    <option>Branding &amp; graphic design</option>
+                    <option>Hosting &amp; maintenance</option>
+                    <option>SSD-ACMIS (school management)</option>
+                    <option>Something else</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="q-budget" class="block text-xs font-medium text-slate-300 mb-1.5">Budget range</label>
+                  <select id="q-budget" name="budget" class="form-input">
+                    <option value="">Not sure yet</option>
+                    <option>Under $500</option>
+                    <option>$500 – $1,500</option>
+                    <option>$1,500 – $5,000</option>
+                    <option>$5,000 – $15,000</option>
+                    <option>$15,000+</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="q-timeline" class="block text-xs font-medium text-slate-300 mb-1.5">Ideal timeline</label>
+                  <select id="q-timeline" name="timeline" class="form-input">
+                    <option value="">Flexible</option>
+                    <option>ASAP (within 2 weeks)</option>
+                    <option>1 month</option>
+                    <option>2–3 months</option>
+                    <option>3+ months</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="q-existing" class="block text-xs font-medium text-slate-300 mb-1.5">Existing website (optional)</label>
+                  <input id="q-existing" type="url" name="existing_url" class="form-input" placeholder="https://yoursite.com" />
+                </div>
+              </div>
+
+              <div class="mt-4">
+                <label for="q-details" class="block text-xs font-medium text-slate-300 mb-1.5">Tell us more about your project *</label>
+                <textarea id="q-details" required rows="5" name="details" class="form-input resize-y"
+                          placeholder="What are you trying to build or solve? Any specific features, pages or integrations you need?"></textarea>
+              </div>
+            </div>
+
+            <!-- Submit -->
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pt-2 border-t border-white/5">
+              <p class="text-[11px] text-slate-400 max-w-sm">
+                Just have a question?
+                <a href="contact.html" class="text-primary hover:underline font-medium">Send a quick message</a>
+                instead.
+              </p>
+              <button type="submit" class="btn-primary justify-center sm:w-auto w-full">
+                <i data-feather="send" class="w-4 h-4"></i>
+                Request my quote
+              </button>
+            </div>
+          </form>
+
+          <!-- Success message -->
+          <div id="quote-success" class="hidden mt-6 rounded-2xl border border-emerald-400/30 bg-emerald-500/10 p-4 flex items-start gap-3">
+            <span class="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-300">
+              <i data-feather="check-circle" class="w-4 h-4"></i>
+            </span>
+            <div>
+              <p class="font-semibold text-emerald-200">Got it — your quote request is in.</p>
+              <p class="text-sm text-emerald-100/80">We'll review it and send you a clear quote within 1–2 business days.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer assurance line -->
+      <p class="reveal mt-8 text-center text-xs text-slate-500" data-delay="300">
+        <i data-feather="lock" class="w-3 h-3 inline-block -mt-0.5"></i>
+        Your details stay private — we only use them to prepare your quote.
+      </p>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="assets/main.js"></script>
+  <script>
+    (function () {
+      const params = new URLSearchParams(location.search);
+      if (params.get('sent') === '1') {
+        const el = document.getElementById('quote-success');
+        if (el) {
+          el.classList.remove('hidden');
+          el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+        const form = document.getElementById('quote-form');
+        if (form) form.reset();
+      }
+
+      // If a `subject` query param is present (e.g. from product CTAs), prefill it as a context line
+      const subj = params.get('subject');
+      if (subj) {
+        const details = document.getElementById('q-details');
+        if (details && !details.value) {
+          details.value = 'Interested in: ' + decodeURIComponent(subj) + '\n\n';
+        }
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -121,6 +121,108 @@ function initCounters() {
   counters.forEach((c) => io.observe(c));
 }
 
+// Slider / carousel
+function initSliders() {
+  const sliders = document.querySelectorAll('[data-slider]');
+  if (!sliders.length) return;
+
+  sliders.forEach((slider) => {
+    const slides = Array.from(slider.querySelectorAll('[data-slide]'));
+    if (slides.length <= 1) {
+      if (slides[0]) slides[0].classList.add('is-active');
+      return;
+    }
+
+    const dotsWrap = slider.querySelector('[data-slide-dots]');
+    const counter = slider.querySelector('[data-slide-counter]');
+    const interval = parseInt(slider.dataset.sliderInterval || '5000', 10);
+
+    let dots = [];
+    if (dotsWrap) {
+      dotsWrap.innerHTML = '';
+      slides.forEach((_, i) => {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.setAttribute('data-slide-dot', '');
+        b.setAttribute('aria-label', `Go to slide ${i + 1}`);
+        dotsWrap.appendChild(b);
+      });
+      dots = Array.from(dotsWrap.querySelectorAll('[data-slide-dot]'));
+    }
+
+    const prev = slider.querySelector('[data-slide-prev]');
+    const next = slider.querySelector('[data-slide-next]');
+
+    let current = 0;
+    let timer = null;
+
+    const setCounter = () => {
+      if (counter) counter.textContent = `${current + 1} / ${slides.length}`;
+    };
+
+    const go = (idx) => {
+      current = ((idx % slides.length) + slides.length) % slides.length;
+      slides.forEach((s, i) => s.classList.toggle('is-active', i === current));
+      dots.forEach((d, i) => d.classList.toggle('is-active', i === current));
+      setCounter();
+    };
+
+    const start = () => {
+      stop();
+      timer = setInterval(() => go(current + 1), interval);
+    };
+    const stop = () => {
+      if (timer) clearInterval(timer);
+      timer = null;
+    };
+
+    dots.forEach((d, i) =>
+      d.addEventListener('click', () => {
+        go(i);
+        start();
+      })
+    );
+    if (prev) prev.addEventListener('click', () => { go(current - 1); start(); });
+    if (next) next.addEventListener('click', () => { go(current + 1); start(); });
+
+    slider.addEventListener('mouseenter', stop);
+    slider.addEventListener('mouseleave', start);
+    slider.addEventListener('focusin', stop);
+    slider.addEventListener('focusout', start);
+
+    // Touch swipe
+    let touchX = 0;
+    slider.addEventListener(
+      'touchstart',
+      (e) => {
+        touchX = e.touches[0].clientX;
+        stop();
+      },
+      { passive: true }
+    );
+    slider.addEventListener(
+      'touchend',
+      (e) => {
+        const dx = e.changedTouches[0].clientX - touchX;
+        if (Math.abs(dx) > 40) go(current + (dx < 0 ? 1 : -1));
+        start();
+      },
+      { passive: true }
+    );
+
+    // Pause when off-screen, resume when on-screen
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((en) => (en.isIntersecting ? start() : stop()));
+      });
+      io.observe(slider);
+    }
+
+    go(0);
+    start();
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   Promise.all([
     loadPartial('site-header', 'partials/header.html'),
@@ -129,5 +231,6 @@ document.addEventListener('DOMContentLoaded', () => {
     replaceFeatherIcons();
     initRevealObserver();
     initCounters();
+    initSliders();
   });
 });
