@@ -3,267 +3,460 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Products – SSD IT Solutions</title>
+  <title>Products — SSD-iT Solutions</title>
+  <meta name="description" content="A focused suite of products from SSD-iT Solutions: SSD Monitor, SSD SecureMail and SSD WebStack — plus our recent web work." />
+  <link rel="icon" type="image/png" href="assets/ssd-it-logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#ef4444',
-            secondary: '#020617',
-            accent: '#f97316',
-          }
-        }
-      }
-    }
-  </script>
+  <script src="assets/theme.js"></script>
   <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
-<body class="bg-black text-slate-100 antialiased">
+<body class="bg-forest-950 text-slate-100 antialiased overflow-x-hidden">
 
   <div id="site-header"></div>
 
-  <main class="pt-28 pb-20 bg-black">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 mb-10">
-        <div>
-          <h1 class="text-3xl sm:text-4xl font-semibold text-white mb-2">Our Products</h1>
-          <p class="text-slate-300 text-sm sm:text-base max-w-2xl">
-            SSD IT Solutions offers a focused suite of products that extend our managed services—giving you visibility,
-            control, and reliability across your IT environment.
-          </p>
-        </div>
-        <div class="flex items-center gap-3">
-          <div class="h-10 w-10 rounded-xl border border-neutral-700 bg-gradient-to-tr from-red-600 via-red-500 to-orange-500 flex items-center justify-center text-black">
-            <i data-feather="grid" class="w-4 h-4"></i>
-          </div>
-          <p class="text-xs text-slate-400 max-w-xs">
-            Bundle products with our services for a unified, single‑partner experience.
+  <main>
+    <!-- Hero -->
+    <section class="relative isolate overflow-hidden bg-tech pt-28 sm:pt-32 pb-16 sm:pb-20">
+      <div aria-hidden="true" class="absolute inset-0 bg-grid"></div>
+      <div aria-hidden="true" class="glow-accent w-[36rem] h-[36rem] -top-40 -left-32 bg-primary/15"></div>
+      <div aria-hidden="true" class="glow-accent w-[28rem] h-[28rem] -bottom-32 -right-24 bg-emerald-500/10"></div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal max-w-3xl">
+          <span class="eyebrow"><i data-feather="grid" class="w-3 h-3"></i> Products</span>
+          <h1 class="mt-4 font-display text-4xl sm:text-5xl font-bold text-white leading-tight">
+            Tools that extend our
+            <span class="text-gradient">managed services</span>.
+          </h1>
+          <p class="mt-5 text-lg text-slate-300/85">
+            A focused suite of products that give you visibility, control and reliability across your IT environment —
+            tightly integrated with our services.
           </p>
         </div>
       </div>
+    </section>
 
-      <!-- Product categories -->
-      <section class="grid gap-6 lg:grid-cols-3 mb-12">
-        <!-- SSD Monitor -->
-        <article class="rounded-2xl border border-neutral-800 bg-neutral-900/80 p-6 flex flex-col">
-          <div class="flex items-center gap-3 mb-3">
-            <div class="h-9 w-9 rounded-xl bg-red-500/10 flex items-center justify-center text-red-400">
-              <i data-feather="activity" class="w-4 h-4"></i>
+    <!-- Product cards -->
+    <section class="relative py-20 sm:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-6 lg:grid-cols-3">
+          <article class="reveal card rounded-2xl border border-white/5 bg-forest-900/60 p-7 flex flex-col" data-delay="100">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary mb-4">
+              <i data-feather="activity" class="w-5 h-5"></i>
             </div>
-            <div>
-              <h2 class="text-lg font-semibold text-white">SSD Monitor</h2>
-              <p class="text-[11px] uppercase tracking-wide text-slate-400">Infrastructure & uptime monitoring</p>
+            <h2 class="text-xl font-semibold text-white">SSD Monitor</h2>
+            <p class="text-[11px] uppercase tracking-wider text-emerald-200/60">Infrastructure & uptime monitoring</p>
+            <p class="mt-3 text-sm text-slate-300/85">
+              Real-time monitoring and alerting for servers, cloud workloads and network devices — fully managed by our NOC.
+            </p>
+            <ul class="mt-4 space-y-1.5 text-xs text-slate-300 mb-6">
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Live dashboards for health & performance</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Custom alert thresholds & runbooks</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Monthly reports with recommendations</li>
+            </ul>
+            <div class="mt-auto flex items-center justify-between text-xs">
+              <span class="text-slate-400">Best for: 20+ users</span>
+              <span class="text-primary font-semibold">From contact</span>
             </div>
-          </div>
-          <p class="text-sm text-slate-300 mb-3">
-            A real‑time monitoring and alerting platform for servers, cloud workloads, and network devices—fully
-            managed by our NOC.
-          </p>
-          <ul class="text-xs text-slate-300 space-y-1 mb-4">
-            <li>• Live dashboards for health and performance</li>
-            <li>• Custom alert thresholds and runbooks</li>
-            <li>• Monthly reports with recommendations</li>
-          </ul>
-          <div class="mt-auto flex items-center justify-between text-xs text-slate-400">
-            <span>Best for: 20+ users</span>
-            <span class="text-primary font-semibold">From $ /mo</span>
-          </div>
-        </article>
+          </article>
 
-        <!-- SSD SecureMail -->
-        <article class="rounded-2xl border border-neutral-800 bg-neutral-900/80 p-6 flex flex-col">
-          <div class="flex items-center gap-3 mb-3">
-            <div class="h-9 w-9 rounded-xl bg-red-500/10 flex items-center justify-center text-red-400">
-              <i data-feather="mail" class="w-4 h-4"></i>
+          <article class="reveal card rounded-2xl border border-primary/40 bg-gradient-to-br from-primary/10 via-forest-900/70 to-forest-900/60 p-7 flex flex-col" data-delay="200">
+            <div class="flex items-center justify-between">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/20 text-primary">
+                <i data-feather="mail" class="w-5 h-5"></i>
+              </div>
+              <span class="text-[10px] font-semibold uppercase tracking-widest text-primary border border-primary/40 rounded-full px-2 py-1">Most popular</span>
             </div>
-            <div>
-              <h2 class="text-lg font-semibold text-white">SSD SecureMail</h2>
-              <p class="text-[11px] uppercase tracking-wide text-slate-400">Email security & continuity</p>
+            <h2 class="mt-4 text-xl font-semibold text-white">SSD SecureMail</h2>
+            <p class="text-[11px] uppercase tracking-wider text-emerald-200/60">Email security & continuity</p>
+            <p class="mt-3 text-sm text-slate-300/85">
+              Advanced email filtering, encryption and continuity to protect your team from phishing, spam and data
+              loss — integrated with Microsoft 365 or Google Workspace.
+            </p>
+            <ul class="mt-4 space-y-1.5 text-xs text-slate-300 mb-6">
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Spam & phishing protection</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Encryption & DLP options</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Failover mail continuity</li>
+            </ul>
+            <div class="mt-auto flex items-center justify-between text-xs">
+              <span class="text-slate-400">Best for: Compliance teams</span>
+              <span class="text-primary font-semibold">Per-mailbox</span>
             </div>
-          </div>
-          <p class="text-sm text-slate-300 mb-3">
-            Advanced email filtering, encryption, and continuity to protect your team from phishing, spam, and data
-            loss—integrated with Microsoft 365 or Google Workspace.
-          </p>
-          <ul class="text-xs text-slate-300 space-y-1 mb-4">
-            <li>• Spam and phishing protection</li>
-            <li>• Email encryption and DLP options</li>
-            <li>• Failover mail continuity</li>
-          </ul>
-          <div class="mt-auto flex items-center justify-between text-xs text-slate-400">
-            <span>Best for: Compliance‑sensitive teams</span>
-            <span class="text-primary font-semibold">Per‑mailbox pricing</span>
-          </div>
-        </article>
+          </article>
 
-        <!-- SSD WebStack -->
-        <article class="rounded-2xl border border-neutral-800 bg-neutral-900/80 p-6 flex flex-col">
-          <div class="flex items-center gap-3 mb-3">
-            <div class="h-9 w-9 rounded-xl bg-red-500/10 flex items-center justify-center text-red-400">
-              <i data-feather="layers" class="w-4 h-4"></i>
+          <article class="reveal card rounded-2xl border border-white/5 bg-forest-900/60 p-7 flex flex-col" data-delay="300">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary mb-4">
+              <i data-feather="layers" class="w-5 h-5"></i>
             </div>
-            <div>
-              <h2 class="text-lg font-semibold text-white">SSD WebStack</h2>
-              <p class="text-[11px] uppercase tracking-wide text-slate-400">Managed website platform</p>
+            <h2 class="text-xl font-semibold text-white">SSD WebStack</h2>
+            <p class="text-[11px] uppercase tracking-wider text-emerald-200/60">Managed website platform</p>
+            <p class="mt-3 text-sm text-slate-300/85">
+              A secure, fully managed hosting stack for your corporate website, landing pages and microsites — paired
+              with our web design and maintenance services.
+            </p>
+            <ul class="mt-4 space-y-1.5 text-xs text-slate-300 mb-6">
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Optimized hosting with SSL</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Staging environments</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Monitoring, backups, uptime SLAs</li>
+            </ul>
+            <div class="mt-auto flex items-center justify-between text-xs">
+              <span class="text-slate-400">Best for: Marketing sites</span>
+              <span class="text-primary font-semibold">Bundle with design</span>
             </div>
-          </div>
-          <p class="text-sm text-slate-300 mb-3">
-            A secure, fully managed hosting stack for your corporate website, landing pages, and microsites—paired
-            with our web design and maintenance services.
-          </p>
-          <ul class="text-xs text-slate-300 space-y-1 mb-4">
-            <li>• Optimized, secure hosting with SSL</li>
-            <li>• Staging environments and safe deployments</li>
-            <li>• Monitoring, backups, and uptime SLAs</li>
-          </ul>
-          <div class="mt-auto flex items-center justify-between text-xs text-slate-400">
-            <span>Best for: Marketing & corporate sites</span>
-            <span class="text-primary font-semibold">Bundle with design</span>
-          </div>
-        </article>
-      </section>
+          </article>
+        </div>
+      </div>
+    </section>
 
-      <!-- Bundled plans -->
-      <section class="rounded-2xl border border-neutral-800 bg-neutral-900/80 p-6 sm:p-7">
-        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-4">
-          <div>
-            <p class="text-xs font-semibold tracking-wide text-red-400 uppercase mb-1">Bundles</p>
-            <h2 class="text-lg sm:text-xl font-semibold text-white">Service & product bundles</h2>
-            <p class="mt-2 text-sm text-slate-300 max-w-xl">
+    <!-- Bundles -->
+    <section class="relative py-16 sm:py-20 bg-forest-900/40 border-y border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10">
+          <div class="max-w-2xl">
+            <span class="eyebrow"><i data-feather="package" class="w-3 h-3"></i> Bundles</span>
+            <h2 class="mt-3 font-display text-3xl sm:text-4xl font-bold text-white">
+              Service & product <span class="text-gradient">bundles</span>
+            </h2>
+            <p class="mt-3 text-slate-300/80">
               Combine our products with managed services in simple tiers that scale with your organization.
             </p>
           </div>
-          <a href="index.html#contact" class="inline-flex items-center justify-center rounded-full bg-primary px-4 py-2 text-xs font-semibold text-white hover:bg-red-600 transition">
+          <a href="contact.html" class="btn-primary self-start md:self-end">
+            <i data-feather="message-circle" class="w-4 h-4"></i>
             Talk to sales
           </a>
         </div>
 
-        <div class="grid gap-4 md:grid-cols-3 text-xs text-slate-300">
-          <div class="rounded-xl border border-neutral-800 bg-black/60 p-4">
-            <p class="text-[11px] font-semibold tracking-wide text-slate-400 uppercase mb-1">Starter</p>
-            <p class="mb-2 text-sm text-white">For small teams getting organized.</p>
-            <ul class="space-y-1">
-              <li>• Basic Managed IT support</li>
-              <li>• SSD Monitor (core endpoints)</li>
-              <li>• Optional SSD SecureMail add‑on</li>
+        <div class="grid gap-5 md:grid-cols-3 text-sm text-slate-300">
+          <div class="reveal card rounded-2xl border border-white/5 bg-forest-950/60 p-6" data-delay="100">
+            <p class="text-[11px] font-semibold tracking-widest text-emerald-200/60 uppercase mb-1">Starter</p>
+            <p class="text-base text-white font-semibold mb-3">For small teams getting organized</p>
+            <ul class="space-y-1.5 text-sm">
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Basic Managed IT support</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> SSD Monitor (core endpoints)</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> SecureMail (optional)</li>
             </ul>
           </div>
-          <div class="rounded-xl border border-primary bg-black/70 p-4">
-            <p class="text-[11px] font-semibold tracking-wide text-primary uppercase mb-1">Business</p>
-            <p class="mb-2 text-sm text-white">For growing organizations with hybrid environments.</p>
-            <ul class="space-y-1">
-              <li>• Managed IT & Helpdesk</li>
-              <li>• SSD Monitor + SecureMail</li>
-              <li>• SSD WebStack for main website</li>
+
+          <div class="reveal card rounded-2xl border border-primary/40 bg-gradient-to-br from-primary/10 via-forest-950/70 to-forest-950/70 p-6 relative" data-delay="200">
+            <span class="absolute -top-3 right-6 text-[10px] font-semibold uppercase tracking-widest text-white bg-primary px-3 py-1 rounded-full shadow-glow">Recommended</span>
+            <p class="text-[11px] font-semibold tracking-widest text-primary uppercase mb-1">Business</p>
+            <p class="text-base text-white font-semibold mb-3">For growing organizations</p>
+            <ul class="space-y-1.5 text-sm">
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Managed IT & Helpdesk</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> SSD Monitor + SecureMail</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> SSD WebStack for main website</li>
             </ul>
           </div>
-          <div class="rounded-xl border border-neutral-800 bg-black/60 p-4">
-            <p class="text-[11px] font-semibold tracking-wide text-slate-400 uppercase mb-1">Enterprise</p>
-            <p class="mb-2 text-sm text-white">For complex, multi‑site environments.</p>
-            <ul class="space-y-1">
-              <li>• All Business features</li>
-              <li>• Custom monitoring packs</li>
-              <li>• vCIO strategy sessions</li>
+
+          <div class="reveal card rounded-2xl border border-white/5 bg-forest-950/60 p-6" data-delay="300">
+            <p class="text-[11px] font-semibold tracking-widest text-emerald-200/60 uppercase mb-1">Enterprise</p>
+            <p class="text-base text-white font-semibold mb-3">For complex, multi-site environments</p>
+            <ul class="space-y-1.5 text-sm">
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Everything in Business</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Custom monitoring packs</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> vCIO strategy sessions</li>
             </ul>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Websites we developed -->
-      <section id="websites" class="mt-16 sm:mt-20">
-        <div class="mb-10">
-          <h2 class="text-2xl sm:text-3xl font-semibold text-white">Websites we developed</h2>
-          <p class="mt-2 text-sm sm:text-base text-slate-400 max-w-xl">
-            A few of the sites we’ve designed and built for our clients. Click through to explore.
-          </p>
+    <!-- ============== Websites & Projects ============== -->
+    <section id="websites" class="relative py-20 sm:py-24">
+      <div aria-hidden="true" class="pointer-events-none absolute inset-0 bg-grid opacity-30"></div>
+      <div aria-hidden="true" class="pointer-events-none absolute -top-20 left-1/2 h-72 w-[40rem] -translate-x-1/2 rounded-full bg-primary/15 blur-3xl"></div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">
+          <div class="max-w-2xl">
+            <span class="eyebrow"><i data-feather="globe" class="w-3 h-3"></i> Recent work</span>
+            <h2 class="mt-3 font-display text-3xl sm:text-4xl font-bold text-white">
+              Websites & projects we've <span class="text-gradient">shipped</span>
+            </h2>
+            <p class="mt-3 text-slate-300/80">
+              Real, live work from across nonprofits, education, consulting and travel — designed for
+              speed, security and clean content management.
+            </p>
+          </div>
+          <div class="flex items-center gap-2 text-xs text-emerald-200/70">
+            <span class="inline-flex items-center gap-1.5 rounded-full border border-emerald-400/30 bg-emerald-500/10 px-3 py-1.5">
+              <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span> 4 live sites
+            </span>
+            <span class="inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-3 py-1.5 text-primary">
+              <i data-feather="trending-up" class="w-3 h-3"></i> 3 in development
+            </span>
+          </div>
         </div>
 
+        <!-- Filter tabs (visual only) -->
+        <div class="reveal mb-8 flex flex-wrap gap-2 text-xs">
+          <span class="inline-flex items-center gap-1.5 rounded-full bg-primary text-white px-4 py-1.5 font-semibold uppercase tracking-wider shadow-glow">
+            <i data-feather="grid" class="w-3 h-3"></i> All work
+          </span>
+          <span class="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-forest-900/60 text-slate-300 px-4 py-1.5 font-semibold uppercase tracking-wider">
+            <i data-feather="globe" class="w-3 h-3"></i> Websites
+          </span>
+          <span class="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-forest-900/60 text-slate-300 px-4 py-1.5 font-semibold uppercase tracking-wider">
+            <i data-feather="layout" class="w-3 h-3"></i> Web apps
+          </span>
+          <span class="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-forest-900/60 text-slate-300 px-4 py-1.5 font-semibold uppercase tracking-wider">
+            <i data-feather="pen-tool" class="w-3 h-3"></i> Branding
+          </span>
+        </div>
+
+        <!-- Project cards -->
         <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <a href="https://jdiobestemfoundation.org" target="_blank" rel="noopener noreferrer" class="group rounded-2xl border border-neutral-800 bg-neutral-900/80 overflow-hidden hover:border-primary hover:shadow-lg hover:shadow-red-500/30 transition block">
-            <div class="aspect-video w-full overflow-hidden bg-neutral-800">
-              <img src="https://image.thum.io/get/width/600/noAuth/https://jdiobestemfoundation.org" alt="Jdiobe STEM Foundation website preview" class="h-full w-full object-cover object-top transition group-hover:scale-[1.02]" loading="lazy" onerror="this.src='https://placehold.co/600x340/1e293b/64748b?text=Jdiobe+STEM+Foundation'" />
-            </div>
-            <div class="p-6">
-              <div class="flex items-center gap-3 mb-2">
-                <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-red-500/10 text-primary"><i data-feather="globe" class="w-4 h-4"></i></span>
-                <h3 class="text-lg font-semibold text-white group-hover:text-primary transition">Jdiobe STEM Foundation</h3>
+
+          <!-- 1. EAI Consulting (Featured) -->
+          <a href="https://eaiconsultingfirm.com" target="_blank" rel="noopener noreferrer"
+             class="reveal card group sm:col-span-2 rounded-2xl border border-white/5 bg-forest-900/60 overflow-hidden block" data-delay="100">
+            <div class="grid sm:grid-cols-2">
+              <div class="relative aspect-[4/3] sm:aspect-auto overflow-hidden bg-forest-800">
+                <img src="https://image.thum.io/get/width/900/noAuth/https://eaiconsultingfirm.com" alt="EAI Consulting preview"
+                     class="absolute inset-0 h-full w-full object-cover object-top transition duration-700 group-hover:scale-105"
+                     loading="lazy"
+                     onerror="this.src='https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=900&q=80'" />
+                <div class="absolute inset-0 bg-gradient-to-t from-forest-950/80 via-transparent to-transparent"></div>
+                <div class="absolute top-3 left-3 flex items-center gap-2">
+                  <span class="inline-flex items-center gap-1.5 rounded-full bg-primary/90 text-white px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest"><i data-feather="star" class="w-3 h-3"></i> Featured</span>
+                  <span class="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-400/30 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest"><span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Live</span>
+                </div>
               </div>
-              <p class="text-sm text-slate-300 mb-4">
-                jdiobestemfoundation.org — Education and STEM outreach.
-              </p>
-              <span class="inline-flex items-center gap-1.5 rounded-full border border-primary/50 bg-primary/10 px-4 py-2 text-sm font-semibold text-primary transition group-hover:bg-primary group-hover:text-white group-hover:border-primary">
-                Visit site
-                <i data-feather="external-link" class="w-3.5 h-3.5"></i>
-              </span>
+              <div class="p-6 sm:p-7 flex flex-col">
+                <div class="flex items-center gap-3 mb-2">
+                  <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary"><i data-feather="briefcase" class="w-5 h-5"></i></span>
+                  <div>
+                    <h3 class="text-lg font-semibold text-white group-hover:text-primary transition">EAI Consulting Firm</h3>
+                    <p class="text-[11px] uppercase tracking-wider text-emerald-200/60">eaiconsultingfirm.com</p>
+                  </div>
+                </div>
+                <p class="text-sm text-slate-300/85 mb-4">
+                  Brand site for a consulting firm focused on entrepreneurial innovation, agricultural
+                  solutions and impact assessment.
+                </p>
+                <div class="flex flex-wrap gap-1.5 mb-5">
+                  <span class="inline-flex items-center gap-1 rounded-full border border-white/10 bg-forest-950/60 px-2 py-0.5 text-[10px] uppercase tracking-wider text-slate-300"><i data-feather="layout" class="w-3 h-3 text-primary"></i> UI/UX</span>
+                  <span class="inline-flex items-center gap-1 rounded-full border border-white/10 bg-forest-950/60 px-2 py-0.5 text-[10px] uppercase tracking-wider text-slate-300"><i data-feather="zap" class="w-3 h-3 text-primary"></i> Fast</span>
+                  <span class="inline-flex items-center gap-1 rounded-full border border-white/10 bg-forest-950/60 px-2 py-0.5 text-[10px] uppercase tracking-wider text-slate-300"><i data-feather="shield" class="w-3 h-3 text-primary"></i> SSL</span>
+                  <span class="inline-flex items-center gap-1 rounded-full border border-white/10 bg-forest-950/60 px-2 py-0.5 text-[10px] uppercase tracking-wider text-slate-300"><i data-feather="search" class="w-3 h-3 text-primary"></i> SEO</span>
+                </div>
+                <span class="mt-auto inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-3 transition-all">
+                  Visit live site <i data-feather="external-link" class="w-3.5 h-3.5"></i>
+                </span>
+              </div>
             </div>
           </a>
 
-          <a href="https://wolayochildrestoration.org" target="_blank" rel="noopener noreferrer" class="group rounded-2xl border border-neutral-800 bg-neutral-900/80 overflow-hidden hover:border-primary hover:shadow-lg hover:shadow-red-500/30 transition block">
-            <div class="aspect-video w-full overflow-hidden bg-neutral-800">
-              <img src="https://image.thum.io/get/width/600/noAuth/https://wolayochildrestoration.org" alt="Jwolayo Child Restoration website preview" class="h-full w-full object-cover object-top transition group-hover:scale-[1.02]" loading="lazy" onerror="this.src='https://placehold.co/600x340/1e293b/64748b?text=Jwolayo+Child+Restoration'" />
+          <!-- 2. Atlas Uganda Explorers -->
+          <a href="https://nelson211-0ss.github.io/Atlas-Uganda-Explorers/" target="_blank" rel="noopener noreferrer"
+             class="reveal card group rounded-2xl border border-white/5 bg-forest-900/60 overflow-hidden block" data-delay="200">
+            <div class="relative aspect-video w-full overflow-hidden bg-forest-800">
+              <img src="https://image.thum.io/get/width/700/noAuth/https://nelson211-0ss.github.io/Atlas-Uganda-Explorers/" alt="Atlas Uganda Explorers preview"
+                   class="absolute inset-0 h-full w-full object-cover object-top transition duration-700 group-hover:scale-105"
+                   loading="lazy"
+                   onerror="this.src='https://images.unsplash.com/photo-1604537466573-5e94508fd476?auto=format&fit=crop&w=900&q=80'" />
+              <div class="absolute inset-0 bg-gradient-to-t from-forest-950/85 via-forest-950/20 to-transparent"></div>
+              <span class="absolute top-3 left-3 inline-flex items-center gap-1.5 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-400/30 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest"><span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Live</span>
             </div>
             <div class="p-6">
               <div class="flex items-center gap-3 mb-2">
-                <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-red-500/10 text-primary"><i data-feather="globe" class="w-4 h-4"></i></span>
-                <h3 class="text-lg font-semibold text-white group-hover:text-primary transition">Wolayo Child Restoration</h3>
+                <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary"><i data-feather="map" class="w-4 h-4"></i></span>
+                <div>
+                  <h3 class="text-base font-semibold text-white group-hover:text-primary transition">Atlas Uganda Explorers</h3>
+                  <p class="text-[10px] uppercase tracking-wider text-emerald-200/60">Tour & travel · Jinja</p>
+                </div>
               </div>
-              <p class="text-sm text-slate-300 mb-4">
-                wolayochildrestoration.org — Child welfare and restoration.
-              </p>
-              <span class="inline-flex items-center gap-1.5 rounded-full border border-primary/50 bg-primary/10 px-4 py-2 text-sm font-semibold text-primary transition group-hover:bg-primary group-hover:text-white group-hover:border-primary">
-                Visit site
-                <i data-feather="external-link" class="w-3.5 h-3.5"></i>
-              </span>
+              <p class="text-sm text-slate-300/85 mb-4">A travel company in Jinja, Uganda — your gateway to nature's wonders.</p>
+              <div class="flex flex-wrap gap-1.5 mb-4">
+                <span class="text-[10px] text-slate-300 inline-flex items-center gap-1"><i data-feather="image" class="w-3 h-3 text-primary"></i> Gallery</span>
+                <span class="text-[10px] text-slate-300 inline-flex items-center gap-1"><i data-feather="smartphone" class="w-3 h-3 text-primary"></i> Responsive</span>
+                <span class="text-[10px] text-slate-300 inline-flex items-center gap-1"><i data-feather="message-square" class="w-3 h-3 text-primary"></i> Contact</span>
+              </div>
+              <span class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-3 transition-all">Visit site <i data-feather="external-link" class="w-3.5 h-3.5"></i></span>
             </div>
           </a>
 
-          <a href="https://nelson211-0ss.github.io/Atlas-Uganda-Explorers/" target="_blank" rel="noopener noreferrer" class="group rounded-2xl border border-neutral-800 bg-neutral-900/80 overflow-hidden hover:border-primary hover:shadow-lg hover:shadow-red-500/30 transition block">
-            <div class="aspect-video w-full overflow-hidden bg-neutral-800">
-              <img src="https://image.thum.io/get/width/600/noAuth/https://nelson211-0ss.github.io/Atlas-Uganda-Explorers/" alt="Atlas Uganda Explorers website preview" class="h-full w-full object-cover object-top transition group-hover:scale-[1.02]" loading="lazy" onerror="this.src='https://placehold.co/600x340/1e293b/64748b?text=Atlas+Uganda+Explorers'" />
+          <!-- 3. Jdiobe STEM -->
+          <a href="https://jdiobestemfoundation.org" target="_blank" rel="noopener noreferrer"
+             class="reveal card group rounded-2xl border border-white/5 bg-forest-900/60 overflow-hidden block" data-delay="300">
+            <div class="relative aspect-video w-full overflow-hidden bg-forest-800">
+              <img src="https://image.thum.io/get/width/700/noAuth/https://jdiobestemfoundation.org" alt="Jdiobe STEM Foundation preview"
+                   class="absolute inset-0 h-full w-full object-cover object-top transition duration-700 group-hover:scale-105"
+                   loading="lazy"
+                   onerror="this.src='https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=900&q=80'" />
+              <div class="absolute inset-0 bg-gradient-to-t from-forest-950/85 via-forest-950/20 to-transparent"></div>
+              <span class="absolute top-3 left-3 inline-flex items-center gap-1.5 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-400/30 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest"><span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Live</span>
             </div>
             <div class="p-6">
               <div class="flex items-center gap-3 mb-2">
-                <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-red-500/10 text-primary"><i data-feather="globe" class="w-4 h-4"></i></span>
-                <h3 class="text-lg font-semibold text-white group-hover:text-primary transition">Atlas Uganda Explorers</h3>
+                <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary"><i data-feather="book-open" class="w-4 h-4"></i></span>
+                <div>
+                  <h3 class="text-base font-semibold text-white group-hover:text-primary transition">Jdiobe STEM Foundation</h3>
+                  <p class="text-[10px] uppercase tracking-wider text-emerald-200/60">Education · Nonprofit</p>
+                </div>
               </div>
-              <p class="text-sm text-slate-300 mb-4">
-                Tour and travel company in Jinja, Uganda — gateway to nature’s wonders.
-              </p>
-              <span class="inline-flex items-center gap-1.5 rounded-full border border-primary/50 bg-primary/10 px-4 py-2 text-sm font-semibold text-primary transition group-hover:bg-primary group-hover:text-white group-hover:border-primary">
-                Visit site
-                <i data-feather="external-link" class="w-3.5 h-3.5"></i>
-              </span>
+              <p class="text-sm text-slate-300/85 mb-4">Education and STEM outreach platform — programs, news and donations.</p>
+              <div class="flex flex-wrap gap-1.5 mb-4">
+                <span class="text-[10px] text-slate-300 inline-flex items-center gap-1"><i data-feather="users" class="w-3 h-3 text-primary"></i> Nonprofit</span>
+                <span class="text-[10px] text-slate-300 inline-flex items-center gap-1"><i data-feather="dollar-sign" class="w-3 h-3 text-primary"></i> Donations</span>
+                <span class="text-[10px] text-slate-300 inline-flex items-center gap-1"><i data-feather="file-text" class="w-3 h-3 text-primary"></i> Blog</span>
+              </div>
+              <span class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-3 transition-all">Visit site <i data-feather="external-link" class="w-3.5 h-3.5"></i></span>
             </div>
           </a>
 
-          <a href="https://eaiconsultingfirm.com" target="_blank" rel="noopener noreferrer" class="group rounded-2xl border border-neutral-800 bg-neutral-900/80 overflow-hidden hover:border-primary hover:shadow-lg hover:shadow-red-500/30 transition block">
-            <div class="aspect-video w-full overflow-hidden bg-neutral-800">
-              <img src="https://image.thum.io/get/width/600/noAuth/https://eaiconsultingfirm.com" alt="EAI Consulting website preview" class="h-full w-full object-cover object-top transition group-hover:scale-[1.02]" loading="lazy" onerror="this.src='https://placehold.co/600x340/1e293b/64748b?text=EAI+Consulting'" />
+          <!-- 4. Wolayo Child Restoration -->
+          <a href="https://wolayochildrestoration.org" target="_blank" rel="noopener noreferrer"
+             class="reveal card group rounded-2xl border border-white/5 bg-forest-900/60 overflow-hidden block" data-delay="100">
+            <div class="relative aspect-video w-full overflow-hidden bg-forest-800">
+              <img src="https://image.thum.io/get/width/700/noAuth/https://wolayochildrestoration.org" alt="Wolayo Child Restoration preview"
+                   class="absolute inset-0 h-full w-full object-cover object-top transition duration-700 group-hover:scale-105"
+                   loading="lazy"
+                   onerror="this.src='https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=900&q=80'" />
+              <div class="absolute inset-0 bg-gradient-to-t from-forest-950/85 via-forest-950/20 to-transparent"></div>
+              <span class="absolute top-3 left-3 inline-flex items-center gap-1.5 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-400/30 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest"><span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Live</span>
             </div>
             <div class="p-6">
               <div class="flex items-center gap-3 mb-2">
-                <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-red-500/10 text-primary"><i data-feather="globe" class="w-4 h-4"></i></span>
-                <h3 class="text-lg font-semibold text-white group-hover:text-primary transition">EAI Consulting</h3>
+                <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary"><i data-feather="heart" class="w-4 h-4"></i></span>
+                <div>
+                  <h3 class="text-base font-semibold text-white group-hover:text-primary transition">Wolayo Child Restoration</h3>
+                  <p class="text-[10px] uppercase tracking-wider text-emerald-200/60">Child welfare · Nonprofit</p>
+                </div>
               </div>
-              <p class="text-sm text-slate-300 mb-4">
-                eaiconsultingfirm.com — Entrepreneurial innovation, agricultural solutions & impact assessment.
-              </p>
-              <span class="inline-flex items-center gap-1.5 rounded-full border border-primary/50 bg-primary/10 px-4 py-2 text-sm font-semibold text-primary transition group-hover:bg-primary group-hover:text-white group-hover:border-primary">
-                Visit site
-                <i data-feather="external-link" class="w-3.5 h-3.5"></i>
-              </span>
+              <p class="text-sm text-slate-300/85 mb-4">Child welfare and restoration organization — programs, stories, and giving.</p>
+              <div class="flex flex-wrap gap-1.5 mb-4">
+                <span class="text-[10px] text-slate-300 inline-flex items-center gap-1"><i data-feather="users" class="w-3 h-3 text-primary"></i> Nonprofit</span>
+                <span class="text-[10px] text-slate-300 inline-flex items-center gap-1"><i data-feather="image" class="w-3 h-3 text-primary"></i> Stories</span>
+                <span class="text-[10px] text-slate-300 inline-flex items-center gap-1"><i data-feather="dollar-sign" class="w-3 h-3 text-primary"></i> Donate</span>
+              </div>
+              <span class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-3 transition-all">Visit site <i data-feather="external-link" class="w-3.5 h-3.5"></i></span>
             </div>
+          </a>
+
+          <!-- 5. In progress: E-commerce -->
+          <div class="reveal card group rounded-2xl border border-white/5 bg-forest-900/60 overflow-hidden" data-delay="200">
+            <div class="relative aspect-video w-full overflow-hidden bg-forest-800">
+              <img src="https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&w=900&q=80" alt="E-commerce platform"
+                   class="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-forest-950/90 via-forest-950/40 to-forest-950/30"></div>
+              <span class="absolute top-3 left-3 inline-flex items-center gap-1.5 rounded-full bg-primary/90 text-white px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest"><i data-feather="trending-up" class="w-3 h-3"></i> In progress</span>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary"><i data-feather="shopping-cart" class="w-4 h-4"></i></span>
+                <div>
+                  <h3 class="text-base font-semibold text-white">E-commerce platform</h3>
+                  <p class="text-[10px] uppercase tracking-wider text-emerald-200/60">Storefront · Mobile money</p>
+                </div>
+              </div>
+              <p class="text-sm text-slate-300/85 mb-4">Custom storefront with cart, checkout and mobile-money integration.</p>
+              <div class="h-1.5 rounded-full bg-white/5 overflow-hidden mb-1.5">
+                <div class="h-full w-3/4 rounded-full bg-gradient-to-r from-primary to-primary-300"></div>
+              </div>
+              <p class="text-[11px] text-slate-400">75% · UAT phase</p>
+            </div>
+          </div>
+
+          <!-- 6. In progress: Dashboard -->
+          <div class="reveal card group rounded-2xl border border-white/5 bg-forest-900/60 overflow-hidden" data-delay="300">
+            <div class="relative aspect-video w-full overflow-hidden bg-forest-800">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80" alt="Operations dashboard"
+                   class="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-forest-950/90 via-forest-950/40 to-forest-950/30"></div>
+              <span class="absolute top-3 left-3 inline-flex items-center gap-1.5 rounded-full bg-primary/90 text-white px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest"><i data-feather="trending-up" class="w-3 h-3"></i> In progress</span>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary"><i data-feather="bar-chart-2" class="w-4 h-4"></i></span>
+                <div>
+                  <h3 class="text-base font-semibold text-white">Operations dashboard</h3>
+                  <p class="text-[10px] uppercase tracking-wider text-emerald-200/60">SaaS · Real-time analytics</p>
+                </div>
+              </div>
+              <p class="text-sm text-slate-300/85 mb-4">Internal SaaS dashboard with real-time analytics and role-based access.</p>
+              <div class="h-1.5 rounded-full bg-white/5 overflow-hidden mb-1.5">
+                <div class="h-full w-1/2 rounded-full bg-gradient-to-r from-primary to-primary-300"></div>
+              </div>
+              <p class="text-[11px] text-slate-400">50% · API integrations</p>
+            </div>
+          </div>
+
+          <!-- 7. In progress: Tourism site -->
+          <div class="reveal card group rounded-2xl border border-white/5 bg-forest-900/60 overflow-hidden" data-delay="400">
+            <div class="relative aspect-video w-full overflow-hidden bg-forest-800">
+              <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=900&q=80" alt="Tourism booking site"
+                   class="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-forest-950/90 via-forest-950/40 to-forest-950/30"></div>
+              <span class="absolute top-3 left-3 inline-flex items-center gap-1.5 rounded-full bg-primary/90 text-white px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest"><i data-feather="trending-up" class="w-3 h-3"></i> In progress</span>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary"><i data-feather="compass" class="w-4 h-4"></i></span>
+                <div>
+                  <h3 class="text-base font-semibold text-white">Tourism booking site</h3>
+                  <p class="text-[10px] uppercase tracking-wider text-emerald-200/60">Web · CMS · Payments</p>
+                </div>
+              </div>
+              <p class="text-sm text-slate-300/85 mb-4">Bookable tour packages with itinerary builder and online payments.</p>
+              <div class="h-1.5 rounded-full bg-white/5 overflow-hidden mb-1.5">
+                <div class="h-full w-[35%] rounded-full bg-gradient-to-r from-primary to-primary-300"></div>
+              </div>
+              <p class="text-[11px] text-slate-400">35% · Design system</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tech we work with -->
+        <div class="reveal mt-16">
+          <div class="flex items-center gap-2 mb-5">
+            <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10 text-primary"><i data-feather="cpu" class="w-4 h-4"></i></span>
+            <h3 class="text-sm font-semibold text-white uppercase tracking-[0.18em]">Tech stack we work with</h3>
+          </div>
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+            <div class="card flex items-center gap-2 rounded-xl border border-white/5 bg-forest-900/50 px-4 py-3 text-sm text-slate-200">
+              <i data-feather="code" class="w-4 h-4 text-primary"></i> HTML / CSS / JS
+            </div>
+            <div class="card flex items-center gap-2 rounded-xl border border-white/5 bg-forest-900/50 px-4 py-3 text-sm text-slate-200">
+              <i data-feather="layers" class="w-4 h-4 text-primary"></i> Tailwind CSS
+            </div>
+            <div class="card flex items-center gap-2 rounded-xl border border-white/5 bg-forest-900/50 px-4 py-3 text-sm text-slate-200">
+              <i data-feather="database" class="w-4 h-4 text-primary"></i> Postgres / MySQL
+            </div>
+            <div class="card flex items-center gap-2 rounded-xl border border-white/5 bg-forest-900/50 px-4 py-3 text-sm text-slate-200">
+              <i data-feather="cloud" class="w-4 h-4 text-primary"></i> AWS / Azure
+            </div>
+            <div class="card flex items-center gap-2 rounded-xl border border-white/5 bg-forest-900/50 px-4 py-3 text-sm text-slate-200">
+              <i data-feather="github" class="w-4 h-4 text-primary"></i> GitHub Actions
+            </div>
+            <div class="card flex items-center gap-2 rounded-xl border border-white/5 bg-forest-900/50 px-4 py-3 text-sm text-slate-200">
+              <i data-feather="shield" class="w-4 h-4 text-primary"></i> Cloudflare
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="reveal mt-14 flex flex-col sm:flex-row items-center justify-between gap-4 rounded-2xl bg-forest-900/70 p-6 sm:p-8">
+          <div>
+            <h3 class="text-lg font-semibold text-white">Have a project in mind?</h3>
+            <p class="text-sm text-slate-300/80">We'd love to design and build it with you.</p>
+          </div>
+          <a href="contact.html" class="btn-primary">
+            <i data-feather="send" class="w-4 h-4"></i> Start a project
           </a>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
 
   <div id="site-footer"></div>
-
   <script src="assets/main.js"></script>
 </body>
 </html>
-

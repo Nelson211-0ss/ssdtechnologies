@@ -90,29 +90,6 @@ function initRevealObserver() {
   items.forEach((el) => io.observe(el));
 }
 
-// 3D tilt for cards with [data-tilt]
-function initTilt() {
-  const cards = document.querySelectorAll('[data-tilt]');
-  cards.forEach((card) => {
-    let raf;
-    const onMove = (e) => {
-      const rect = card.getBoundingClientRect();
-      const x = (e.clientX - rect.left) / rect.width - 0.5;
-      const y = (e.clientY - rect.top) / rect.height - 0.5;
-      cancelAnimationFrame(raf);
-      raf = requestAnimationFrame(() => {
-        card.style.transform = `perspective(900px) rotateY(${x * 6}deg) rotateX(${-y * 6}deg) translateZ(0)`;
-      });
-    };
-    const reset = () => {
-      cancelAnimationFrame(raf);
-      card.style.transform = '';
-    };
-    card.addEventListener('mousemove', onMove);
-    card.addEventListener('mouseleave', reset);
-  });
-}
-
 // Counter animation
 function initCounters() {
   const counters = document.querySelectorAll('[data-counter]');
@@ -144,19 +121,6 @@ function initCounters() {
   counters.forEach((c) => io.observe(c));
 }
 
-// Magnetic effect on buttons with [data-magnetic]
-function initMagnetic() {
-  document.querySelectorAll('[data-magnetic]').forEach((btn) => {
-    btn.addEventListener('mousemove', (e) => {
-      const r = btn.getBoundingClientRect();
-      const x = e.clientX - r.left - r.width / 2;
-      const y = e.clientY - r.top - r.height / 2;
-      btn.style.transform = `translate(${x * 0.18}px, ${y * 0.18}px)`;
-    });
-    btn.addEventListener('mouseleave', () => (btn.style.transform = ''));
-  });
-}
-
 document.addEventListener('DOMContentLoaded', () => {
   Promise.all([
     loadPartial('site-header', 'partials/header.html'),
@@ -164,8 +128,6 @@ document.addEventListener('DOMContentLoaded', () => {
   ]).then(() => {
     replaceFeatherIcons();
     initRevealObserver();
-    initTilt();
     initCounters();
-    initMagnetic();
   });
 });

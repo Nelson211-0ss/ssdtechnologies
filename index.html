@@ -24,129 +24,72 @@
 
   <main>
     <!-- =========================== HERO =========================== -->
-    <section class="relative isolate overflow-hidden bg-tech pt-28 sm:pt-36 pb-20 sm:pb-28">
+    <section class="relative isolate overflow-hidden bg-tech min-h-[88vh] flex items-center pt-28 sm:pt-32 pb-20">
       <div aria-hidden="true" class="absolute inset-0 bg-grid"></div>
-      <div aria-hidden="true" class="orb orb-1"></div>
-      <div aria-hidden="true" class="orb orb-2"></div>
-      <div aria-hidden="true" class="orb orb-3"></div>
+      <div aria-hidden="true" class="glow-accent w-[36rem] h-[36rem] -top-40 -left-32 bg-primary/15"></div>
+      <div aria-hidden="true" class="glow-accent w-[28rem] h-[28rem] -bottom-32 -right-24 bg-emerald-500/10"></div>
 
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid gap-12 lg:grid-cols-[minmax(0,1.25fr)_minmax(0,1fr)] items-center">
-          <!-- Headline -->
-          <div>
-            <span class="eyebrow reveal">
-              <span class="pulse-dot"></span>
-              IT operations · always-on · always secure
-            </span>
-
-            <h1 class="reveal mt-5 font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.05] tracking-tight text-white">
-              Modern IT for
-              <span class="text-gradient">businesses</span>
-              <span class="block">that can't afford downtime.</span>
-            </h1>
-
-            <p class="reveal mt-6 max-w-xl text-base sm:text-lg text-slate-300/90" data-delay="100">
-              <span class="font-semibold text-white">SSD-iT Solutions</span> designs, secures and runs your IT —
-              from <span class="text-emerald-300">cloud</span> and <span class="text-emerald-300">networks</span> to
-              <span class="text-primary-300">devices</span>, <span class="text-primary-300">websites</span> and brand —
-              so your team stays fast, available and protected.
-            </p>
-
-            <div class="reveal mt-8 flex flex-wrap gap-3" data-delay="200">
-              <a href="contact.html" class="btn-primary" data-magnetic>
-                <i data-feather="zap" class="w-4 h-4"></i>
-                Book a free assessment
-              </a>
-              <a href="services.html" class="btn-ghost">
-                Explore services
-                <i data-feather="arrow-right" class="w-4 h-4"></i>
-              </a>
-            </div>
-
-            <!-- KPI strip -->
-            <dl class="reveal mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-xl" data-delay="300">
-              <div>
-                <dt class="text-[11px] uppercase tracking-wider text-emerald-200/60">Uptime</dt>
-                <dd class="mt-1 text-2xl font-bold text-white">
-                  <span data-counter="99.98" data-suffix="%">0%</span>
-                </dd>
-              </div>
-              <div>
-                <dt class="text-[11px] uppercase tracking-wider text-emerald-200/60">Monitoring</dt>
-                <dd class="mt-1 text-2xl font-bold text-white">24/7</dd>
-              </div>
-              <div>
-                <dt class="text-[11px] uppercase tracking-wider text-emerald-200/60">Sites delivered</dt>
-                <dd class="mt-1 text-2xl font-bold text-white">
-                  <span data-counter="40" data-suffix="+">0+</span>
-                </dd>
-              </div>
-              <div>
-                <dt class="text-[11px] uppercase tracking-wider text-emerald-200/60">Clients</dt>
-                <dd class="mt-1 text-2xl font-bold text-white">
-                  <span data-counter="25" data-suffix="+">0+</span>
-                </dd>
-              </div>
-            </dl>
-          </div>
-
-          <!-- Visual: animated control card -->
-          <div class="reveal relative" data-delay="200">
-            <div class="absolute -inset-6 bg-gradient-to-tr from-primary/30 via-emerald-500/15 to-primary/20 blur-3xl"></div>
-
-            <div data-tilt class="relative rounded-3xl gradient-border-animated bg-forest-900/80 backdrop-blur-xl p-6 shadow-glow-lg">
-              <div class="flex justify-between items-start mb-5">
-                <div class="flex items-center gap-3">
-                  <img src="assets/ssd-it-logo.png" alt="" class="h-9 w-9 rounded-lg ring-1 ring-white/10" />
-                  <div>
-                    <p class="text-[11px] text-emerald-200/60 uppercase tracking-[0.18em]">Operations</p>
-                    <p class="text-sm font-semibold text-white">SSD Control Center</p>
-                  </div>
-                </div>
-                <span class="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/15 px-3 py-1 text-[11px] text-emerald-300">
-                  <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                  All healthy
-                </span>
-              </div>
-
-              <div class="grid grid-cols-2 gap-3 text-xs">
-                <div class="rounded-xl border border-white/5 bg-forest-950/70 p-4">
-                  <p class="text-emerald-200/60 mb-1 uppercase tracking-wider text-[10px]">Infrastructure</p>
-                  <p class="text-2xl font-bold text-white">47</p>
-                  <p class="mt-1 text-[11px] text-slate-400">systems · 0 alerts</p>
-                </div>
-                <div class="rounded-xl border border-white/5 bg-forest-950/70 p-4">
-                  <p class="text-emerald-200/60 mb-1 uppercase tracking-wider text-[10px]">Websites</p>
-                  <p class="text-2xl font-bold text-white">12</p>
-                  <p class="mt-1 text-[11px] text-slate-400">avg 120 ms response</p>
-                </div>
-                <div class="col-span-2 rounded-xl border border-white/5 bg-gradient-to-br from-forest-950/80 to-forest-900/60 p-4">
-                  <div class="flex justify-between items-center mb-2">
-                    <p class="text-emerald-200/60 uppercase tracking-wider text-[10px]">Security posture</p>
-                    <span class="text-[11px] text-emerald-300">Patched · Backed up</span>
-                  </div>
-                  <div class="flex items-end gap-1 h-12">
-                    <div class="flex-1 rounded-sm bg-primary/80" style="height: 40%"></div>
-                    <div class="flex-1 rounded-sm bg-primary/70" style="height: 65%"></div>
-                    <div class="flex-1 rounded-sm bg-primary" style="height: 80%"></div>
-                    <div class="flex-1 rounded-sm bg-emerald-500/70" style="height: 55%"></div>
-                    <div class="flex-1 rounded-sm bg-emerald-500" style="height: 90%"></div>
-                    <div class="flex-1 rounded-sm bg-primary/60" style="height: 50%"></div>
-                    <div class="flex-1 rounded-sm bg-primary-300" style="height: 70%"></div>
-                    <div class="flex-1 rounded-sm bg-emerald-500/60" style="height: 60%"></div>
-                    <div class="flex-1 rounded-sm bg-primary-400" style="height: 85%"></div>
-                    <div class="flex-1 rounded-sm bg-emerald-400" style="height: 75%"></div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="mt-4 flex items-center justify-between text-[11px] text-slate-400">
-                <span class="inline-flex items-center gap-1.5"><span class="pulse-dot"></span> Live · monitored from Juba & Magwi</span>
-                <span>v2.0</span>
-              </div>
-            </div>
-          </div>
+      <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
+        <div class="reveal flex justify-center">
+          <span class="eyebrow">
+            <span class="pulse-dot"></span>
+            Smart · Secure · Scalable IT
+          </span>
         </div>
+
+        <h1 class="reveal mt-6 font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.05] tracking-tight text-white" data-delay="100">
+          Modern IT for businesses
+          <span class="block text-gradient mt-2">that can't afford downtime.</span>
+        </h1>
+
+        <p class="reveal mx-auto mt-6 max-w-2xl text-base sm:text-lg text-slate-300/90" data-delay="200">
+          <span class="font-semibold text-white">SSD-iT Solutions</span> designs, secures and runs your IT —
+          from <span class="text-emerald-300">cloud</span> and <span class="text-emerald-300">networks</span> to
+          <span class="text-primary-300">devices</span>, <span class="text-primary-300">websites</span> and brand —
+          so your team stays fast, available and protected.
+        </p>
+
+        <div class="reveal mt-9 flex flex-wrap justify-center gap-3" data-delay="300">
+          <a href="contact.html" class="btn-primary">
+            <i data-feather="zap" class="w-4 h-4"></i>
+            Book a free assessment
+          </a>
+          <a href="services.html" class="btn-ghost">
+            Explore services
+            <i data-feather="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- KPI strip -->
+        <dl class="reveal mt-14 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl mx-auto" data-delay="400">
+          <div class="rounded-2xl border border-white/5 bg-forest-900/40 backdrop-blur px-4 py-5">
+            <dt class="text-[11px] uppercase tracking-wider text-emerald-200/60">Uptime</dt>
+            <dd class="mt-1 text-2xl font-bold text-white">
+              <span data-counter="99.98" data-suffix="%">0%</span>
+            </dd>
+          </div>
+          <div class="rounded-2xl border border-white/5 bg-forest-900/40 backdrop-blur px-4 py-5">
+            <dt class="text-[11px] uppercase tracking-wider text-emerald-200/60">Monitoring</dt>
+            <dd class="mt-1 text-2xl font-bold text-white">24/7</dd>
+          </div>
+          <div class="rounded-2xl border border-white/5 bg-forest-900/40 backdrop-blur px-4 py-5">
+            <dt class="text-[11px] uppercase tracking-wider text-emerald-200/60">Sites delivered</dt>
+            <dd class="mt-1 text-2xl font-bold text-white">
+              <span data-counter="40" data-suffix="+">0+</span>
+            </dd>
+          </div>
+          <div class="rounded-2xl border border-white/5 bg-forest-900/40 backdrop-blur px-4 py-5">
+            <dt class="text-[11px] uppercase tracking-wider text-emerald-200/60">Clients</dt>
+            <dd class="mt-1 text-2xl font-bold text-white">
+              <span data-counter="25" data-suffix="+">0+</span>
+            </dd>
+          </div>
+        </dl>
+
+        <a href="#services" class="reveal mt-12 inline-flex flex-col items-center gap-1 text-[11px] uppercase tracking-[0.22em] text-emerald-200/50 hover:text-primary transition" data-delay="500">
+          Scroll
+          <i data-feather="chevron-down" class="w-4 h-4"></i>
+        </a>
       </div>
     </section>
 
@@ -321,8 +264,179 @@
       </div>
     </section>
 
+    <!-- =========================== RECENT WORK / WEBSITES =========================== -->
+    <section id="work" class="relative py-20 sm:py-24">
+      <div aria-hidden="true" class="pointer-events-none absolute inset-0 bg-grid opacity-30"></div>
+      <div aria-hidden="true" class="pointer-events-none absolute -top-32 left-1/3 h-72 w-[40rem] rounded-full bg-primary/10 blur-3xl"></div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">
+          <div class="max-w-2xl">
+            <span class="eyebrow"><i data-feather="globe" class="w-3 h-3"></i> Websites & Projects</span>
+            <h2 class="mt-3 font-display text-3xl sm:text-4xl font-bold text-white">
+              Sites we've <span class="text-gradient">designed, built and ship</span>
+            </h2>
+            <p class="mt-3 text-slate-300/80">
+              A selection of recent web platforms, brand sites and ongoing projects — engineered for speed,
+              security and scale.
+            </p>
+          </div>
+          <a href="products.html#websites" class="btn-ghost self-start sm:self-end">
+            View full portfolio <i data-feather="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <div class="grid gap-6 lg:grid-cols-3">
+          <!-- Featured -->
+          <a href="https://eaiconsultingfirm.com" target="_blank" rel="noopener noreferrer"
+             class="reveal card group lg:col-span-2 lg:row-span-2 rounded-2xl border border-white/5 bg-forest-900/60 overflow-hidden block">
+            <div class="relative aspect-[16/10] w-full overflow-hidden bg-forest-800">
+              <img src="https://image.thum.io/get/width/1200/noAuth/https://eaiconsultingfirm.com" alt="EAI Consulting preview"
+                   class="absolute inset-0 h-full w-full object-cover object-top transition duration-700 group-hover:scale-[1.03]"
+                   loading="lazy"
+                   onerror="this.src='https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80'" />
+              <div class="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-950/30 to-transparent"></div>
+              <div class="absolute top-4 left-4 flex items-center gap-2">
+                <span class="inline-flex items-center gap-1.5 rounded-full bg-primary/90 text-white px-3 py-1 text-[10px] font-semibold uppercase tracking-widest shadow-glow">
+                  <i data-feather="star" class="w-3 h-3"></i> Featured
+                </span>
+                <span class="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-400/30 px-3 py-1 text-[10px] font-semibold uppercase tracking-widest">
+                  <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Live
+                </span>
+              </div>
+            </div>
+            <div class="p-7">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                  <i data-feather="briefcase" class="w-5 h-5"></i>
+                </span>
+                <div>
+                  <h3 class="text-xl font-semibold text-white group-hover:text-primary transition">EAI Consulting Firm</h3>
+                  <p class="text-[11px] uppercase tracking-wider text-emerald-200/60">eaiconsultingfirm.com · Consulting</p>
+                </div>
+              </div>
+              <p class="text-sm text-slate-300/85 mb-4 max-w-xl">
+                A modern brand site for a consulting firm focused on entrepreneurial innovation, agricultural
+                solutions and impact assessment. Built for speed, accessibility and easy content updates.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-5">
+                <span class="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-forest-950/60 px-2.5 py-1 text-[10px] uppercase tracking-wider text-slate-300"><i data-feather="layout" class="w-3 h-3 text-primary"></i> UI/UX</span>
+                <span class="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-forest-950/60 px-2.5 py-1 text-[10px] uppercase tracking-wider text-slate-300"><i data-feather="zap" class="w-3 h-3 text-primary"></i> Performance</span>
+                <span class="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-forest-950/60 px-2.5 py-1 text-[10px] uppercase tracking-wider text-slate-300"><i data-feather="shield" class="w-3 h-3 text-primary"></i> Hardened SSL</span>
+                <span class="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-forest-950/60 px-2.5 py-1 text-[10px] uppercase tracking-wider text-slate-300"><i data-feather="search" class="w-3 h-3 text-primary"></i> SEO</span>
+              </div>
+              <span class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-3 transition-all">
+                Visit live site <i data-feather="external-link" class="w-3.5 h-3.5"></i>
+              </span>
+            </div>
+          </a>
+
+          <!-- Card 2 -->
+          <a href="https://jdiobestemfoundation.org" target="_blank" rel="noopener noreferrer"
+             class="reveal card group rounded-2xl border border-white/5 bg-forest-900/60 overflow-hidden block" data-delay="100">
+            <div class="relative aspect-video w-full overflow-hidden bg-forest-800">
+              <img src="https://image.thum.io/get/width/700/noAuth/https://jdiobestemfoundation.org" alt="Jdiobe STEM Foundation preview"
+                   class="absolute inset-0 h-full w-full object-cover object-top transition duration-700 group-hover:scale-[1.05]"
+                   loading="lazy"
+                   onerror="this.src='https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=900&q=80'" />
+              <div class="absolute inset-0 bg-gradient-to-t from-forest-950/90 via-forest-950/30 to-transparent"></div>
+              <span class="absolute top-3 left-3 inline-flex items-center gap-1.5 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-400/30 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest"><span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Live</span>
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2.5 mb-1.5">
+                <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary"><i data-feather="book-open" class="w-4 h-4"></i></span>
+                <h3 class="text-base font-semibold text-white group-hover:text-primary transition">Jdiobe STEM Foundation</h3>
+              </div>
+              <p class="text-xs text-slate-300/80 mb-3">jdiobestemfoundation.org — Education & STEM outreach.</p>
+              <div class="flex flex-wrap gap-1.5 mb-3">
+                <span class="text-[10px] text-slate-300 inline-flex items-center gap-1"><i data-feather="users" class="w-3 h-3 text-primary"></i> Nonprofit</span>
+                <span class="text-[10px] text-slate-300 inline-flex items-center gap-1"><i data-feather="smartphone" class="w-3 h-3 text-primary"></i> Mobile-first</span>
+              </div>
+              <span class="inline-flex items-center gap-1 text-xs font-semibold text-primary group-hover:gap-2 transition-all">Visit <i data-feather="external-link" class="w-3 h-3"></i></span>
+            </div>
+          </a>
+
+          <!-- Card 3 -->
+          <a href="https://wolayochildrestoration.org" target="_blank" rel="noopener noreferrer"
+             class="reveal card group rounded-2xl border border-white/5 bg-forest-900/60 overflow-hidden block" data-delay="200">
+            <div class="relative aspect-video w-full overflow-hidden bg-forest-800">
+              <img src="https://image.thum.io/get/width/700/noAuth/https://wolayochildrestoration.org" alt="Wolayo Child Restoration preview"
+                   class="absolute inset-0 h-full w-full object-cover object-top transition duration-700 group-hover:scale-[1.05]"
+                   loading="lazy"
+                   onerror="this.src='https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=900&q=80'" />
+              <div class="absolute inset-0 bg-gradient-to-t from-forest-950/90 via-forest-950/30 to-transparent"></div>
+              <span class="absolute top-3 left-3 inline-flex items-center gap-1.5 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-400/30 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest"><span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Live</span>
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2.5 mb-1.5">
+                <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary"><i data-feather="heart" class="w-4 h-4"></i></span>
+                <h3 class="text-base font-semibold text-white group-hover:text-primary transition">Wolayo Child Restoration</h3>
+              </div>
+              <p class="text-xs text-slate-300/80 mb-3">wolayochildrestoration.org — Child welfare & restoration.</p>
+              <div class="flex flex-wrap gap-1.5 mb-3">
+                <span class="text-[10px] text-slate-300 inline-flex items-center gap-1"><i data-feather="users" class="w-3 h-3 text-primary"></i> Nonprofit</span>
+                <span class="text-[10px] text-slate-300 inline-flex items-center gap-1"><i data-feather="dollar-sign" class="w-3 h-3 text-primary"></i> Donations</span>
+              </div>
+              <span class="inline-flex items-center gap-1 text-xs font-semibold text-primary group-hover:gap-2 transition-all">Visit <i data-feather="external-link" class="w-3 h-3"></i></span>
+            </div>
+          </a>
+        </div>
+
+        <!-- In-progress projects -->
+        <div class="reveal mt-14" data-delay="200">
+          <div class="flex items-center gap-2 mb-5">
+            <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10 text-primary"><i data-feather="clock" class="w-4 h-4"></i></span>
+            <h3 class="text-sm font-semibold text-white uppercase tracking-[0.18em]">Currently in development</h3>
+          </div>
+          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="card rounded-2xl border border-white/5 bg-forest-900/50 p-5 flex items-start gap-4">
+              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-primary/30 to-primary/10 text-primary">
+                <i data-feather="shopping-cart" class="w-5 h-5"></i>
+              </div>
+              <div class="min-w-0 flex-1">
+                <p class="text-sm font-semibold text-white">E-commerce platform</p>
+                <p class="text-[11px] text-emerald-200/60 uppercase tracking-wider">Storefront · Mobile money</p>
+                <div class="mt-2 h-1.5 rounded-full bg-white/5 overflow-hidden">
+                  <div class="h-full w-3/4 rounded-full bg-gradient-to-r from-primary to-primary-300"></div>
+                </div>
+                <p class="mt-1.5 text-[11px] text-slate-400">75% · UAT phase</p>
+              </div>
+            </div>
+
+            <div class="card rounded-2xl border border-white/5 bg-forest-900/50 p-5 flex items-start gap-4">
+              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-primary/30 to-primary/10 text-primary">
+                <i data-feather="bar-chart-2" class="w-5 h-5"></i>
+              </div>
+              <div class="min-w-0 flex-1">
+                <p class="text-sm font-semibold text-white">Operations dashboard</p>
+                <p class="text-[11px] text-emerald-200/60 uppercase tracking-wider">SaaS · Real-time analytics</p>
+                <div class="mt-2 h-1.5 rounded-full bg-white/5 overflow-hidden">
+                  <div class="h-full w-1/2 rounded-full bg-gradient-to-r from-primary to-primary-300"></div>
+                </div>
+                <p class="mt-1.5 text-[11px] text-slate-400">50% · API integrations</p>
+              </div>
+            </div>
+
+            <div class="card rounded-2xl border border-white/5 bg-forest-900/50 p-5 flex items-start gap-4">
+              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-primary/30 to-primary/10 text-primary">
+                <i data-feather="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div class="min-w-0 flex-1">
+                <p class="text-sm font-semibold text-white">Tourism booking site</p>
+                <p class="text-[11px] text-emerald-200/60 uppercase tracking-wider">Web · CMS · Payments</p>
+                <div class="mt-2 h-1.5 rounded-full bg-white/5 overflow-hidden">
+                  <div class="h-full w-[35%] rounded-full bg-gradient-to-r from-primary to-primary-300"></div>
+                </div>
+                <p class="mt-1.5 text-[11px] text-slate-400">35% · Design system</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- =========================== PARTNERS =========================== -->
-    <section id="partners" class="py-20 sm:py-24">
+    <section id="partners" class="py-20 sm:py-24 bg-forest-900/40 border-y border-white/5">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="reveal text-center mb-12 max-w-2xl mx-auto">
           <span class="eyebrow"><i data-feather="users" class="w-3 h-3"></i> Partners</span>
@@ -374,7 +488,7 @@
     <!-- =========================== CTA =========================== -->
     <section class="relative py-20 sm:py-24">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="reveal relative overflow-hidden rounded-3xl gradient-border-animated bg-gradient-to-br from-forest-900 via-forest-800 to-forest-950 p-10 sm:p-14 text-center">
+        <div class="reveal relative overflow-hidden rounded-3xl bg-gradient-to-br from-forest-900 via-forest-800 to-forest-950 p-10 sm:p-14 text-center">
           <div aria-hidden="true" class="absolute -top-20 left-1/2 h-60 w-[34rem] -translate-x-1/2 rounded-full bg-primary/25 blur-3xl"></div>
           <div aria-hidden="true" class="absolute -bottom-20 right-0 h-60 w-[26rem] rounded-full bg-emerald-500/15 blur-3xl"></div>
 
@@ -388,7 +502,7 @@
               starting point.
             </p>
             <div class="mt-7 flex flex-wrap justify-center gap-3">
-              <a href="contact.html" class="btn-primary" data-magnetic>
+              <a href="contact.html" class="btn-primary">
                 <i data-feather="send" class="w-4 h-4"></i>
                 Start a conversation
               </a>

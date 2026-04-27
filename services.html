@@ -3,328 +3,261 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Services – SSD IT Solutions</title>
+  <title>Services — SSD-iT Solutions</title>
+  <meta name="description" content="End-to-end IT services from SSD-iT Solutions: Managed IT, Cloud, Security, Web design, Branding, Strategy & vCIO." />
+  <link rel="icon" type="image/png" href="assets/ssd-it-logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#ef4444',
-            secondary: '#020617',
-            accent: '#f97316',
-          }
-        }
-      }
-    }
-  </script>
-  <!-- Feather Icons -->
+  <script src="assets/theme.js"></script>
   <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
-<body class="bg-black text-slate-100 antialiased">
+<body class="bg-forest-950 text-slate-100 antialiased overflow-x-hidden">
 
   <div id="site-header"></div>
 
-  <main class="pt-28 pb-20 bg-black">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 mb-10">
-        <div>
-          <h1 class="text-3xl sm:text-4xl font-semibold text-white mb-2">Our Services</h1>
-          <p class="text-slate-300 text-sm sm:text-base max-w-2xl">
-            SSD IT Solutions provides end‑to‑end IT services tailored to your industry, size, and roadmap. Combine
-            managed services, cloud, cybersecurity, and strategic consulting under one partner.
+  <main>
+    <!-- Hero -->
+    <section class="relative isolate overflow-hidden bg-tech pt-28 sm:pt-32 pb-16 sm:pb-20">
+      <div aria-hidden="true" class="absolute inset-0 bg-grid"></div>
+      <div aria-hidden="true" class="glow-accent w-[36rem] h-[36rem] -top-40 -left-32 bg-primary/15"></div>
+      <div aria-hidden="true" class="glow-accent w-[28rem] h-[28rem] -bottom-32 -right-24 bg-emerald-500/10"></div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal max-w-3xl">
+          <span class="eyebrow"><i data-feather="layers" class="w-3 h-3"></i> Services</span>
+          <h1 class="mt-4 font-display text-4xl sm:text-5xl font-bold text-white leading-tight">
+            End-to-end IT,
+            <span class="text-gradient">delivered as one partner</span>.
+          </h1>
+          <p class="mt-5 text-lg text-slate-300/85">
+            Combine managed services, cloud, cybersecurity, web and brand under one accountable team —
+            tailored to your industry, size and roadmap.
           </p>
-        </div>
-        <div class="flex items-center gap-3">
-          <div class="hidden sm:flex -space-x-3">
-            <div class="h-9 w-9 rounded-full border border-neutral-700 bg-[url('https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=200&q=80')] bg-cover bg-center"></div>
-            <div class="h-9 w-9 rounded-full border border-neutral-700 bg-[url('https://images.unsplash.com/photo-1525130413817-d45c1d127c42?auto=format&fit=crop&w=200&q=80')] bg-cover bg-center"></div>
-            <div class="h-9 w-9 rounded-full border border-neutral-700 bg-[url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=200&q=80')] bg-cover bg-center"></div>
+          <div class="mt-7 flex flex-wrap gap-3">
+            <a href="contact.html" class="btn-primary"><i data-feather="zap" class="w-4 h-4"></i> Get a custom proposal</a>
+            <a href="#services-grid" class="btn-ghost">Browse services <i data-feather="arrow-down" class="w-4 h-4"></i></a>
           </div>
-          <p class="text-xs text-slate-400 max-w-xs">
-            Delivered by a senior team of cloud, network, and security engineers.
-          </p>
         </div>
       </div>
+    </section>
 
-      <!-- Service grid -->
-      <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3 mb-12">
-        <!-- Managed IT & Helpdesk -->
-        <section class="group rounded-2xl border border-neutral-800 bg-neutral-900/80 p-6 hover:border-primary/70 hover:bg-neutral-900 hover:-translate-y-1 hover:shadow-lg hover:shadow-red-500/30 transition-transform duration-200">
-          <div class="flex items-start gap-3 mb-3">
-            <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-tr from-red-500 via-red-500/60 to-orange-400 text-black shadow-md shadow-red-500/40">
-              <i data-feather="headphones" class="w-5 h-5"></i>
+    <!-- Service grid -->
+    <section id="services-grid" class="relative py-20 sm:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <!-- card -->
+          <article class="reveal card group rounded-2xl border border-white/5 bg-forest-900/60 p-7" data-delay="100">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-primary-400 text-white shadow-glow">
+              <i data-feather="headphones" class="w-6 h-6"></i>
             </div>
-            <div>
-              <h2 class="text-lg sm:text-xl font-semibold text-white">Managed IT & Helpdesk</h2>
-              <p class="text-[11px] uppercase tracking-wide text-slate-400 mt-0.5">Support for your day‑to‑day IT</p>
-            </div>
-          </div>
-          <p class="text-sm text-slate-300">
-            Comprehensive support for desktops, servers, and business‑critical apps, delivered with clear SLAs and
-            proactive monitoring.
-          </p>
-          <ul class="mt-4 space-y-1.5 text-xs text-slate-300">
-            <li class="flex items-start gap-2">
-              <i data-feather="check" class="mt-0.5 h-3.5 w-3.5 text-primary shrink-0"></i>
-              <span>24/7 remote & on‑site support</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i data-feather="check" class="mt-0.5 h-3.5 w-3.5 text-primary shrink-0"></i>
-              <span>Endpoint and server management</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i data-feather="check" class="mt-0.5 h-3.5 w-3.5 text-primary shrink-0"></i>
-              <span>Patch management and asset tracking</span>
-            </li>
-          </ul>
-        </section>
-
-        <!-- Cloud Transformation -->
-        <section class="group rounded-2xl border border-neutral-800 bg-neutral-900/80 p-6 hover:border-primary/70 hover:bg-neutral-900 hover:-translate-y-1 hover:shadow-lg hover:shadow-red-500/30 transition-transform duration-200">
-          <div class="flex items-start gap-3 mb-3">
-            <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-tr from-red-500 via-red-500/60 to-orange-400 text-black shadow-md shadow-red-500/40">
-              <i data-feather="cloud" class="w-5 h-5"></i>
-            </div>
-            <div>
-              <h2 class="text-lg sm:text-xl font-semibold text-white">Cloud Transformation</h2>
-              <p class="text-[11px] uppercase tracking-wide text-slate-400 mt-0.5">Modernize infrastructure & apps</p>
-            </div>
-          </div>
-          <p class="text-sm text-slate-300">
-            Assessment, migration, and optimization for AWS, Azure, and hybrid environments, with a focus on security
-            and cost control.
-          </p>
-          <ul class="mt-4 space-y-1.5 text-xs text-slate-300">
-            <li class="flex items-start gap-2">
-              <i data-feather="check" class="mt-0.5 h-3.5 w-3.5 text-primary shrink-0"></i>
-              <span>Cloud readiness assessments</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i data-feather="check" class="mt-0.5 h-3.5 w-3.5 text-primary shrink-0"></i>
-              <span>Migration planning and execution</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i data-feather="check" class="mt-0.5 h-3.5 w-3.5 text-primary shrink-0"></i>
-              <span>Ongoing cost and performance tuning</span>
-            </li>
-          </ul>
-        </section>
-
-        <!-- Network & Security -->
-        <section class="group rounded-2xl border border-neutral-800 bg-neutral-900/80 p-6 hover:border-primary/70 hover:bg-neutral-900 hover:-translate-y-1 hover:shadow-lg hover:shadow-red-500/30 transition-transform duration-200">
-          <div class="flex items-start gap-3 mb-3">
-            <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-tr from-red-500 via-red-500/60 to-orange-400 text-black shadow-md shadow-red-500/40">
-              <i data-feather="shield" class="w-5 h-5"></i>
-            </div>
-            <div>
-              <h2 class="text-lg sm:text-xl font-semibold text-white">Network & Security</h2>
-              <p class="text-[11px] uppercase tracking-wide text-slate-400 mt-0.5">Secure connectivity everywhere</p>
-            </div>
-          </div>
-          <p class="text-sm text-slate-300">
-            Secure, high‑availability networks with next‑gen firewalls, VPNs, and zero‑trust access to protect your
-            data and people.
-          </p>
-          <ul class="mt-4 space-y-1.5 text-xs text-slate-300">
-            <li class="flex items-start gap-2">
-              <i data-feather="check" class="mt-0.5 h-3.5 w-3.5 text-primary shrink-0"></i>
-              <span>Network design and implementation</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i data-feather="check" class="mt-0.5 h-3.5 w-3.5 text-primary shrink-0"></i>
-              <span>Firewall, VPN, and secure remote access</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i data-feather="check" class="mt-0.5 h-3.5 w-3.5 text-primary shrink-0"></i>
-              <span>Zero‑trust and identity management</span>
-            </li>
-          </ul>
-        </section>
-
-        <!-- Cybersecurity & Compliance -->
-        <section class="group rounded-2xl border border-neutral-800 bg-neutral-900/80 p-6 hover:border-primary/70 hover:bg-neutral-900 hover:-translate-y-1 hover:shadow-lg hover:shadow-red-500/30 transition-transform duration-200">
-          <div class="flex items-start gap-3 mb-3">
-            <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-tr from-red-500 via-red-500/60 to-orange-400 text-black shadow-md shadow-red-500/40">
-              <i data-feather="lock" class="w-5 h-5"></i>
-            </div>
-            <div>
-              <h2 class="text-lg sm:text-xl font-semibold text-white">Cybersecurity & Compliance</h2>
-              <p class="text-[11px] uppercase tracking-wide text-slate-400 mt-0.5">Reduce risk & meet standards</p>
-            </div>
-          </div>
-          <p class="text-sm text-slate-300">
-            Reduce risk with layered security, security awareness, and frameworks that keep you aligned with
-            industry and regulatory standards.
-          </p>
-          <ul class="mt-4 space-y-1.5 text-xs text-slate-300">
-            <li class="flex items-start gap-2">
-              <i data-feather="check" class="mt-0.5 h-3.5 w-3.5 text-primary shrink-0"></i>
-              <span>Security assessments and hardening</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i data-feather="check" class="mt-0.5 h-3.5 w-3.5 text-primary shrink-0"></i>
-              <span>SOC‑aligned monitoring and alerting</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i data-feather="check" class="mt-0.5 h-3.5 w-3.5 text-primary shrink-0"></i>
-              <span>Policy, compliance, and awareness training</span>
-            </li>
-          </ul>
-        </section>
-
-        <!-- Backup, DR & Business Continuity -->
-        <section class="group rounded-2xl border border-neutral-800 bg-neutral-900/80 p-6 hover:border-primary/70 hover:bg-neutral-900 hover:-translate-y-1 hover:shadow-lg hover:shadow-red-500/30 transition-transform duration-200">
-          <div class="flex items-start gap-3 mb-3">
-            <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-tr from-red-500 via-red-500/60 to-orange-400 text-black shadow-md shadow-red-500/40">
-              <i data-feather="refresh-cw" class="w-5 h-5"></i>
-            </div>
-            <div>
-              <h2 class="text-lg sm:text-xl font-semibold text-white">Backup & Business Continuity</h2>
-              <p class="text-[11px] uppercase tracking-wide text-slate-400 mt-0.5">Stay online when it matters</p>
-            </div>
-          </div>
-          <p class="text-sm text-slate-300">
-            Protect critical data and keep operations online with resilient backup, disaster recovery, and continuity
-            planning.
-          </p>
-          <ul class="mt-4 space-y-1.5 text-xs text-slate-300">
-            <li class="flex items-start gap-2">
-              <i data-feather="check" class="mt-0.5 h-3.5 w-3.5 text-primary shrink-0"></i>
-              <span>Modern, encrypted backup solutions</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i data-feather="check" class="mt-0.5 h-3.5 w-3.5 text-primary shrink-0"></i>
-              <span>Disaster recovery runbooks and testing</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i data-feather="check" class="mt-0.5 h-3.5 w-3.5 text-primary shrink-0"></i>
-              <span>RPO/RTO aligned to your business</span>
-            </li>
-          </ul>
-        </section>
-
-        <!-- IT Strategy & vCIO -->
-        <section class="group rounded-2xl border border-neutral-800 bg-neutral-900/80 p-6 hover:border-primary/70 hover:bg-neutral-900 hover:-translate-y-1 hover:shadow-lg hover:shadow-red-500/30 transition-transform duration-200">
-          <div class="flex items-start gap-3 mb-3">
-            <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-tr from-red-500 via-red-500/60 to-orange-400 text-black shadow-md shadow-red-500/40">
-              <i data-feather="compass" class="w-5 h-5"></i>
-            </div>
-            <div>
-              <h2 class="text-lg sm:text-xl font-semibold text-white">IT Strategy & vCIO</h2>
-              <p class="text-[11px] uppercase tracking-wide text-slate-400 mt-0.5">Roadmaps & strategic guidance</p>
-            </div>
-          </div>
-          <p class="text-sm text-slate-300">
-            Turn IT into a strategic asset with virtual CIO services, budgeting support, and a roadmap aligned to
-            your growth plans.
-          </p>
-          <ul class="mt-4 space-y-1.5 text-xs text-slate-300">
-            <li class="flex items-start gap-2">
-              <i data-feather="check" class="mt-0.5 h-3.5 w-3.5 text-primary shrink-0"></i>
-              <span>Technology roadmaps and budgeting</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i data-feather="check" class="mt-0.5 h-3.5 w-3.5 text-primary shrink-0"></i>
-              <span>Vendor and license management</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i data-feather="check" class="mt-0.5 h-3.5 w-3.5 text-primary shrink-0"></i>
-              <span>Quarterly business reviews and planning</span>
-            </li>
-          </ul>
-        </section>
-
-        <!-- Web Design & Hosting -->
-        <section class="group rounded-2xl border border-neutral-800 bg-neutral-900/80 p-6 md:col-span-2 xl:col-span-1 hover:border-primary/70 hover:bg-neutral-900 hover:-translate-y-1 hover:shadow-lg hover:shadow-red-500/30 transition-transform duration-200">
-          <div class="flex items-start gap-3 mb-3">
-            <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-tr from-red-500 via-red-500/60 to-orange-400 text-black shadow-md shadow-red-500/40">
-              <i data-feather="monitor" class="w-5 h-5"></i>
-            </div>
-            <div>
-              <h2 class="text-lg sm:text-xl font-semibold text-white">Web Design & Hosting</h2>
-              <p class="text-[11px] uppercase tracking-wide text-slate-400 mt-0.5">Modern, secure web presence</p>
-            </div>
-          </div>
-          <p class="text-sm text-slate-300">
-            Modern, secure, and fast websites built for your brand—fully managed by SSD IT Solutions from design and
-            development to hosting, updates, and monitoring.
-          </p>
-          <ul class="mt-4 space-y-1.5 text-xs text-slate-300">
-            <li class="flex items-start gap-2">
-              <i data-feather="check" class="mt-0.5 h-3.5 w-3.5 text-primary shrink-0"></i>
-              <span>UX‑focused, mobile‑first website design</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i data-feather="check" class="mt-0.5 h-3.5 w-3.5 text-primary shrink-0"></i>
-              <span>Secure, high‑performance hosting and SSL</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i data-feather="check" class="mt-0.5 h-3.5 w-3.5 text-primary shrink-0"></i>
-              <span>Ongoing maintenance, backups, and monitoring</span>
-            </li>
-          </ul>
-        </section>
-
-        <!-- Graphic Design & Branding -->
-        <section class="group rounded-2xl border border-neutral-800 bg-neutral-900/80 p-6 hover:border-primary/70 hover:bg-neutral-900 hover:-translate-y-1 hover:shadow-lg hover:shadow-red-500/30 transition-transform duration-200">
-          <div class="flex items-start gap-3 mb-3">
-            <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-tr from-red-500 via-red-500/60 to-orange-400 text-black shadow-md shadow-red-500/40">
-              <i data-feather="pen-tool" class="w-5 h-5"></i>
-            </div>
-            <div>
-              <h2 class="text-lg sm:text-xl font-semibold text-white">Graphic Design & Branding</h2>
-              <p class="text-[11px] uppercase tracking-wide text-slate-400 mt-0.5">Cohesive visual identity</p>
-            </div>
-          </div>
-          <p class="text-sm text-slate-300">
-            Visual identity, marketing assets, and brand‑aligned graphics that keep your digital and print presence consistent.
-          </p>
-          <ul class="mt-4 space-y-1.5 text-xs text-slate-300">
-            <li class="flex items-start gap-2">
-              <i data-feather="check" class="mt-0.5 h-3.5 w-3.5 text-primary shrink-0"></i>
-              <span>Logos, brand guidelines, and visual systems</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i data-feather="check" class="mt-0.5 h-3.5 w-3.5 text-primary shrink-0"></i>
-              <span>Social media, pitch decks, and marketing collateral</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i data-feather="check" class="mt-0.5 h-3.5 w-3.5 text-primary shrink-0"></i>
-              <span>Website, UI, and campaign design assets</span>
-            </li>
-          </ul>
-        </section>
-      </div>
-
-      <!-- Visual / highlight section -->
-      <section class="grid gap-8 lg:grid-cols-2 items-center">
-        <div class="relative order-2 lg:order-1">
-          <div class="absolute -inset-4 bg-gradient-to-tr from-red-600/30 via-red-500/10 to-orange-500/10 blur-3xl"></div>
-          <div class="relative rounded-2xl border border-neutral-800 bg-neutral-900/80 p-5 sm:p-6">
-            <p class="text-xs font-semibold tracking-wide text-red-400 uppercase mb-2">Typical engagement</p>
-            <h3 class="text-lg sm:text-xl font-semibold text-white mb-3">From assessment to steady‑state support</h3>
-            <ol class="space-y-2 text-sm text-slate-300 list-decimal list-inside">
-              <li>Discovery workshop and environment assessment.</li>
-              <li>Prioritized roadmap with quick wins and long‑term initiatives.</li>
-              <li>Implementation of foundational security and reliability.</li>
-              <li>Ongoing monitoring, reporting, and optimization.</li>
-            </ol>
-            <p class="mt-3 text-xs text-slate-400">
-              We adapt our approach to your size and industry, from startups to established enterprises.
+            <h2 class="mt-5 text-xl font-semibold text-white">Managed IT & Helpdesk</h2>
+            <p class="text-[11px] uppercase tracking-wider text-emerald-200/60">Day-to-day IT support</p>
+            <p class="mt-3 text-sm text-slate-300/85">
+              Comprehensive support for desktops, servers and business-critical apps with clear SLAs and
+              proactive monitoring.
             </p>
-          </div>
+            <ul class="mt-5 space-y-1.5 text-xs text-slate-300">
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> 24/7 remote & on-site support</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Endpoint and server management</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Patch management & asset tracking</li>
+            </ul>
+          </article>
+
+          <article class="reveal card group rounded-2xl border border-white/5 bg-forest-900/60 p-7" data-delay="150">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-primary-400 text-white shadow-glow">
+              <i data-feather="cloud" class="w-6 h-6"></i>
+            </div>
+            <h2 class="mt-5 text-xl font-semibold text-white">Cloud Transformation</h2>
+            <p class="text-[11px] uppercase tracking-wider text-emerald-200/60">Modernize infrastructure & apps</p>
+            <p class="mt-3 text-sm text-slate-300/85">
+              Assessment, migration and optimization for AWS, Azure and hybrid environments — with a focus on
+              security and cost control.
+            </p>
+            <ul class="mt-5 space-y-1.5 text-xs text-slate-300">
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Cloud readiness assessments</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Migration planning & execution</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Cost & performance tuning</li>
+            </ul>
+          </article>
+
+          <article class="reveal card group rounded-2xl border border-white/5 bg-forest-900/60 p-7" data-delay="200">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-primary-400 text-white shadow-glow">
+              <i data-feather="shield" class="w-6 h-6"></i>
+            </div>
+            <h2 class="mt-5 text-xl font-semibold text-white">Network & Security</h2>
+            <p class="text-[11px] uppercase tracking-wider text-emerald-200/60">Secure connectivity everywhere</p>
+            <p class="mt-3 text-sm text-slate-300/85">
+              Secure, high-availability networks with next-gen firewalls, VPN and zero-trust access to protect
+              your data and people.
+            </p>
+            <ul class="mt-5 space-y-1.5 text-xs text-slate-300">
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Network design & implementation</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Firewall, VPN & remote access</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Zero-trust & identity</li>
+            </ul>
+          </article>
+
+          <article class="reveal card group rounded-2xl border border-white/5 bg-forest-900/60 p-7" data-delay="250">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-primary-400 text-white shadow-glow">
+              <i data-feather="lock" class="w-6 h-6"></i>
+            </div>
+            <h2 class="mt-5 text-xl font-semibold text-white">Cybersecurity & Compliance</h2>
+            <p class="text-[11px] uppercase tracking-wider text-emerald-200/60">Reduce risk & meet standards</p>
+            <p class="mt-3 text-sm text-slate-300/85">
+              Layered security, awareness training and frameworks aligned to industry and regulatory standards.
+            </p>
+            <ul class="mt-5 space-y-1.5 text-xs text-slate-300">
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Security assessments</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> SOC-aligned monitoring</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Policy & awareness training</li>
+            </ul>
+          </article>
+
+          <article class="reveal card group rounded-2xl border border-white/5 bg-forest-900/60 p-7" data-delay="300">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-primary-400 text-white shadow-glow">
+              <i data-feather="refresh-cw" class="w-6 h-6"></i>
+            </div>
+            <h2 class="mt-5 text-xl font-semibold text-white">Backup & Business Continuity</h2>
+            <p class="text-[11px] uppercase tracking-wider text-emerald-200/60">Stay online when it matters</p>
+            <p class="mt-3 text-sm text-slate-300/85">
+              Resilient backup, disaster recovery and continuity planning to keep critical data and operations online.
+            </p>
+            <ul class="mt-5 space-y-1.5 text-xs text-slate-300">
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Encrypted backup solutions</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> DR runbooks and testing</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Aligned RPO/RTO targets</li>
+            </ul>
+          </article>
+
+          <article class="reveal card group rounded-2xl border border-white/5 bg-forest-900/60 p-7" data-delay="350">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-primary-400 text-white shadow-glow">
+              <i data-feather="compass" class="w-6 h-6"></i>
+            </div>
+            <h2 class="mt-5 text-xl font-semibold text-white">IT Strategy & vCIO</h2>
+            <p class="text-[11px] uppercase tracking-wider text-emerald-200/60">Roadmaps & strategic guidance</p>
+            <p class="mt-3 text-sm text-slate-300/85">
+              Virtual CIO services, technology budgeting and a roadmap aligned to your growth plans.
+            </p>
+            <ul class="mt-5 space-y-1.5 text-xs text-slate-300">
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Roadmaps & budgeting</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Vendor & license management</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Quarterly business reviews</li>
+            </ul>
+          </article>
+
+          <article class="reveal card group rounded-2xl border border-white/5 bg-forest-900/60 p-7" data-delay="100">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-primary-400 text-white shadow-glow">
+              <i data-feather="monitor" class="w-6 h-6"></i>
+            </div>
+            <h2 class="mt-5 text-xl font-semibold text-white">Web Design & Hosting</h2>
+            <p class="text-[11px] uppercase tracking-wider text-emerald-200/60">Modern, secure web presence</p>
+            <p class="mt-3 text-sm text-slate-300/85">
+              Modern, secure and fast websites — fully managed from design and development to hosting,
+              updates and monitoring.
+            </p>
+            <ul class="mt-5 space-y-1.5 text-xs text-slate-300">
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> UX-focused, mobile-first design</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Secure hosting and SSL</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Maintenance, backups, monitoring</li>
+            </ul>
+          </article>
+
+          <article class="reveal card group rounded-2xl border border-white/5 bg-forest-900/60 p-7" data-delay="150">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-primary-400 text-white shadow-glow">
+              <i data-feather="pen-tool" class="w-6 h-6"></i>
+            </div>
+            <h2 class="mt-5 text-xl font-semibold text-white">Graphic Design & Branding</h2>
+            <p class="text-[11px] uppercase tracking-wider text-emerald-200/60">Cohesive visual identity</p>
+            <p class="mt-3 text-sm text-slate-300/85">
+              Visual identity, marketing assets and brand-aligned graphics that keep your digital and print presence consistent.
+            </p>
+            <ul class="mt-5 space-y-1.5 text-xs text-slate-300">
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Logos & brand systems</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Pitch decks & social</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Campaign & UI design</li>
+            </ul>
+          </article>
+
+          <article class="reveal card group rounded-2xl border border-white/5 bg-forest-900/60 p-7" data-delay="200">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-primary-400 text-white shadow-glow">
+              <i data-feather="code" class="w-6 h-6"></i>
+            </div>
+            <h2 class="mt-5 text-xl font-semibold text-white">Custom Software</h2>
+            <p class="text-[11px] uppercase tracking-wider text-emerald-200/60">Built to fit your operations</p>
+            <p class="mt-3 text-sm text-slate-300/85">
+              Internal tools, dashboards and integrations that automate the work your team shouldn't be doing manually.
+            </p>
+            <ul class="mt-5 space-y-1.5 text-xs text-slate-300">
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Web apps & dashboards</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> API & systems integration</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Automation & workflows</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Engagement timeline -->
+    <section class="relative py-20 sm:py-24 bg-forest-900/40 border-y border-white/5">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal max-w-2xl mb-12">
+          <span class="eyebrow"><i data-feather="map" class="w-3 h-3"></i> Typical engagement</span>
+          <h2 class="mt-3 font-display text-3xl sm:text-4xl font-bold text-white">
+            From <span class="text-gradient">assessment</span> to steady-state support
+          </h2>
         </div>
 
-        <div class="order-1 lg:order-2">
-          <div class="aspect-[4/3] rounded-2xl border border-neutral-800 bg-[url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=900&q=80')] bg-cover bg-center shadow-xl shadow-black/40"></div>
+        <ol class="relative border-l border-primary/30 pl-8 space-y-8">
+          <li class="reveal" data-delay="100">
+            <span class="absolute -left-[11px] flex h-5 w-5 items-center justify-center rounded-full bg-primary text-[10px] font-bold text-white shadow-glow">1</span>
+            <h3 class="text-base font-semibold text-white">Discovery workshop & assessment</h3>
+            <p class="mt-1 text-sm text-slate-300/85">A focused review of your environment, risks and goals.</p>
+          </li>
+          <li class="reveal" data-delay="200">
+            <span class="absolute -left-[11px] flex h-5 w-5 items-center justify-center rounded-full bg-primary text-[10px] font-bold text-white shadow-glow">2</span>
+            <h3 class="text-base font-semibold text-white">Prioritized roadmap</h3>
+            <p class="mt-1 text-sm text-slate-300/85">Quick wins surfaced first; long-term initiatives sequenced.</p>
+          </li>
+          <li class="reveal" data-delay="300">
+            <span class="absolute -left-[11px] flex h-5 w-5 items-center justify-center rounded-full bg-primary text-[10px] font-bold text-white shadow-glow">3</span>
+            <h3 class="text-base font-semibold text-white">Implementation</h3>
+            <p class="mt-1 text-sm text-slate-300/85">Foundational security and reliability rolled out with minimal disruption.</p>
+          </li>
+          <li class="reveal" data-delay="400">
+            <span class="absolute -left-[11px] flex h-5 w-5 items-center justify-center rounded-full bg-primary text-[10px] font-bold text-white shadow-glow">4</span>
+            <h3 class="text-base font-semibold text-white">Ongoing support</h3>
+            <p class="mt-1 text-sm text-slate-300/85">Proactive monitoring, monthly reporting and continuous improvement.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="relative py-20 sm:py-24">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal relative overflow-hidden rounded-3xl bg-gradient-to-br from-forest-900 via-forest-800 to-forest-950 p-10 sm:p-14 text-center">
+          <div aria-hidden="true" class="absolute -top-20 left-1/2 h-60 w-[34rem] -translate-x-1/2 rounded-full bg-primary/25 blur-3xl"></div>
+          <h2 class="font-display text-3xl sm:text-4xl font-bold text-white">
+            Ready to <span class="text-gradient">simplify your IT</span>?
+          </h2>
+          <p class="mt-3 max-w-xl mx-auto text-slate-300/85">
+            Let's talk through your environment and shape a roadmap together.
+          </p>
+          <div class="mt-7 flex flex-wrap justify-center gap-3">
+            <a href="contact.html" class="btn-primary"><i data-feather="send" class="w-4 h-4"></i> Start a conversation</a>
+            <a href="products.html" class="btn-ghost">See our products <i data-feather="arrow-right" class="w-4 h-4"></i></a>
+          </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
 
   <div id="site-footer"></div>
-
   <script src="assets/main.js"></script>
 </body>
 </html>
