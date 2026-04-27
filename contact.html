@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — SSD-iT Solutions</title>
+  <meta name="description" content="Get in touch with SSD-iT Solutions. Tell us about your project and we'll get back to you within one business day." />
+  <link rel="icon" type="image/png" href="assets/ssd-it-logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/theme.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="bg-forest-950 text-slate-100 antialiased overflow-x-hidden">
+
+  <div id="site-header"></div>
+
+  <main class="relative isolate overflow-hidden bg-tech pt-28 sm:pt-32 pb-24">
+    <div aria-hidden="true" class="absolute inset-0 bg-grid"></div>
+    <div aria-hidden="true" class="orb orb-1"></div>
+    <div aria-hidden="true" class="orb orb-2"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- header -->
+      <div class="reveal max-w-2xl">
+        <span class="eyebrow"><span class="pulse-dot"></span> We're listening</span>
+        <h1 class="mt-4 font-display text-4xl sm:text-5xl font-bold text-white leading-tight">
+          Let's build something <span class="text-gradient">remarkable</span>.
+        </h1>
+        <p class="mt-4 text-slate-300/85 text-base sm:text-lg">
+          Tell us about your IT environment, project, or idea — we reply within one business day.
+        </p>
+      </div>
+
+      <div class="mt-12 grid gap-8 lg:grid-cols-[1.2fr_1fr] items-start">
+        <!-- ===== Contact form ===== -->
+        <div class="reveal" data-delay="100">
+          <div class="relative rounded-3xl gradient-border-animated bg-forest-900/70 backdrop-blur-xl p-6 sm:p-8 shadow-glow-lg">
+            <div class="flex items-center gap-3 mb-6">
+              <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/15 text-primary">
+                <i data-feather="message-square" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h2 class="text-lg font-semibold text-white">Send us an inquiry</h2>
+                <p class="text-xs text-emerald-200/60">Goes straight to nelsonochan@gmail.com</p>
+              </div>
+            </div>
+
+            <form id="contact-form"
+                  action="https://formsubmit.co/nelsonochan@gmail.com"
+                  method="POST"
+                  class="grid gap-4">
+              <!-- Formsubmit.co configuration -->
+              <input type="hidden" name="_subject" value="New SSD-iT Solutions inquiry" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_next" value="contact.html?sent=1" />
+              <!-- Honeypot -->
+              <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+
+              <div class="grid gap-4 sm:grid-cols-2">
+                <div>
+                  <label class="block text-xs font-medium text-emerald-200/70 mb-1.5 uppercase tracking-wider">Name *</label>
+                  <input required type="text" name="name" class="form-input" placeholder="Jane Doe" />
+                </div>
+                <div>
+                  <label class="block text-xs font-medium text-emerald-200/70 mb-1.5 uppercase tracking-wider">Company</label>
+                  <input type="text" name="company" class="form-input" placeholder="Acme Inc." />
+                </div>
+              </div>
+
+              <div class="grid gap-4 sm:grid-cols-2">
+                <div>
+                  <label class="block text-xs font-medium text-emerald-200/70 mb-1.5 uppercase tracking-wider">Email *</label>
+                  <input required type="email" name="email" class="form-input" placeholder="you@company.com" />
+                </div>
+                <div>
+                  <label class="block text-xs font-medium text-emerald-200/70 mb-1.5 uppercase tracking-wider">Phone</label>
+                  <input type="tel" name="phone" class="form-input" placeholder="+256 700 000 000" />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-medium text-emerald-200/70 mb-1.5 uppercase tracking-wider">I'm interested in</label>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-xs">
+                  <label class="flex items-center gap-2 rounded-lg border border-white/10 bg-forest-950/60 px-3 py-2 cursor-pointer hover:border-primary/60 transition has-[:checked]:border-primary has-[:checked]:bg-primary/10">
+                    <input type="checkbox" name="interest" value="Managed IT" class="accent-orange-500" />
+                    Managed IT
+                  </label>
+                  <label class="flex items-center gap-2 rounded-lg border border-white/10 bg-forest-950/60 px-3 py-2 cursor-pointer hover:border-primary/60 transition has-[:checked]:border-primary has-[:checked]:bg-primary/10">
+                    <input type="checkbox" name="interest" value="Cloud" class="accent-orange-500" />
+                    Cloud
+                  </label>
+                  <label class="flex items-center gap-2 rounded-lg border border-white/10 bg-forest-950/60 px-3 py-2 cursor-pointer hover:border-primary/60 transition has-[:checked]:border-primary has-[:checked]:bg-primary/10">
+                    <input type="checkbox" name="interest" value="Cybersecurity" class="accent-orange-500" />
+                    Cybersecurity
+                  </label>
+                  <label class="flex items-center gap-2 rounded-lg border border-white/10 bg-forest-950/60 px-3 py-2 cursor-pointer hover:border-primary/60 transition has-[:checked]:border-primary has-[:checked]:bg-primary/10">
+                    <input type="checkbox" name="interest" value="Web design" class="accent-orange-500" />
+                    Web design
+                  </label>
+                  <label class="flex items-center gap-2 rounded-lg border border-white/10 bg-forest-950/60 px-3 py-2 cursor-pointer hover:border-primary/60 transition has-[:checked]:border-primary has-[:checked]:bg-primary/10">
+                    <input type="checkbox" name="interest" value="Branding" class="accent-orange-500" />
+                    Branding
+                  </label>
+                  <label class="flex items-center gap-2 rounded-lg border border-white/10 bg-forest-950/60 px-3 py-2 cursor-pointer hover:border-primary/60 transition has-[:checked]:border-primary has-[:checked]:bg-primary/10">
+                    <input type="checkbox" name="interest" value="vCIO / Strategy" class="accent-orange-500" />
+                    vCIO / Strategy
+                  </label>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-medium text-emerald-200/70 mb-1.5 uppercase tracking-wider">Tell us about your project *</label>
+                <textarea required rows="5" name="message" class="form-input resize-y"
+                          placeholder="Briefly describe your environment, challenges or goals…"></textarea>
+              </div>
+
+              <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pt-2">
+                <button type="submit" class="btn-primary justify-center sm:w-auto w-full" data-magnetic>
+                  <i data-feather="send" class="w-4 h-4"></i>
+                  Send inquiry
+                </button>
+                <p class="text-[11px] text-slate-400 max-w-sm">
+                  By submitting you agree to be contacted by SSD-iT Solutions. We respect your privacy.
+                </p>
+              </div>
+            </form>
+
+            <!-- Success message (shown after redirect with ?sent=1) -->
+            <div id="contact-success" class="hidden mt-6 rounded-2xl border border-emerald-400/30 bg-emerald-500/10 p-4 flex items-start gap-3">
+              <span class="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-300">
+                <i data-feather="check-circle" class="w-4 h-4"></i>
+              </span>
+              <div>
+                <p class="font-semibold text-emerald-200">Thank you — your message is on its way.</p>
+                <p class="text-sm text-emerald-100/80">We'll get back to you at the email you provided within one business day.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== Side: contact details ===== -->
+        <aside class="space-y-5">
+          <div class="reveal rounded-2xl border border-white/5 bg-forest-900/60 p-6" data-delay="150">
+            <h3 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Direct channels</h3>
+            <ul class="space-y-4 text-sm">
+              <li class="flex items-start gap-3">
+                <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary"><i data-feather="mail" class="w-4 h-4"></i></span>
+                <div>
+                  <p class="text-emerald-200/60 text-[11px] uppercase tracking-wider">Email</p>
+                  <a href="mailto:nelsonochan@gmail.com" class="text-white hover:text-primary transition">nelsonochan@gmail.com</a>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary"><i data-feather="phone" class="w-4 h-4"></i></span>
+                <div>
+                  <p class="text-emerald-200/60 text-[11px] uppercase tracking-wider">Phone · Uganda</p>
+                  <a href="tel:+256773123550" class="text-white hover:text-primary transition">+256 773 123 550</a>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary"><i data-feather="phone" class="w-4 h-4"></i></span>
+                <div>
+                  <p class="text-emerald-200/60 text-[11px] uppercase tracking-wider">Phone · South Sudan</p>
+                  <a href="tel:+211927500585" class="text-white hover:text-primary transition">+211 927 500 585</a>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary"><i data-feather="map-pin" class="w-4 h-4"></i></span>
+                <div>
+                  <p class="text-emerald-200/60 text-[11px] uppercase tracking-wider">Location</p>
+                  <p class="text-white">Juba & Magwi · South Sudan</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <a href="https://wa.me/256773123550" target="_blank" rel="noopener noreferrer"
+             class="reveal card group flex items-center gap-4 rounded-2xl border border-emerald-400/20 bg-gradient-to-br from-emerald-500/15 via-forest-900/60 to-forest-900/60 p-6" data-delay="250">
+            <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/25 text-emerald-300">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
+            </span>
+            <div>
+              <p class="text-sm font-semibold text-white">Chat on WhatsApp</p>
+              <p class="text-xs text-emerald-200/70">Get a quick reply during business hours</p>
+            </div>
+            <i data-feather="arrow-right" class="w-4 h-4 ml-auto text-emerald-300 group-hover:translate-x-1 transition"></i>
+          </a>
+
+          <div class="reveal rounded-2xl border border-white/5 bg-forest-900/60 p-6" data-delay="350">
+            <h3 class="text-sm font-semibold text-white uppercase tracking-wider mb-3">Response promise</h3>
+            <ul class="space-y-2 text-sm text-slate-300/85">
+              <li class="flex items-start gap-2"><i data-feather="check-circle" class="w-4 h-4 text-emerald-400 mt-0.5"></i> Reply within one business day</li>
+              <li class="flex items-start gap-2"><i data-feather="check-circle" class="w-4 h-4 text-emerald-400 mt-0.5"></i> Free 30-min discovery call</li>
+              <li class="flex items-start gap-2"><i data-feather="check-circle" class="w-4 h-4 text-emerald-400 mt-0.5"></i> Custom proposal in 3-5 days</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="assets/main.js"></script>
+  <script>
+    // Reveal success message if user lands back here after submission
+    (function () {
+      const params = new URLSearchParams(location.search);
+      if (params.get('sent') === '1') {
+        const el = document.getElementById('contact-success');
+        if (el) {
+          el.classList.remove('hidden');
+          el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+        const form = document.getElementById('contact-form');
+        if (form) form.reset();
+      }
+    })();
+  </script>
+</body>
+</html>

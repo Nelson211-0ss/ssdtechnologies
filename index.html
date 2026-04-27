@@ -3,145 +3,146 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SSD IT Solutions – IT Solutions</title>
-  <meta name="description" content="SSD IT Solutions provides modern IT solutions, cloud services, and managed infrastructure for growing businesses.">
+  <title>SSD-iT Solutions — Smart, Secure, Scalable IT</title>
+  <meta name="description" content="SSD-iT Solutions designs, secures and runs modern IT — cloud, networks, devices, websites and brand — for growing businesses." />
+  <link rel="icon" type="image/png" href="assets/ssd-it-logo.png" />
 
-  <!-- Tailwind CSS (CDN) -->
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind + theme -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#ef4444',   // red-500
-            secondary: '#020617', // almost black
-            accent: '#f97316',    // orange accent
-          }
-        }
-      }
-    }
-  </script>
+  <script src="assets/theme.js"></script>
   <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
-<body class="bg-black text-slate-100 antialiased">
+<body class="bg-forest-950 text-slate-100 antialiased overflow-x-hidden">
 
-  <!-- Header gets injected here -->
   <div id="site-header"></div>
 
-  <!-- Hero Section -->
   <main>
-    <section class="pt-28 pb-20 bg-gradient-to-b from-black via-neutral-900 to-black min-h-screen flex items-center">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid gap-10 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] items-center">
-          <!-- Text / value prop -->
-          <div>
-            <div class="inline-flex items-center gap-2 rounded-full border border-red-500/30 bg-red-500/5 px-3 py-1 text-[11px] font-medium uppercase tracking-wide text-red-300">
-              <span class="h-1.5 w-1.5 rounded-full bg-red-500 animate-pulse"></span>
-              Always‑on IT operations, secured.
-            </div>
+    <!-- =========================== HERO =========================== -->
+    <section class="relative isolate overflow-hidden bg-tech pt-28 sm:pt-36 pb-20 sm:pb-28">
+      <div aria-hidden="true" class="absolute inset-0 bg-grid"></div>
+      <div aria-hidden="true" class="orb orb-1"></div>
+      <div aria-hidden="true" class="orb orb-2"></div>
+      <div aria-hidden="true" class="orb orb-3"></div>
 
-            <h1 class="mt-4 text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white">
-              Enterprise‑grade IT,
-              <span class="block text-primary mt-1">built for growing teams.</span>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-12 lg:grid-cols-[minmax(0,1.25fr)_minmax(0,1fr)] items-center">
+          <!-- Headline -->
+          <div>
+            <span class="eyebrow reveal">
+              <span class="pulse-dot"></span>
+              IT operations · always-on · always secure
+            </span>
+
+            <h1 class="reveal mt-5 font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.05] tracking-tight text-white">
+              Modern IT for
+              <span class="text-gradient">businesses</span>
+              <span class="block">that can't afford downtime.</span>
             </h1>
 
-            <p class="mt-4 text-sm sm:text-base lg:text-lg text-slate-300 max-w-xl">
-              SSD IT Solutions designs, secures, and runs your IT—from cloud and networks to endpoints and
-              websites—so your business stays fast, available, and protected.
+            <p class="reveal mt-6 max-w-xl text-base sm:text-lg text-slate-300/90" data-delay="100">
+              <span class="font-semibold text-white">SSD-iT Solutions</span> designs, secures and runs your IT —
+              from <span class="text-emerald-300">cloud</span> and <span class="text-emerald-300">networks</span> to
+              <span class="text-primary-300">devices</span>, <span class="text-primary-300">websites</span> and brand —
+              so your team stays fast, available and protected.
             </p>
 
-            <div class="mt-6 flex flex-wrap gap-3">
-              <a href="#contact" class="inline-flex items-center justify-center rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-white shadow-lg shadow-red-500/40 hover:bg-red-600 transition">
+            <div class="reveal mt-8 flex flex-wrap gap-3" data-delay="200">
+              <a href="contact.html" class="btn-primary" data-magnetic>
+                <i data-feather="zap" class="w-4 h-4"></i>
                 Book a free assessment
               </a>
-              <a href="services.html" class="inline-flex items-center justify-center rounded-full border border-slate-700 px-6 py-2.5 text-sm font-semibold text-slate-100 hover:border-primary hover:text-primary transition">
-                View all services
+              <a href="services.html" class="btn-ghost">
+                Explore services
+                <i data-feather="arrow-right" class="w-4 h-4"></i>
               </a>
             </div>
 
-            <div class="mt-6 grid grid-cols-2 sm:flex sm:flex-row sm:flex-wrap gap-4 text-xs sm:text-sm text-slate-300">
-              <div class="flex items-start gap-2">
-                <span class="mt-0.5 text-primary shrink-0"><i data-feather="activity" class="w-4 h-4"></i></span>
-                <div>
-                  <p class="font-semibold text-white">99.98% uptime</p>
-                  <p class="text-slate-400 text-[11px] sm:text-xs">Across managed infrastructure</p>
-                </div>
+            <!-- KPI strip -->
+            <dl class="reveal mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-xl" data-delay="300">
+              <div>
+                <dt class="text-[11px] uppercase tracking-wider text-emerald-200/60">Uptime</dt>
+                <dd class="mt-1 text-2xl font-bold text-white">
+                  <span data-counter="99.98" data-suffix="%">0%</span>
+                </dd>
               </div>
-              <div class="flex items-start gap-2">
-                <span class="mt-0.5 text-primary shrink-0"><i data-feather="monitor" class="w-4 h-4"></i></span>
-                <div>
-                  <p class="font-semibold text-white">24/7 monitoring</p>
-                  <p class="text-slate-400 text-[11px] sm:text-xs">NOC‑backed response</p>
-                </div>
+              <div>
+                <dt class="text-[11px] uppercase tracking-wider text-emerald-200/60">Monitoring</dt>
+                <dd class="mt-1 text-2xl font-bold text-white">24/7</dd>
               </div>
-              <div class="flex items-start gap-2">
-                <span class="mt-0.5 text-primary shrink-0"><i data-feather="shield" class="w-4 h-4"></i></span>
-                <div>
-                  <p class="font-semibold text-white">Security‑first</p>
-                  <p class="text-slate-400 text-[11px] sm:text-xs">Aligned to best practices</p>
-                </div>
+              <div>
+                <dt class="text-[11px] uppercase tracking-wider text-emerald-200/60">Sites delivered</dt>
+                <dd class="mt-1 text-2xl font-bold text-white">
+                  <span data-counter="40" data-suffix="+">0+</span>
+                </dd>
               </div>
-              <div class="flex items-start gap-2">
-                <span class="mt-0.5 text-primary shrink-0"><i data-feather="globe" class="w-4 h-4"></i></span>
-                <div>
-                  <p class="font-semibold text-white">Web & hosting</p>
-                  <p class="text-slate-400 text-[11px] sm:text-xs">Design, build, and host</p>
-                </div>
+              <div>
+                <dt class="text-[11px] uppercase tracking-wider text-emerald-200/60">Clients</dt>
+                <dd class="mt-1 text-2xl font-bold text-white">
+                  <span data-counter="25" data-suffix="+">0+</span>
+                </dd>
               </div>
-            </div>
+            </dl>
           </div>
 
-          <!-- Visual / mini dashboard + logos -->
-          <div class="space-y-4">
-            <div class="relative">
-              <div class="absolute -inset-4 bg-gradient-to-tr from-red-500/25 via-red-500/5 to-orange-500/10 blur-3xl"></div>
-              <div class="relative rounded-2xl border border-neutral-800 bg-neutral-900/70 backdrop-blur p-6 shadow-2xl">
-                <div class="flex justify-between items-center mb-4">
-                  <div>
-                    <p class="text-xs text-slate-400 uppercase tracking-wide">Operations overview</p>
-                    <p class="text-sm font-semibold text-slate-100">SSD Control Panel</p>
-                  </div>
-                  <span class="inline-flex items-center gap-1 rounded-full bg-red-500/10 px-3 py-1 text-[11px] text-red-300">
-                    Healthy
-                    <span class="h-1.5 w-1.5 rounded-full bg-red-500"></span>
-                  </span>
-                </div>
-                <div class="grid grid-cols-2 gap-3 text-xs">
-                  <div class="rounded-xl border border-neutral-800 bg-black/70 p-3">
-                    <p class="text-slate-400 mb-1">Infrastructure</p>
-                    <p class="text-lg font-semibold text-red-300">47 systems</p>
-                    <p class="mt-1 text-[11px] text-slate-500">0 critical alerts</p>
-                  </div>
-                  <div class="rounded-xl border border-neutral-800 bg-black/70 p-3">
-                    <p class="text-slate-400 mb-1">Websites</p>
-                    <p class="text-lg font-semibold text-rose-300">12 online</p>
-                    <p class="mt-1 text-[11px] text-slate-500">AVG response 120 ms</p>
-                  </div>
-                  <div class="col-span-2 rounded-xl border border-neutral-800 bg-gradient-to-r from-black/80 to-neutral-900/60 p-3">
-                    <p class="text-slate-400 mb-1 text-xs">Security posture</p>
-                    <div class="flex items-center justify-between">
-                      <div class="flex gap-2">
-                        <span class="h-1.5 w-10 rounded-full bg-red-500/90"></span>
-                        <span class="h-1.5 w-10 rounded-full bg-red-500/70"></span>
-                        <span class="h-1.5 w-10 rounded-full bg-orange-500/70"></span>
-                      </div>
-                      <span class="text-[11px] text-slate-400">Patching & backups on</span>
-                    </div>
-                  </div>
-                </div>
-                <p class="mt-4 text-[11px] text-slate-500">
-                  One view of your cloud, network, endpoints, and web presence—managed by SSD IT Solutions.
-                </p>
-              </div>
-            </div>
+          <!-- Visual: animated control card -->
+          <div class="reveal relative" data-delay="200">
+            <div class="absolute -inset-6 bg-gradient-to-tr from-primary/30 via-emerald-500/15 to-primary/20 blur-3xl"></div>
 
-            <div class="hidden sm:block">
-              <p class="text-[11px] uppercase tracking-wide text-slate-500 mb-2">Trusted by teams that depend on IT</p>
-              <div class="flex flex-wrap gap-3 text-[11px] text-slate-400">
-                <span class="rounded-full border border-neutral-800 bg-black/60 px-3 py-1">Professional services</span>
-                <span class="rounded-full border border-neutral-800 bg-black/60 px-3 py-1">Finance & fintech</span>
-                <span class="rounded-full border border-neutral-800 bg-black/60 px-3 py-1">Healthcare</span>
-                <span class="rounded-full border border-neutral-800 bg-black/60 px-3 py-1">SaaS & startups</span>
+            <div data-tilt class="relative rounded-3xl gradient-border-animated bg-forest-900/80 backdrop-blur-xl p-6 shadow-glow-lg">
+              <div class="flex justify-between items-start mb-5">
+                <div class="flex items-center gap-3">
+                  <img src="assets/ssd-it-logo.png" alt="" class="h-9 w-9 rounded-lg ring-1 ring-white/10" />
+                  <div>
+                    <p class="text-[11px] text-emerald-200/60 uppercase tracking-[0.18em]">Operations</p>
+                    <p class="text-sm font-semibold text-white">SSD Control Center</p>
+                  </div>
+                </div>
+                <span class="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/15 px-3 py-1 text-[11px] text-emerald-300">
+                  <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                  All healthy
+                </span>
+              </div>
+
+              <div class="grid grid-cols-2 gap-3 text-xs">
+                <div class="rounded-xl border border-white/5 bg-forest-950/70 p-4">
+                  <p class="text-emerald-200/60 mb-1 uppercase tracking-wider text-[10px]">Infrastructure</p>
+                  <p class="text-2xl font-bold text-white">47</p>
+                  <p class="mt-1 text-[11px] text-slate-400">systems · 0 alerts</p>
+                </div>
+                <div class="rounded-xl border border-white/5 bg-forest-950/70 p-4">
+                  <p class="text-emerald-200/60 mb-1 uppercase tracking-wider text-[10px]">Websites</p>
+                  <p class="text-2xl font-bold text-white">12</p>
+                  <p class="mt-1 text-[11px] text-slate-400">avg 120 ms response</p>
+                </div>
+                <div class="col-span-2 rounded-xl border border-white/5 bg-gradient-to-br from-forest-950/80 to-forest-900/60 p-4">
+                  <div class="flex justify-between items-center mb-2">
+                    <p class="text-emerald-200/60 uppercase tracking-wider text-[10px]">Security posture</p>
+                    <span class="text-[11px] text-emerald-300">Patched · Backed up</span>
+                  </div>
+                  <div class="flex items-end gap-1 h-12">
+                    <div class="flex-1 rounded-sm bg-primary/80" style="height: 40%"></div>
+                    <div class="flex-1 rounded-sm bg-primary/70" style="height: 65%"></div>
+                    <div class="flex-1 rounded-sm bg-primary" style="height: 80%"></div>
+                    <div class="flex-1 rounded-sm bg-emerald-500/70" style="height: 55%"></div>
+                    <div class="flex-1 rounded-sm bg-emerald-500" style="height: 90%"></div>
+                    <div class="flex-1 rounded-sm bg-primary/60" style="height: 50%"></div>
+                    <div class="flex-1 rounded-sm bg-primary-300" style="height: 70%"></div>
+                    <div class="flex-1 rounded-sm bg-emerald-500/60" style="height: 60%"></div>
+                    <div class="flex-1 rounded-sm bg-primary-400" style="height: 85%"></div>
+                    <div class="flex-1 rounded-sm bg-emerald-400" style="height: 75%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-4 flex items-center justify-between text-[11px] text-slate-400">
+                <span class="inline-flex items-center gap-1.5"><span class="pulse-dot"></span> Live · monitored from Juba & Magwi</span>
+                <span>v2.0</span>
               </div>
             </div>
           </div>
@@ -149,161 +150,260 @@
       </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-16 sm:py-20 bg-black">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
-          <div>
-            <h2 class="text-2xl sm:text-3xl font-semibold text-white">IT solutions built for growth</h2>
-            <p class="mt-2 text-sm sm:text-base text-slate-400 max-w-xl">
-              From strategy to implementation, SSD IT Solutions delivers secure, scalable, and cost‑effective solutions.
+    <!-- =========================== TRUSTED BY (marquee) =========================== -->
+    <section class="border-y border-white/5 bg-forest-900/40 py-8">
+      <p class="text-center text-[11px] uppercase tracking-[0.22em] text-emerald-200/50 mb-5">
+        Trusted by teams that depend on IT
+      </p>
+      <div class="marquee">
+        <div class="marquee-track gap-12 px-6 text-slate-400 text-sm font-medium">
+          <span class="flex items-center gap-2"><i data-feather="globe" class="w-4 h-4 text-primary"></i> Jdiobe STEM Foundation</span>
+          <span class="flex items-center gap-2"><i data-feather="heart" class="w-4 h-4 text-primary"></i> Wolayo Child Restoration</span>
+          <span class="flex items-center gap-2"><i data-feather="map" class="w-4 h-4 text-primary"></i> Atlas Uganda Explorers</span>
+          <span class="flex items-center gap-2"><i data-feather="briefcase" class="w-4 h-4 text-primary"></i> EAI Consulting</span>
+          <span class="flex items-center gap-2"><i data-feather="globe" class="w-4 h-4 text-primary"></i> Jdiobe STEM Foundation</span>
+          <span class="flex items-center gap-2"><i data-feather="heart" class="w-4 h-4 text-primary"></i> Wolayo Child Restoration</span>
+          <span class="flex items-center gap-2"><i data-feather="map" class="w-4 h-4 text-primary"></i> Atlas Uganda Explorers</span>
+          <span class="flex items-center gap-2"><i data-feather="briefcase" class="w-4 h-4 text-primary"></i> EAI Consulting</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================== SERVICES =========================== -->
+    <section id="services" class="relative py-20 sm:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">
+          <div class="max-w-2xl">
+            <span class="eyebrow"><i data-feather="grid" class="w-3 h-3"></i> What we do</span>
+            <h2 class="mt-3 font-display text-3xl sm:text-4xl font-bold text-white">
+              IT solutions <span class="text-gradient">built for growth</span>
+            </h2>
+            <p class="mt-3 text-slate-300/80">
+              From strategy to implementation, we deliver secure, scalable, cost-effective solutions across the
+              full IT stack — bundled into a single, accountable partner.
             </p>
           </div>
-          <a href="services.html" class="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-red-400">
-            Explore all services
-            <i data-feather="arrow-right" class="w-4 h-4"></i>
+          <a href="services.html" class="btn-ghost self-start sm:self-end">
+            All services <i data-feather="arrow-right" class="w-4 h-4"></i>
           </a>
         </div>
 
         <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <article class="group rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 hover:border-primary hover:shadow-lg hover:shadow-red-500/30 transition">
-            <div class="flex items-center gap-3 mb-2">
-              <span class="flex h-9 w-9 items-center justify-center rounded-xl bg-red-500/10 text-primary"><i data-feather="headphones" class="w-4 h-4"></i></span>
-              <h3 class="text-lg font-semibold text-white">Managed IT Services</h3>
+          <!-- card template -->
+          <article class="reveal card group rounded-2xl border border-white/5 bg-forest-900/60 p-7" data-delay="100">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition">
+              <i data-feather="headphones" class="w-5 h-5"></i>
             </div>
-            <p class="mt-2 text-sm text-slate-300">
-              Proactive monitoring, patching, backup, and support to keep your systems healthy and your team productive.
+            <h3 class="mt-5 text-lg font-semibold text-white">Managed IT & Helpdesk</h3>
+            <p class="mt-2 text-sm text-slate-300/80">
+              Proactive monitoring, patching, backup and support so your systems stay healthy and your team stays productive.
             </p>
-            <ul class="mt-4 space-y-1 text-xs text-slate-200">
-              <li>• 24/7 monitoring & support</li>
-              <li>• Endpoint & server management</li>
-              <li>• Backup & disaster recovery</li>
+            <ul class="mt-4 space-y-1.5 text-xs text-slate-300">
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> 24/7 remote & on-site support</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Endpoint & server management</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Backup & disaster recovery</li>
             </ul>
           </article>
 
-          <article class="group rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 hover:border-primary hover:shadow-lg hover:shadow-red-500/30 transition">
-            <div class="flex items-center gap-3 mb-2">
-              <span class="flex h-9 w-9 items-center justify-center rounded-xl bg-red-500/10 text-primary"><i data-feather="cloud" class="w-4 h-4"></i></span>
-              <h3 class="text-lg font-semibold text-white">Cloud & Infrastructure</h3>
+          <article class="reveal card group rounded-2xl border border-white/5 bg-forest-900/60 p-7" data-delay="200">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition">
+              <i data-feather="cloud" class="w-5 h-5"></i>
             </div>
-            <p class="mt-2 text-sm text-slate-300">
-              Design, migrate, and optimize your cloud and hybrid environments for performance and reliability.
+            <h3 class="mt-5 text-lg font-semibold text-white">Cloud & Infrastructure</h3>
+            <p class="mt-2 text-sm text-slate-300/80">
+              Design, migrate and optimize cloud and hybrid environments for performance, reliability and cost control.
             </p>
-            <ul class="mt-4 space-y-1 text-xs text-slate-200">
-              <li>• Cloud architecture & migration</li>
-              <li>• Network design & security</li>
-              <li>• Cost optimization</li>
+            <ul class="mt-4 space-y-1.5 text-xs text-slate-300">
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Cloud architecture & migration</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Network design & security</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Cost optimization</li>
             </ul>
           </article>
 
-          <article class="group rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 hover:border-primary hover:shadow-lg hover:shadow-red-500/30 transition">
-            <div class="flex items-center gap-3 mb-2">
-              <span class="flex h-9 w-9 items-center justify-center rounded-xl bg-red-500/10 text-primary"><i data-feather="shield" class="w-4 h-4"></i></span>
-              <h3 class="text-lg font-semibold text-white">Cybersecurity</h3>
+          <article class="reveal card group rounded-2xl border border-white/5 bg-forest-900/60 p-7" data-delay="300">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition">
+              <i data-feather="shield" class="w-5 h-5"></i>
             </div>
-            <p class="mt-2 text-sm text-slate-300">
-              Protect your data and operations with layered security, best practices, and continuous monitoring.
+            <h3 class="mt-5 text-lg font-semibold text-white">Cybersecurity</h3>
+            <p class="mt-2 text-sm text-slate-300/80">
+              Protect your data and operations with layered defense, zero-trust principles and continuous monitoring.
             </p>
-            <ul class="mt-4 space-y-1 text-xs text-slate-200">
-              <li>• Security assessments</li>
-              <li>• Zero‑trust & access control</li>
-              <li>• Incident response planning</li>
+            <ul class="mt-4 space-y-1.5 text-xs text-slate-300">
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Security assessments</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Zero-trust & access control</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Incident response planning</li>
+            </ul>
+          </article>
+
+          <article class="reveal card group rounded-2xl border border-white/5 bg-forest-900/60 p-7" data-delay="200">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition">
+              <i data-feather="monitor" class="w-5 h-5"></i>
+            </div>
+            <h3 class="mt-5 text-lg font-semibold text-white">Web Design & Hosting</h3>
+            <p class="mt-2 text-sm text-slate-300/80">
+              Modern, secure, fast websites — fully managed from design and development to hosting, updates and monitoring.
+            </p>
+            <ul class="mt-4 space-y-1.5 text-xs text-slate-300">
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> UX-focused, mobile-first design</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Secure, high-performance hosting</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Maintenance, backups, monitoring</li>
+            </ul>
+          </article>
+
+          <article class="reveal card group rounded-2xl border border-white/5 bg-forest-900/60 p-7" data-delay="300">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition">
+              <i data-feather="pen-tool" class="w-5 h-5"></i>
+            </div>
+            <h3 class="mt-5 text-lg font-semibold text-white">Branding & Graphic Design</h3>
+            <p class="mt-2 text-sm text-slate-300/80">
+              Cohesive visual identity, marketing assets and brand-aligned graphics for digital and print.
+            </p>
+            <ul class="mt-4 space-y-1.5 text-xs text-slate-300">
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Logos & brand systems</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Pitch decks & social assets</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Campaign & UI design</li>
+            </ul>
+          </article>
+
+          <article class="reveal card group rounded-2xl border border-white/5 bg-forest-900/60 p-7" data-delay="400">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition">
+              <i data-feather="compass" class="w-5 h-5"></i>
+            </div>
+            <h3 class="mt-5 text-lg font-semibold text-white">IT Strategy & vCIO</h3>
+            <p class="mt-2 text-sm text-slate-300/80">
+              Turn IT into a strategic asset with a virtual CIO, technology roadmaps and quarterly planning.
+            </p>
+            <ul class="mt-4 space-y-1.5 text-xs text-slate-300">
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Roadmaps & budgeting</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Vendor & license management</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Quarterly business reviews</li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Companies & organizations we've worked with -->
-    <section id="partners" class="py-16 sm:py-20 bg-neutral-900">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-10">
-          <h2 class="text-2xl sm:text-3xl font-semibold text-white">Companies & organizations we've worked with</h2>
-          <p class="mt-2 text-sm sm:text-base text-slate-400 max-w-xl mx-auto">
-            We're proud to partner with organizations across sectors—from education and nonprofits to consulting and travel.
+    <!-- =========================== PROCESS =========================== -->
+    <section class="relative py-20 sm:py-24 bg-forest-900/40 border-y border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal max-w-2xl mb-14">
+          <span class="eyebrow"><i data-feather="settings" class="w-3 h-3"></i> Our process</span>
+          <h2 class="mt-3 font-display text-3xl sm:text-4xl font-bold text-white">
+            From <span class="text-gradient">discovery</span> to steady-state support
+          </h2>
+          <p class="mt-3 text-slate-300/80">
+            A simple, predictable engagement that adapts to your size and industry — without surprises.
+          </p>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-4">
+          <div class="reveal relative rounded-2xl border border-white/5 bg-forest-950/60 p-6" data-delay="100">
+            <div class="text-5xl font-display font-bold text-primary/20">01</div>
+            <h3 class="mt-2 text-base font-semibold text-white">Assess</h3>
+            <p class="mt-2 text-sm text-slate-300/80">Discovery workshop, environment audit and risk review.</p>
+          </div>
+          <div class="reveal relative rounded-2xl border border-white/5 bg-forest-950/60 p-6" data-delay="200">
+            <div class="text-5xl font-display font-bold text-primary/20">02</div>
+            <h3 class="mt-2 text-base font-semibold text-white">Design</h3>
+            <p class="mt-2 text-sm text-slate-300/80">A roadmap balancing quick wins with long-term resilience.</p>
+          </div>
+          <div class="reveal relative rounded-2xl border border-white/5 bg-forest-950/60 p-6" data-delay="300">
+            <div class="text-5xl font-display font-bold text-primary/20">03</div>
+            <h3 class="mt-2 text-base font-semibold text-white">Implement</h3>
+            <p class="mt-2 text-sm text-slate-300/80">Clear communication, minimal disruption, on-budget delivery.</p>
+          </div>
+          <div class="reveal relative rounded-2xl border border-white/5 bg-forest-950/60 p-6" data-delay="400">
+            <div class="text-5xl font-display font-bold text-primary/20">04</div>
+            <h3 class="mt-2 text-base font-semibold text-white">Support</h3>
+            <p class="mt-2 text-sm text-slate-300/80">Proactive monitoring, reporting and continuous improvement.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================== PARTNERS =========================== -->
+    <section id="partners" class="py-20 sm:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal text-center mb-12 max-w-2xl mx-auto">
+          <span class="eyebrow"><i data-feather="users" class="w-3 h-3"></i> Partners</span>
+          <h2 class="mt-3 font-display text-3xl sm:text-4xl font-bold text-white">
+            Organizations we've <span class="text-gradient">worked with</span>
+          </h2>
+          <p class="mt-3 text-slate-300/80">
+            From education and nonprofits to consulting and travel — proudly partnering across sectors.
           </p>
         </div>
 
         <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          <a href="https://jdiobestemfoundation.org" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-center gap-3 rounded-xl border border-neutral-700 bg-neutral-800/50 px-6 py-5 text-slate-200 transition hover:border-primary hover:bg-neutral-800 hover:text-white hover:shadow-lg hover:shadow-red-500/20">
-            <i data-feather="globe" class="w-5 h-5 text-primary shrink-0"></i>
-            <span class="text-sm font-medium text-center">Jdiobe STEM Foundation</span>
+          <a href="https://jdiobestemfoundation.org" target="_blank" rel="noopener noreferrer"
+             class="reveal card group flex flex-col items-center justify-center gap-3 rounded-2xl border border-white/5 bg-forest-900/60 p-6 text-center" data-delay="100">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition">
+              <i data-feather="globe" class="w-5 h-5"></i>
+            </div>
+            <span class="text-sm font-semibold text-white">Jdiobe STEM Foundation</span>
+            <span class="text-[11px] text-emerald-200/60">Education · STEM</span>
           </a>
-          <a href="https://wolayochildrestoration.org" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-center gap-3 rounded-xl border border-neutral-700 bg-neutral-800/50 px-6 py-5 text-slate-200 transition hover:border-primary hover:bg-neutral-800 hover:text-white hover:shadow-lg hover:shadow-red-500/20">
-            <i data-feather="globe" class="w-5 h-5 text-primary shrink-0"></i>
-            <span class="text-sm font-medium text-center">wolayo Child Restoration</span>
+          <a href="https://wolayochildrestoration.org" target="_blank" rel="noopener noreferrer"
+             class="reveal card group flex flex-col items-center justify-center gap-3 rounded-2xl border border-white/5 bg-forest-900/60 p-6 text-center" data-delay="200">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition">
+              <i data-feather="heart" class="w-5 h-5"></i>
+            </div>
+            <span class="text-sm font-semibold text-white">Wolayo Child Restoration</span>
+            <span class="text-[11px] text-emerald-200/60">Nonprofit</span>
           </a>
-          <a href="https://nelson211-0ss.github.io/Atlas-Uganda-Explorers/" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-center gap-3 rounded-xl border border-neutral-700 bg-neutral-800/50 px-6 py-5 text-slate-200 transition hover:border-primary hover:bg-neutral-800 hover:text-white hover:shadow-lg hover:shadow-red-500/20">
-            <i data-feather="globe" class="w-5 h-5 text-primary shrink-0"></i>
-            <span class="text-sm font-medium text-center">Atlas Uganda Explorers</span>
+          <a href="https://nelson211-0ss.github.io/Atlas-Uganda-Explorers/" target="_blank" rel="noopener noreferrer"
+             class="reveal card group flex flex-col items-center justify-center gap-3 rounded-2xl border border-white/5 bg-forest-900/60 p-6 text-center" data-delay="300">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition">
+              <i data-feather="map" class="w-5 h-5"></i>
+            </div>
+            <span class="text-sm font-semibold text-white">Atlas Uganda Explorers</span>
+            <span class="text-[11px] text-emerald-200/60">Travel · Tours</span>
           </a>
-          <a href="https://eaiconsultingfirm.com" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-center gap-3 rounded-xl border border-neutral-700 bg-neutral-800/50 px-6 py-5 text-slate-200 transition hover:border-primary hover:bg-neutral-800 hover:text-white hover:shadow-lg hover:shadow-red-500/20">
-            <i data-feather="globe" class="w-5 h-5 text-primary shrink-0"></i>
-            <span class="text-sm font-medium text-center">EAI Consulting</span>
+          <a href="https://eaiconsultingfirm.com" target="_blank" rel="noopener noreferrer"
+             class="reveal card group flex flex-col items-center justify-center gap-3 rounded-2xl border border-white/5 bg-forest-900/60 p-6 text-center" data-delay="400">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition">
+              <i data-feather="briefcase" class="w-5 h-5"></i>
+            </div>
+            <span class="text-sm font-semibold text-white">EAI Consulting</span>
+            <span class="text-[11px] text-emerald-200/60">Consulting</span>
           </a>
         </div>
-
-        <p class="mt-6 text-center text-xs text-slate-500">
-          Each link opens the client’s website in a new tab.
-        </p>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 sm:py-20 bg-black">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="max-w-xl">
-          <h2 class="text-2xl sm:text-3xl font-semibold text-white">Let’s talk about your IT strategy</h2>
-          <p class="mt-2 text-sm sm:text-base text-slate-300">
-            Share a bit about your environment and goals. Our team will respond within one business day.
-          </p>
-        </div>
+    <!-- =========================== CTA =========================== -->
+    <section class="relative py-20 sm:py-24">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal relative overflow-hidden rounded-3xl gradient-border-animated bg-gradient-to-br from-forest-900 via-forest-800 to-forest-950 p-10 sm:p-14 text-center">
+          <div aria-hidden="true" class="absolute -top-20 left-1/2 h-60 w-[34rem] -translate-x-1/2 rounded-full bg-primary/25 blur-3xl"></div>
+          <div aria-hidden="true" class="absolute -bottom-20 right-0 h-60 w-[26rem] rounded-full bg-emerald-500/15 blur-3xl"></div>
 
-        <form class="mt-8 grid gap-4">
-          <div class="grid gap-4 sm:grid-cols-2">
-            <div>
-              <label class="block text-xs font-medium text-slate-300 mb-1">Name</label>
-              <input type="text" class="w-full rounded-lg border border-neutral-700 bg-black/70 px-3 py-2 text-sm text-slate-100 placeholder-slate-500 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Jane Doe" />
-            </div>
-            <div>
-              <label class="block text-xs font-medium text-slate-300 mb-1">Company</label>
-              <input type="text" class="w-full rounded-lg border border-neutral-700 bg-black/70 px-3 py-2 text-sm text-slate-100 placeholder-slate-500 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Acme Inc." />
-            </div>
-          </div>
-
-          <div class="grid gap-4 sm:grid-cols-2">
-            <div>
-              <label class="block text-xs font-medium text-slate-300 mb-1">Email</label>
-              <input type="email" class="w-full rounded-lg border border-neutral-700 bg-black/70 px-3 py-2 text-sm text-slate-100 placeholder-slate-500 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" placeholder="you@company.com" />
-            </div>
-            <div>
-              <label class="block text-xs font-medium text-slate-300 mb-1">Phone (optional)</label>
-              <input type="tel" class="w-full rounded-lg border border-neutral-700 bg-black/70 px-3 py-2 text-sm text-slate-100 placeholder-slate-500 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" placeholder="+1 (555) 123‑4567" />
-            </div>
-          </div>
-
-          <div>
-            <label class="block text-xs font-medium text-slate-300 mb-1">What can we help you with?</label>
-            <textarea rows="4" class="w-full rounded-lg border border-neutral-700 bg-black/70 px-3 py-2 text-sm text-slate-100 placeholder-slate-500 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Tell us about your current challenges or upcoming projects."></textarea>
-          </div>
-
-          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mt-2">
-            <button type="submit" class="inline-flex items-center justify-center rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-white shadow-lg shadow-red-500/40 hover:bg-red-600 transition w-full sm:w-auto">
-              Submit Request
-            </button>
-            <p class="text-xs text-slate-400 max-w-sm">
-              By submitting, you agree to be contacted by SSD IT Solutions about services and offers. We respect your privacy.
+          <div class="relative">
+            <span class="eyebrow"><i data-feather="zap" class="w-3 h-3"></i> Ready when you are</span>
+            <h2 class="mt-4 font-display text-3xl sm:text-4xl font-bold text-white">
+              Let's talk about your <span class="text-gradient">IT strategy</span>
+            </h2>
+            <p class="mt-3 max-w-xl mx-auto text-slate-300/80">
+              Tell us about your environment and goals — we'll respond within one business day with a practical
+              starting point.
             </p>
+            <div class="mt-7 flex flex-wrap justify-center gap-3">
+              <a href="contact.html" class="btn-primary" data-magnetic>
+                <i data-feather="send" class="w-4 h-4"></i>
+                Start a conversation
+              </a>
+              <a href="mailto:nelsonochan@gmail.com" class="btn-ghost">
+                <i data-feather="mail" class="w-4 h-4"></i>
+                nelsonochan@gmail.com
+              </a>
+            </div>
           </div>
-        </form>
+        </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer gets injected here -->
   <div id="site-footer"></div>
-
-  <!-- Main JS -->
   <script src="assets/main.js"></script>
 </body>
 </html>

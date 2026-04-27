@@ -3,102 +3,165 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About – SSD IT Solutions</title>
-  <meta name="description" content="Learn more about SSD IT Solutions, our mission, and the team behind our IT solutions.">
+  <title>About — SSD-iT Solutions</title>
+  <meta name="description" content="Learn about SSD-iT Solutions, our mission, and the team behind our IT solutions." />
+  <link rel="icon" type="image/png" href="assets/ssd-it-logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#ef4444',
-            secondary: '#020617',
-            accent: '#f97316',
-          }
-        }
-      }
-    }
-  </script>
+  <script src="assets/theme.js"></script>
   <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
-<body class="bg-black text-slate-100 antialiased">
+<body class="bg-forest-950 text-slate-100 antialiased overflow-x-hidden">
 
   <div id="site-header"></div>
 
-  <main class="pt-28 pb-16 bg-gradient-to-b from-black via-neutral-900 to-black">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <h1 class="text-3xl sm:text-4xl font-semibold text-white mb-4">About SSD IT Solutions</h1>
-        <p class="text-sm sm:text-base text-slate-300 mb-6">
-          SSD IT Solutions was founded with one goal: to help businesses move faster and more securely
-          by simplifying complex IT. We combine deep technical expertise with a practical, partnership‑first
-          approach.
-        </p>
+  <main>
+    <!-- Hero -->
+    <section class="relative isolate overflow-hidden bg-tech pt-28 sm:pt-32 pb-16 sm:pb-20">
+      <div aria-hidden="true" class="absolute inset-0 bg-grid"></div>
+      <div aria-hidden="true" class="orb orb-1"></div>
+      <div aria-hidden="true" class="orb orb-2"></div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal max-w-3xl">
+          <span class="eyebrow"><i data-feather="info" class="w-3 h-3"></i> About us</span>
+          <h1 class="mt-4 font-display text-4xl sm:text-5xl font-bold text-white leading-tight">
+            We make enterprise-grade IT
+            <span class="text-gradient">accessible to growing teams</span>.
+          </h1>
+          <p class="mt-5 text-lg text-slate-300/85">
+            SSD-iT Solutions was founded with one goal: to help businesses move faster and more securely
+            by simplifying complex IT. We pair deep technical expertise with a partnership-first approach.
+          </p>
+        </div>
       </div>
+    </section>
 
-      <div class="grid gap-8 md:grid-cols-3 mt-4">
-        <section class="md:col-span-2 space-y-6">
-          <div class="rounded-2xl border border-neutral-800 bg-neutral-900/80 p-6">
-            <h2 class="text-xl font-semibold text-white mb-2">Our mission</h2>
-            <p class="text-sm text-slate-300">
-              We exist to make enterprise‑grade IT accessible to growing organizations. From cloud strategy
-              and security to day‑to‑day support, we design solutions that match your stage, budget,
-              and roadmap—without unnecessary complexity.
-            </p>
+    <!-- Values / mission -->
+    <section class="relative py-20 sm:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-8 md:grid-cols-3">
+        <article class="reveal card rounded-2xl border border-white/5 bg-forest-900/60 p-7" data-delay="100">
+          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary mb-4">
+            <i data-feather="target" class="w-5 h-5"></i>
           </div>
+          <h2 class="text-lg font-semibold text-white">Our mission</h2>
+          <p class="mt-2 text-sm text-slate-300/85">
+            Make secure, reliable, well-designed IT accessible to organizations of every size — without
+            unnecessary complexity or jargon.
+          </p>
+        </article>
 
-          <div class="rounded-2xl border border-neutral-800 bg-neutral-900/80 p-6">
-            <h2 class="text-xl font-semibold text-white mb-2">How we work</h2>
-            <ul class="mt-2 space-y-2 text-sm text-slate-300">
-              <li class="flex items-start gap-2"><span class="mt-0.5 text-primary shrink-0"><i data-feather="search" class="w-4 h-4"></i></span><span><span class="font-semibold text-primary">Assess</span> your current environment, risks, and goals.</span></li>
-              <li class="flex items-start gap-2"><span class="mt-0.5 text-primary shrink-0"><i data-feather="layout" class="w-4 h-4"></i></span><span><span class="font-semibold text-primary">Design</span> a roadmap that balances quick wins with long‑term resilience.</span></li>
-              <li class="flex items-start gap-2"><span class="mt-0.5 text-primary shrink-0"><i data-feather="tool" class="w-4 h-4"></i></span><span><span class="font-semibold text-primary">Implement</span> with clear communication and minimal disruption.</span></li>
-              <li class="flex items-start gap-2"><span class="mt-0.5 text-primary shrink-0"><i data-feather="refresh-cw" class="w-4 h-4"></i></span><span><span class="font-semibold text-primary">Support</span> with proactive monitoring and continuous improvement.</span></li>
+        <article class="reveal card rounded-2xl border border-white/5 bg-forest-900/60 p-7" data-delay="200">
+          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary mb-4">
+            <i data-feather="eye" class="w-5 h-5"></i>
+          </div>
+          <h2 class="text-lg font-semibold text-white">Our vision</h2>
+          <p class="mt-2 text-sm text-slate-300/85">
+            To be the IT partner of choice for purpose-driven organizations across East Africa and beyond —
+            known for clarity, craft, and care.
+          </p>
+        </article>
+
+        <article class="reveal card rounded-2xl border border-white/5 bg-forest-900/60 p-7" data-delay="300">
+          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary mb-4">
+            <i data-feather="heart" class="w-5 h-5"></i>
+          </div>
+          <h2 class="text-lg font-semibold text-white">Our values</h2>
+          <p class="mt-2 text-sm text-slate-300/85">
+            Honesty over hype. Outcomes over output. Resilience by design. Long-term partnership over
+            transactional contracts.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- How we work + sidebar -->
+    <section class="relative pb-20 sm:pb-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-10 lg:grid-cols-3">
+        <div class="lg:col-span-2 space-y-6">
+          <div class="reveal rounded-2xl border border-white/5 bg-forest-900/60 p-7">
+            <h2 class="text-xl font-semibold text-white mb-4">How we work</h2>
+            <ul class="grid sm:grid-cols-2 gap-4 text-sm text-slate-300/85">
+              <li class="flex items-start gap-3">
+                <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/10 text-primary shrink-0"><i data-feather="search" class="w-4 h-4"></i></span>
+                <span><span class="font-semibold text-white block">Assess</span>your environment, risks and goals.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/10 text-primary shrink-0"><i data-feather="layout" class="w-4 h-4"></i></span>
+                <span><span class="font-semibold text-white block">Design</span>a roadmap with quick wins and long-term resilience.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/10 text-primary shrink-0"><i data-feather="tool" class="w-4 h-4"></i></span>
+                <span><span class="font-semibold text-white block">Implement</span>with clear communication and minimal disruption.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/10 text-primary shrink-0"><i data-feather="refresh-cw" class="w-4 h-4"></i></span>
+                <span><span class="font-semibold text-white block">Support</span>with proactive monitoring and continuous improvement.</span>
+              </li>
             </ul>
           </div>
 
-          <div class="rounded-2xl border border-neutral-800 bg-neutral-900/80 p-6">
-            <h2 class="text-xl font-semibold text-white mb-2">Industries we serve</h2>
-            <p class="text-sm text-slate-300 mb-3">
-              We partner with organizations that rely on technology for daily operations and compliance:
+          <div class="reveal rounded-2xl border border-white/5 bg-forest-900/60 p-7" data-delay="100">
+            <h2 class="text-xl font-semibold text-white mb-4">Industries we serve</h2>
+            <p class="text-sm text-slate-300/85 mb-4">
+              We partner with organizations that rely on technology for daily operations and compliance.
             </p>
             <div class="flex flex-wrap gap-2 text-xs text-slate-200">
-              <span class="rounded-full bg-black/70 border border-neutral-800 px-3 py-1">Professional services</span>
-              <span class="rounded-full bg-black/70 border border-neutral-800 px-3 py-1">Finance & fintech</span>
-              <span class="rounded-full bg-black/70 border border-neutral-800 px-3 py-1">Healthcare</span>
-              <span class="rounded-full bg-black/70 border border-neutral-800 px-3 py-1">SaaS & startups</span>
-              <span class="rounded-full bg-black/70 border border-neutral-800 px-3 py-1">Manufacturing</span>
+              <span class="rounded-full bg-forest-950/70 border border-white/10 px-3 py-1.5">Education & STEM</span>
+              <span class="rounded-full bg-forest-950/70 border border-white/10 px-3 py-1.5">Nonprofits</span>
+              <span class="rounded-full bg-forest-950/70 border border-white/10 px-3 py-1.5">Consulting</span>
+              <span class="rounded-full bg-forest-950/70 border border-white/10 px-3 py-1.5">Travel & tourism</span>
+              <span class="rounded-full bg-forest-950/70 border border-white/10 px-3 py-1.5">Finance & fintech</span>
+              <span class="rounded-full bg-forest-950/70 border border-white/10 px-3 py-1.5">Healthcare</span>
+              <span class="rounded-full bg-forest-950/70 border border-white/10 px-3 py-1.5">SaaS & startups</span>
             </div>
           </div>
-        </section>
+        </div>
 
-        <aside class="space-y-4">
-          <div class="rounded-2xl border border-neutral-800 bg-neutral-900/90 p-5">
-            <h3 class="text-sm font-semibold text-white mb-2">Fast stats</h3>
-            <ul class="space-y-1 text-xs text-slate-300">
-              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary shrink-0"></i> 99.9%+ infrastructure uptime</li>
-              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary shrink-0"></i> 15+ years combined experience</li>
-              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary shrink-0"></i> 24/7 monitoring & alerting</li>
-              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary shrink-0"></i> Cloud, on‑prem, and hybrid</li>
+        <aside class="space-y-5">
+          <div class="reveal rounded-2xl border border-white/5 bg-forest-900/70 p-6" data-delay="200">
+            <h3 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Fast stats</h3>
+            <ul class="space-y-3 text-sm">
+              <li class="flex items-center justify-between">
+                <span class="text-slate-300">Infrastructure uptime</span>
+                <span class="font-bold text-primary"><span data-counter="99.9" data-suffix="%">0%</span></span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="text-slate-300">Years experience</span>
+                <span class="font-bold text-primary"><span data-counter="15" data-suffix="+">0+</span></span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="text-slate-300">Sites & apps shipped</span>
+                <span class="font-bold text-primary"><span data-counter="40" data-suffix="+">0+</span></span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="text-slate-300">Monitoring</span>
+                <span class="font-bold text-primary">24/7</span>
+              </li>
             </ul>
           </div>
 
-          <div class="rounded-2xl border border-neutral-800 bg-neutral-900/90 p-5">
+          <div class="reveal rounded-2xl gradient-border-animated bg-forest-900/70 p-6" data-delay="300">
             <h3 class="text-sm font-semibold text-white mb-2">Ready to talk?</h3>
-            <p class="text-xs text-slate-300 mb-3">
-              Tell us about your environment and we’ll propose a practical starting point.
+            <p class="text-xs text-slate-300/85 mb-4">
+              Tell us about your environment and we'll propose a practical starting point.
             </p>
-            <a href="index.html#contact" class="inline-flex w-full items-center justify-center rounded-full bg-primary px-4 py-2 text-xs font-semibold text-white hover:bg-red-600 transition shadow-md shadow-red-500/30">
+            <a href="contact.html" class="btn-primary w-full justify-center" data-magnetic>
+              <i data-feather="send" class="w-4 h-4"></i>
               Schedule a consultation
             </a>
           </div>
         </aside>
       </div>
-    </div>
+    </section>
   </main>
 
   <div id="site-footer"></div>
-
   <script src="assets/main.js"></script>
 </body>
 </html>
