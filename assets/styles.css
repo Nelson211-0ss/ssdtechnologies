@@ -44,25 +44,74 @@ body {
 
 .hero-photo__media {
   position: absolute;
-  inset: 0;
+  inset: -8%;
   z-index: 0;
   background-color: #061f10;
   background-image: url('hero-tech-bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  transform-origin: 50% 45%;
+  will-change: transform;
+  animation: heroPhotoMotion 28s linear infinite;
 }
 
 @media (min-width: 1024px) {
   .hero-photo__media {
     background-position: 55% 42%;
+    transform-origin: 55% 42%;
+    animation-duration: 32s;
+  }
+}
+
+/* 0% = 100% for a seamless loop (continuous motion, no alternate ping-pong) */
+@keyframes heroPhotoMotion {
+  0%,
+  100% {
+    transform: translate3d(0.45%, 0.12%, 0) scale(1.06);
+  }
+  33% {
+    transform: translate3d(-1.15%, 0.48%, 0) scale(1.11);
+  }
+  66% {
+    transform: translate3d(0.15%, -0.38%, 0) scale(1.085);
+  }
+}
+
+.hero-photo__sheen {
+  position: absolute;
+  inset: -18%;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    105deg,
+    transparent 0%,
+    transparent 42%,
+    rgba(255, 255, 255, 0.06) 50%,
+    transparent 58%,
+    transparent 100%
+  );
+  mix-blend-mode: soft-light;
+  opacity: 0.75;
+  animation: heroPhotoSheen 20s linear infinite;
+}
+
+@keyframes heroPhotoSheen {
+  0%,
+  100% {
+    transform: translate3d(-14%, 0, 0) skewX(-10deg);
+    opacity: 0.55;
+  }
+  50% {
+    transform: translate3d(14%, 0, 0) skewX(-10deg);
+    opacity: 0.88;
   }
 }
 
 .hero-photo__scrim {
   position: absolute;
   inset: 0;
-  z-index: 1;
+  z-index: 2;
   pointer-events: none;
   background:
     linear-gradient(
@@ -81,7 +130,11 @@ body {
     );
 }
 
-/* ---- Inner pages — hero tech photo + light wash (same asset as home) ---- */
+/* ---- Inner pages — hero tech photo + forest overlay (same asset as home) ---- */
+.page-hero {
+  background-color: #e8f0ea;
+}
+
 .page-hero-media {
   position: absolute;
   inset: 0;
@@ -99,14 +152,65 @@ body {
   }
 }
 
-.page-hero-scrim-light {
+/* Uniform forest tint over the photo — no gradients (keep strong so tint reads visibly). */
+.page-hero-forest {
   position: absolute;
   inset: 0;
   z-index: 1;
   pointer-events: none;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.94) 0%, rgba(255, 255, 255, 0.88) 45%, rgba(250, 252, 251, 0.93) 100%),
-    linear-gradient(115deg, rgba(255, 255, 255, 0.86) 0%, transparent 52%);
+  background-color: rgba(3, 19, 10, 0.78);
+}
+
+/* Keeps the forest tint readable; very light so dark green still shows through. */
+.page-hero-scrim-light {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background-color: rgba(251, 253, 252, 0.06);
+}
+
+/* Intro copy sitting on the forest photo (scoped — forms / white cards exclude this class) */
+.page-hero-lede h1.font-display.text-ink,
+.page-hero-lede .font-display.text-ink {
+  color: #ffffff;
+}
+
+.page-hero-lede .text-slate-600 {
+  color: rgba(248, 250, 249, 0.86);
+}
+
+.page-hero-lede .text-slate-500 {
+  color: rgba(237, 244, 240, 0.74);
+}
+
+.page-hero-lede .text-slate-700 {
+  color: rgba(241, 248, 243, 0.88);
+}
+
+.page-hero-lede .eyebrow {
+  border-color: rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.94);
+}
+
+.page-hero-lede .btn-ghost {
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  color: rgba(255, 255, 255, 0.94);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.page-hero-lede .btn-ghost:hover {
+  border-color: rgba(241, 90, 41, 0.55);
+  color: #ffffff;
+  background: rgba(241, 90, 41, 0.15);
+}
+
+.page-hero-lede a.hover\:text-primary {
+  color: rgba(255, 252, 250, 0.9);
+}
+.page-hero-lede a.hover\:text-primary:hover {
+  color: var(--primary);
 }
 
 .btn-ghost-hero {
@@ -438,5 +542,20 @@ select.form-input option {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+
+  .hero-photo__media,
+  .hero-photo__sheen {
+    animation: none !important;
+  }
+
+  .hero-photo__media {
+    transform: none;
+    will-change: auto;
+  }
+
+  .hero-photo__sheen {
+    opacity: 0;
+    transform: none;
   }
 }

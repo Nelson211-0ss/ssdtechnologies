@@ -24,15 +24,16 @@
 
   <div id="site-header"></div>
 
-  <main class="relative isolate overflow-hidden pt-28 sm:pt-32 pb-20">
+  <main class="page-hero relative isolate overflow-hidden pt-28 sm:pt-32 pb-20">
     <div class="page-hero-media" aria-hidden="true"></div>
+    <div class="page-hero-forest" aria-hidden="true"></div>
     <div class="page-hero-scrim-light" aria-hidden="true"></div>
-    <div aria-hidden="true" class="pointer-events-none absolute inset-0 z-[1] bg-grid opacity-[0.28]"></div>
-    <div aria-hidden="true" class="pointer-events-none absolute z-[1] w-[28rem] h-[28rem] -top-32 -right-28 glow-accent bg-primary/[0.06]"></div>
+    <div aria-hidden="true" class="pointer-events-none absolute inset-0 z-[3] bg-grid opacity-[0.28]"></div>
+    <div aria-hidden="true" class="pointer-events-none absolute z-[3] w-[28rem] h-[28rem] -top-32 -right-28 glow-accent bg-primary/[0.06]"></div>
 
-    <div class="relative z-[2] max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Header -->
-      <div class="reveal text-center max-w-2xl mx-auto">
+      <div class="reveal text-center max-w-2xl mx-auto page-hero-lede">
         <span class="eyebrow"><i data-feather="file-text" class="w-3 h-3"></i> Request a quote</span>
         <h1 class="mt-4 font-display text-4xl sm:text-5xl font-bold text-ink leading-tight">
           Get a <span class="text-gradient">clear quote</span> in 1–2 days.
@@ -183,7 +184,7 @@
       </div>
 
       <!-- Footer assurance line -->
-      <p class="reveal mt-8 text-center text-xs text-slate-500" data-delay="300">
+      <p class="reveal mt-8 text-center text-xs text-slate-500 page-hero-lede" data-delay="300">
         <i data-feather="lock" class="w-3 h-3 inline-block -mt-0.5"></i>
         Your details stay private — we only use them to prepare your quote.
       </p>
