@@ -1,30 +1,27 @@
-<header data-site-header class="fixed inset-x-0 top-0 z-40 border-b border-white/5 bg-forest-950/70 backdrop-blur-xl transition-all duration-300">
+<header data-site-header class="fixed inset-x-0 top-0 z-40 border-b border-white/10 bg-forest-950/95 backdrop-blur-xl transition-all duration-300">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex h-16 sm:h-20 items-center justify-between">
-      <!-- Logo (official wordmark, used as-is) -->
       <a href="index.html" aria-label="SSD-iT Solutions" class="flex items-center">
         <img src="assets/ssd-it-logo.png" alt="SSD-iT Solutions"
-             class="h-10 sm:h-12 w-auto" />
+             class="h-10 sm:h-12 w-auto max-h-[2.75rem] sm:max-h-[3.25rem]" />
       </a>
 
-      <!-- Desktop nav -->
-      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-200">
-        <a href="index.html" data-nav-link="index.html" class="relative hover:text-primary transition after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full">Home</a>
-        <a href="services.html" data-nav-link="services.html" class="relative hover:text-primary transition after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full">Services</a>
-        <a href="products.html" data-nav-link="products.html" class="relative hover:text-primary transition after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full">Products</a>
-        <a href="about.html" data-nav-link="about.html" class="relative hover:text-primary transition after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full">About</a>
-        <a href="contact.html" data-nav-link="contact.html" class="relative hover:text-primary transition after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full">Contact</a>
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-white/85">
+        <a href="index.html" data-nav-link="index.html" class="relative hover:text-white transition after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full">Home</a>
+        <a href="services.html" data-nav-link="services.html" class="relative hover:text-white transition after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full">Services</a>
+        <a href="products.html" data-nav-link="products.html" class="relative hover:text-white transition after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full">Products</a>
+        <a href="about.html" data-nav-link="about.html" class="relative hover:text-white transition after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full">About</a>
+        <a href="contact.html" data-nav-link="contact.html" class="relative hover:text-white transition after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full">Contact</a>
         <a href="quote.html" data-nav-link="quote.html" class="btn-primary !py-2 !px-4 text-xs">
           <i data-feather="send" class="w-3.5 h-3.5"></i>
           Get a quote
         </a>
       </nav>
 
-      <!-- Mobile: contact + menu -->
       <div class="flex items-center gap-2 md:hidden">
         <a href="contact.html" class="btn-primary !py-1.5 !px-3 text-xs">Contact</a>
         <button id="mobile-menu-toggle" aria-expanded="false" aria-controls="mobile-menu"
-                class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-white hover:border-primary hover:text-primary transition"
+                class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/20 text-white hover:border-primary hover:text-primary transition"
                 aria-label="Toggle navigation">
           <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16" />
@@ -34,9 +31,8 @@
     </div>
   </div>
 
-  <!-- Mobile menu -->
-  <div id="mobile-menu" class="md:hidden max-h-0 overflow-hidden border-t border-white/5 bg-forest-950/95 backdrop-blur transition-[max-height] duration-300" data-open="false">
-    <nav class="px-4 pb-4 pt-3 space-y-1 text-sm font-medium text-slate-200">
+  <div id="mobile-menu" class="md:hidden max-h-0 overflow-hidden border-t border-white/10 bg-forest-900 transition-[max-height] duration-300" data-open="false">
+    <nav class="px-4 pb-4 pt-3 space-y-1 text-sm font-medium text-white/90">
       <a href="index.html" class="flex items-center gap-2 rounded-lg px-3 py-2.5 hover:bg-white/5 hover:text-primary transition"><i data-feather="home" class="w-4 h-4"></i> Home</a>
       <a href="services.html" class="flex items-center gap-2 rounded-lg px-3 py-2.5 hover:bg-white/5 hover:text-primary transition"><i data-feather="layers" class="w-4 h-4"></i> Services</a>
       <a href="products.html" class="flex items-center gap-2 rounded-lg px-3 py-2.5 hover:bg-white/5 hover:text-primary transition"><i data-feather="grid" class="w-4 h-4"></i> Products</a>
@@ -50,7 +46,7 @@
 
 <style>
   header[data-site-header].is-scrolled {
-    background: rgba(3, 19, 10, 0.92);
-    box-shadow: 0 10px 30px -20px rgba(0,0,0,.6);
+    background: rgba(3, 19, 10, 0.98);
+    box-shadow: 0 12px 40px -20px rgba(0, 0, 0, 0.45);
   }
 </style>

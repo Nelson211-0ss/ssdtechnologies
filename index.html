@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SSD-iT Solutions — Smart, Secure, Scalable IT</title>
-  <meta name="description" content="SSD-iT Solutions designs, secures and runs modern IT — cloud, networks, devices, websites and brand — for growing businesses." />
+  <title>SSD-iT Solutions — Innovative Digital Solutions</title>
+  <meta name="description" content="SSD-iT Solutions delivers smart, scalable digital solutions — websites, custom software, IT consultancy and AI systems — for businesses, organisations and startups." />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
   <link rel="apple-touch-icon" href="assets/favicon.png" />
@@ -13,285 +13,232 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Tailwind + theme -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="assets/theme.js"></script>
   <script src="https://unpkg.com/feather-icons"></script>
   <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="preload" href="assets/hero-tech-bg.jpg" as="image" />
 </head>
-<body class="bg-forest-950 text-slate-100 antialiased overflow-x-hidden">
+<body class="bg-white text-slate-600 antialiased overflow-x-hidden">
 
   <div id="site-header"></div>
 
   <main>
     <!-- =========================== HERO =========================== -->
-    <section class="relative isolate overflow-hidden bg-tech min-h-[88vh] flex items-center pt-28 sm:pt-32 pb-20">
-      <div aria-hidden="true" class="absolute inset-0 bg-grid"></div>
-      <div aria-hidden="true" class="glow-accent w-[36rem] h-[36rem] -top-40 -left-32 bg-primary/15"></div>
-      <div aria-hidden="true" class="glow-accent w-[28rem] h-[28rem] -bottom-32 -right-24 bg-emerald-500/10"></div>
+    <!-- Hero: full-bleed tech photo (assets/hero-tech-bg.jpg) + scrim — no grid / fly-in -->
+    <section class="hero-photo relative isolate overflow-hidden min-h-[min(82vh,780px)] sm:min-h-[min(85vh,820px)] flex flex-col pt-[5.25rem] sm:pt-28 lg:pt-32 pb-10 sm:pb-12 lg:pb-14">
+      <div class="hero-photo__media" aria-hidden="true"></div>
+      <div class="hero-photo__scrim" aria-hidden="true"></div>
 
-      <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
-        <div class="reveal flex justify-center">
-          <span class="eyebrow">
-            <span class="pulse-dot"></span>
-            Smart · Secure · Scalable IT
-          </span>
+      <div class="relative z-[2] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex-1 flex flex-col justify-center">
+        <div class="relative w-full max-w-[34rem] lg:max-w-[36rem] text-left space-y-5 sm:space-y-6">
+              <div>
+                <span class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.07] backdrop-blur-md px-3.5 py-1.5 text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.14em] text-white/88 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)]">
+                  <span class="h-2 w-2 shrink-0 rounded-full bg-primary shadow-[0_0_12px_-1px_rgba(241,90,41,0.85)]" aria-hidden="true"></span>
+                  SSD-iT Solutions
+                </span>
+              </div>
+
+              <h1 class="font-display text-[1.85rem] leading-[1.12] sm:text-4xl sm:leading-[1.1] lg:text-[2.5rem] xl:text-[2.75rem] font-bold tracking-[-0.02em]">
+                <span class="block text-white drop-shadow-[0_2px_28px_rgba(0,0,0,0.35)]">Innovative digital solutions</span>
+                <span class="block mt-2 sm:mt-2.5">
+                  <span class="text-white/90 drop-shadow-[0_2px_28px_rgba(0,0,0,0.35)]">for </span>
+                  <span class="relative inline-block">
+                    <span class="text-gradient relative z-[1]">modern business</span>
+                    <span class="absolute inset-x-0 -bottom-1 h-[0.62rem] rounded-full bg-primary/25 blur-2xl -rotate-[1deg] pointer-events-none" aria-hidden="true"></span>
+                  </span>
+                </span>
+              </h1>
+
+              <p class="max-w-md text-[15px] sm:text-[1.0625rem] text-white/70 leading-[1.55]">
+                Websites, custom software, IT consultancy and AI—built for teams that want clarity and room to grow.
+              </p>
+
+              <div class="flex flex-wrap gap-3 sm:gap-4 items-center pt-0.5">
+                <a href="contact.html" class="btn-primary shadow-[0_8px_30px_-6px_rgba(241,90,41,0.55)]">
+                  <i data-feather="zap" class="w-4 h-4"></i>
+                  Get started
+                </a>
+                <a href="services.html" class="btn-ghost-hero">
+                  Services
+                  <i data-feather="arrow-right" class="w-4 h-4"></i>
+                </a>
+              </div>
         </div>
 
-        <h1 class="reveal mt-6 font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.05] tracking-tight text-white" data-delay="100">
-          Modern IT for businesses
-          <span class="block text-gradient mt-2">that can't afford downtime.</span>
-        </h1>
-
-        <p class="reveal mx-auto mt-6 max-w-2xl text-base sm:text-lg text-slate-300/90" data-delay="200">
-          <span class="font-semibold text-white">SSD-iT Solutions</span> designs, secures and runs your IT —
-          from <span class="text-emerald-300">cloud</span> and <span class="text-emerald-300">networks</span> to
-          <span class="text-primary-300">devices</span>, <span class="text-primary-300">websites</span> and brand —
-          so your team stays fast, available and protected.
-        </p>
-
-        <div class="reveal mt-9 flex flex-wrap justify-center gap-3" data-delay="300">
-          <a href="contact.html" class="btn-primary">
-            <i data-feather="zap" class="w-4 h-4"></i>
-            Book a free assessment
+        <div class="mt-8 sm:mt-10 flex justify-start text-white/38">
+          <a href="#services" class="group inline-flex flex-col items-start gap-2 text-[10px] uppercase tracking-[0.22em] hover:text-primary transition-colors" aria-label="Scroll to services">
+            <span class="opacity-80">Next</span>
+            <span class="flex h-10 w-10 items-center justify-center rounded-full border border-white/14 bg-white/5 backdrop-blur-md group-hover:border-primary/50 group-hover:bg-primary/15 transition-all">
+              <i data-feather="chevron-down" class="w-4 h-4 group-hover:translate-y-0.5 transition-transform"></i>
+            </span>
           </a>
-          <a href="services.html" class="btn-ghost">
-            Explore services
-            <i data-feather="arrow-right" class="w-4 h-4"></i>
-          </a>
-        </div>
-
-        <!-- KPI strip -->
-        <dl class="reveal mt-14 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl mx-auto" data-delay="400">
-          <div class="rounded-2xl border border-white/5 bg-forest-900/40 backdrop-blur px-4 py-5">
-            <dt class="text-[11px] uppercase tracking-wider text-emerald-200/60">Uptime</dt>
-            <dd class="mt-1 text-2xl font-bold text-white">
-              <span data-counter="99.98" data-suffix="%">0%</span>
-            </dd>
-          </div>
-          <div class="rounded-2xl border border-white/5 bg-forest-900/40 backdrop-blur px-4 py-5">
-            <dt class="text-[11px] uppercase tracking-wider text-emerald-200/60">Monitoring</dt>
-            <dd class="mt-1 text-2xl font-bold text-white">24/7</dd>
-          </div>
-          <div class="rounded-2xl border border-white/5 bg-forest-900/40 backdrop-blur px-4 py-5">
-            <dt class="text-[11px] uppercase tracking-wider text-emerald-200/60">Sites delivered</dt>
-            <dd class="mt-1 text-2xl font-bold text-white">
-              <span data-counter="40" data-suffix="+">0+</span>
-            </dd>
-          </div>
-          <div class="rounded-2xl border border-white/5 bg-forest-900/40 backdrop-blur px-4 py-5">
-            <dt class="text-[11px] uppercase tracking-wider text-emerald-200/60">Clients</dt>
-            <dd class="mt-1 text-2xl font-bold text-white">
-              <span data-counter="25" data-suffix="+">0+</span>
-            </dd>
-          </div>
-        </dl>
-
-        <a href="#services" class="reveal mt-12 inline-flex flex-col items-center gap-1 text-[11px] uppercase tracking-[0.22em] text-emerald-200/50 hover:text-primary transition" data-delay="500">
-          Scroll
-          <i data-feather="chevron-down" class="w-4 h-4"></i>
-        </a>
-      </div>
-    </section>
-
-    <!-- =========================== TRUSTED BY (marquee) =========================== -->
-    <section class="border-y border-white/5 bg-forest-900/40 py-8">
-      <p class="text-center text-[11px] uppercase tracking-[0.22em] text-emerald-200/50 mb-5">
-        Trusted by teams that depend on IT
-      </p>
-      <div class="marquee">
-        <div class="marquee-track gap-12 px-6 text-slate-400 text-sm font-medium">
-          <span class="flex items-center gap-2"><i data-feather="briefcase" class="w-4 h-4 text-primary"></i> EAI Consulting</span>
-          <span class="flex items-center gap-2"><i data-feather="compass" class="w-4 h-4 text-primary"></i> Honzi Tours &amp; Travel</span>
-          <span class="flex items-center gap-2"><i data-feather="book-open" class="w-4 h-4 text-primary"></i> Jdiobe STEM Foundation</span>
-          <span class="flex items-center gap-2"><i data-feather="heart" class="w-4 h-4 text-primary"></i> Wolayo Child Restoration</span>
-          <span class="flex items-center gap-2"><i data-feather="map" class="w-4 h-4 text-primary"></i> Atlas Uganda Explorers</span>
-          <span class="flex items-center gap-2"><i data-feather="award" class="w-4 h-4 text-primary"></i> SSD-ACMIS · Schools</span>
-          <span class="flex items-center gap-2"><i data-feather="briefcase" class="w-4 h-4 text-primary"></i> EAI Consulting</span>
-          <span class="flex items-center gap-2"><i data-feather="compass" class="w-4 h-4 text-primary"></i> Honzi Tours &amp; Travel</span>
-          <span class="flex items-center gap-2"><i data-feather="book-open" class="w-4 h-4 text-primary"></i> Jdiobe STEM Foundation</span>
-          <span class="flex items-center gap-2"><i data-feather="heart" class="w-4 h-4 text-primary"></i> Wolayo Child Restoration</span>
-          <span class="flex items-center gap-2"><i data-feather="map" class="w-4 h-4 text-primary"></i> Atlas Uganda Explorers</span>
-          <span class="flex items-center gap-2"><i data-feather="award" class="w-4 h-4 text-primary"></i> SSD-ACMIS · Schools</span>
         </div>
       </div>
     </section>
 
-    <!-- =========================== SERVICES =========================== -->
-    <section id="services" class="relative py-20 sm:py-24">
+    <!-- =========================== SERVICES (bento) =========================== -->
+    <section id="services" class="relative py-20 sm:py-24 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="reveal flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">
+        <div class="reveal flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 lg:gap-10 mb-12 lg:mb-14">
           <div class="max-w-2xl">
             <span class="eyebrow"><i data-feather="grid" class="w-3 h-3"></i> What we do</span>
-            <h2 class="mt-3 font-display text-3xl sm:text-4xl font-bold text-white">
-              IT solutions <span class="text-gradient">built for growth</span>
+            <h2 class="mt-4 font-display text-3xl sm:text-4xl lg:text-[2.65rem] font-bold text-ink leading-tight">
+              Smart, scalable <span class="text-gradient">digital solutions.</span>
             </h2>
-            <p class="mt-3 text-slate-300/80">
-              From strategy to implementation, we deliver secure, scalable, cost-effective solutions across the
-              full IT stack — bundled into a single, accountable partner.
+            <p class="mt-4 text-slate-600 text-[15px] sm:text-base leading-relaxed">
+              Websites, bespoke software, IT consultancy and AI systems — built so your organisation can operate with clarity and room to grow.
             </p>
           </div>
-          <a href="services.html" class="btn-ghost self-start sm:self-end">
+          <a href="services.html" class="btn-primary self-start lg:self-end shrink-0">
             All services <i data-feather="arrow-right" class="w-4 h-4"></i>
           </a>
         </div>
 
-        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <!-- card template -->
-          <article class="reveal card group rounded-2xl border border-white/5 bg-forest-900/60 p-7" data-delay="100">
-            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition">
-              <i data-feather="headphones" class="w-5 h-5"></i>
+        <div class="reveal grid grid-cols-1 lg:grid-cols-12 gap-5 lg:gap-6" data-delay="100">
+          <aside class="lg:col-span-4 flex flex-col gap-5">
+            <div class="rounded-3xl bg-forest-950 text-white p-7 sm:p-8 flex flex-col flex-1 min-h-[260px] border border-white/10 shadow-[0_24px_50px_-24px_rgba(3,19,10,0.45)]">
+              <p class="text-xs font-semibold uppercase tracking-[0.18em] text-primary">Why SSD-iT</p>
+              <p class="mt-4 font-display text-xl sm:text-2xl font-semibold leading-snug">One partner from idea to shipped software.</p>
+              <ul class="mt-5 space-y-2.5 text-sm text-white/80 flex-1">
+                <li class="flex gap-2"><i data-feather="check-circle" class="w-4 h-4 shrink-0 text-accent mt-0.5"></i> Product-minded delivery — no buzzword roadmap</li>
+                <li class="flex gap-2"><i data-feather="check-circle" class="w-4 h-4 shrink-0 text-accent mt-0.5"></i> Technical depth across web, apps and infrastructure</li>
+                <li class="flex gap-2"><i data-feather="check-circle" class="w-4 h-4 shrink-0 text-accent mt-0.5"></i> Clear communication and pragmatic timelines</li>
+              </ul>
+              <a href="contact.html" class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-white hover:text-primary transition">
+                Book a discovery call <i data-feather="arrow-right" class="w-4 h-4"></i>
+              </a>
             </div>
-            <h3 class="mt-5 text-lg font-semibold text-white">Managed IT & Helpdesk</h3>
-            <p class="mt-2 text-sm text-slate-300/80">
-              Proactive monitoring, patching, backup and support so your systems stay healthy and your team stays productive.
+          </aside>
+
+          <div class="lg:col-span-8 grid sm:grid-cols-2 gap-5 lg:gap-6">
+          <article class="card group rounded-2xl border border-black/[0.06] bg-surface-muted/50 hover:bg-white p-6 sm:p-7" data-delay="150">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition">
+              <i data-feather="layout" class="w-5 h-5"></i>
+            </div>
+            <h3 class="mt-5 text-lg font-semibold text-ink">Website Development</h3>
+            <p class="mt-2 text-sm text-slate-600">
+              Business, e-commerce, portfolio, and corporate websites — fast, secure and built around your objectives.
             </p>
-            <ul class="mt-4 space-y-1.5 text-xs text-slate-300">
-              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> 24/7 remote & on-site support</li>
-              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Endpoint & server management</li>
-              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Backup & disaster recovery</li>
+            <ul class="mt-4 space-y-1.5 text-xs text-slate-600">
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> UX-led, mobile-first layouts</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> E-commerce &amp; integrations</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Hosting, maintenance &amp; performance tuning</li>
             </ul>
           </article>
 
-          <article class="reveal card group rounded-2xl border border-white/5 bg-forest-900/60 p-7" data-delay="200">
+          <article class="card group rounded-2xl border border-black/[0.06] bg-surface-muted/50 hover:bg-white p-6 sm:p-7" data-delay="200">
             <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition">
-              <i data-feather="cloud" class="w-5 h-5"></i>
+              <i data-feather="code" class="w-5 h-5"></i>
             </div>
-            <h3 class="mt-5 text-lg font-semibold text-white">Cloud & Infrastructure</h3>
-            <p class="mt-2 text-sm text-slate-300/80">
-              Design, migrate and optimize cloud and hybrid environments for performance, reliability and cost control.
+            <h3 class="mt-5 text-lg font-semibold text-ink">Software Development</h3>
+            <p class="mt-2 text-sm text-slate-600">
+              Custom systems, web apps, mobile platforms &amp; automation — tailored workflows instead of spreadsheets.
             </p>
-            <ul class="mt-4 space-y-1.5 text-xs text-slate-300">
-              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Cloud architecture & migration</li>
-              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Network design & security</li>
-              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Cost optimization</li>
+            <ul class="mt-4 space-y-1.5 text-xs text-slate-600">
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Custom web apps &amp; APIs</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Mobile-ready experiences</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Process automation &amp; integrations</li>
             </ul>
           </article>
 
-          <article class="reveal card group rounded-2xl border border-white/5 bg-forest-900/60 p-7" data-delay="300">
+          <article class="card group rounded-2xl border border-black/[0.06] bg-surface-muted/50 hover:bg-white p-6 sm:p-7" data-delay="300">
             <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition">
-              <i data-feather="shield" class="w-5 h-5"></i>
+              <i data-feather="message-circle" class="w-5 h-5"></i>
             </div>
-            <h3 class="mt-5 text-lg font-semibold text-white">Cybersecurity</h3>
-            <p class="mt-2 text-sm text-slate-300/80">
-              Protect your data and operations with layered defense, zero-trust principles and continuous monitoring.
+            <h3 class="mt-5 text-lg font-semibold text-ink">IT Consultancy</h3>
+            <p class="mt-2 text-sm text-slate-600">
+              Digital transformation, system planning &amp; technical support — pragmatic advice anchored in your ops reality.
             </p>
-            <ul class="mt-4 space-y-1.5 text-xs text-slate-300">
-              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Security assessments</li>
-              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Zero-trust & access control</li>
-              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Incident response planning</li>
+            <ul class="mt-4 space-y-1.5 text-xs text-slate-600">
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Roadmaps &amp; architecture guidance</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Vendor-neutral recommendations</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Hands-on support when you need it</li>
             </ul>
           </article>
 
-          <article class="reveal card group rounded-2xl border border-white/5 bg-forest-900/60 p-7" data-delay="200">
+          <article class="card group rounded-2xl border border-black/[0.06] bg-surface-muted/50 hover:bg-white p-6 sm:p-7" data-delay="400">
             <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition">
-              <i data-feather="monitor" class="w-5 h-5"></i>
+              <i data-feather="cpu" class="w-5 h-5"></i>
             </div>
-            <h3 class="mt-5 text-lg font-semibold text-white">Web Design & Hosting</h3>
-            <p class="mt-2 text-sm text-slate-300/80">
-              Modern, secure, fast websites — fully managed from design and development to hosting, updates and monitoring.
+            <h3 class="mt-5 text-lg font-semibold text-ink">AI Software Systems</h3>
+            <p class="mt-2 text-sm text-slate-600">
+              AI-powered automation, data-driven solutions &amp; analytics — responsibly applied where they move the needle.
             </p>
-            <ul class="mt-4 space-y-1.5 text-xs text-slate-300">
-              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> UX-focused, mobile-first design</li>
-              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Secure, high-performance hosting</li>
-              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Maintenance, backups, monitoring</li>
+            <ul class="mt-4 space-y-1.5 text-xs text-slate-600">
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Intelligent automation pipelines</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Insight dashboards &amp; reporting</li>
+              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Data-ready foundations for scaling</li>
             </ul>
           </article>
-
-          <article class="reveal card group rounded-2xl border border-white/5 bg-forest-900/60 p-7" data-delay="300">
-            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition">
-              <i data-feather="pen-tool" class="w-5 h-5"></i>
-            </div>
-            <h3 class="mt-5 text-lg font-semibold text-white">Branding & Graphic Design</h3>
-            <p class="mt-2 text-sm text-slate-300/80">
-              Cohesive visual identity, marketing assets and brand-aligned graphics for digital and print.
-            </p>
-            <ul class="mt-4 space-y-1.5 text-xs text-slate-300">
-              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Logos & brand systems</li>
-              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Pitch decks & social assets</li>
-              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Campaign & UI design</li>
-            </ul>
-          </article>
-
-          <article class="reveal card group rounded-2xl border border-white/5 bg-forest-900/60 p-7" data-delay="400">
-            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition">
-              <i data-feather="compass" class="w-5 h-5"></i>
-            </div>
-            <h3 class="mt-5 text-lg font-semibold text-white">IT Strategy & vCIO</h3>
-            <p class="mt-2 text-sm text-slate-300/80">
-              Turn IT into a strategic asset with a virtual CIO, technology roadmaps and quarterly planning.
-            </p>
-            <ul class="mt-4 space-y-1.5 text-xs text-slate-300">
-              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Roadmaps & budgeting</li>
-              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Vendor & license management</li>
-              <li class="flex items-center gap-2"><i data-feather="check" class="w-3.5 h-3.5 text-primary"></i> Quarterly business reviews</li>
-            </ul>
-          </article>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- =========================== PROCESS =========================== -->
-    <section class="relative py-20 sm:py-24 bg-forest-900/40 border-y border-white/5">
+    <!-- =========================== PROCESS (timeline) =========================== -->
+    <section class="relative py-20 sm:py-24 bg-surface-muted border-y border-black/[0.06] overflow-hidden">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="reveal max-w-2xl mb-14">
+        <div class="reveal max-w-2xl mb-14 lg:mb-16">
           <span class="eyebrow"><i data-feather="settings" class="w-3 h-3"></i> Our process</span>
-          <h2 class="mt-3 font-display text-3xl sm:text-4xl font-bold text-white">
-            From <span class="text-gradient">discovery</span> to steady-state support
+          <h2 class="mt-4 font-display text-3xl sm:text-4xl font-bold text-ink leading-tight">
+            A straight line from <span class="text-gradient">first call</span> to run-state.
           </h2>
-          <p class="mt-3 text-slate-300/80">
-            A simple, predictable engagement that adapts to your size and industry — without surprises.
+          <p class="mt-4 text-slate-600">
+            No mystery phases — you always know what happens next and who owns it.
           </p>
         </div>
 
-        <div class="grid gap-6 md:grid-cols-4">
-          <div class="reveal relative rounded-2xl border border-white/5 bg-forest-950/60 p-6" data-delay="100">
-            <div class="text-5xl font-display font-bold text-primary/20">01</div>
-            <h3 class="mt-2 text-base font-semibold text-white">Assess</h3>
-            <p class="mt-2 text-sm text-slate-300/80">Discovery workshop, environment audit and risk review.</p>
-          </div>
-          <div class="reveal relative rounded-2xl border border-white/5 bg-forest-950/60 p-6" data-delay="200">
-            <div class="text-5xl font-display font-bold text-primary/20">02</div>
-            <h3 class="mt-2 text-base font-semibold text-white">Design</h3>
-            <p class="mt-2 text-sm text-slate-300/80">A roadmap balancing quick wins with long-term resilience.</p>
-          </div>
-          <div class="reveal relative rounded-2xl border border-white/5 bg-forest-950/60 p-6" data-delay="300">
-            <div class="text-5xl font-display font-bold text-primary/20">03</div>
-            <h3 class="mt-2 text-base font-semibold text-white">Implement</h3>
-            <p class="mt-2 text-sm text-slate-300/80">Clear communication, minimal disruption, on-budget delivery.</p>
-          </div>
-          <div class="reveal relative rounded-2xl border border-white/5 bg-forest-950/60 p-6" data-delay="400">
-            <div class="text-5xl font-display font-bold text-primary/20">04</div>
-            <h3 class="mt-2 text-base font-semibold text-white">Support</h3>
-            <p class="mt-2 text-sm text-slate-300/80">Proactive monitoring, reporting and continuous improvement.</p>
+        <div class="relative">
+          <div class="hidden lg:block absolute top-7 left-[8%] right-[8%] h-px bg-gradient-to-r from-transparent via-primary/25 to-transparent pointer-events-none"></div>
+          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4 lg:gap-6">
+            <div class="reveal relative rounded-2xl border border-black/[0.06] bg-white p-7 pt-10" data-delay="100">
+              <span class="absolute -top-px left-7 flex h-14 w-14 -translate-y-1/2 items-center justify-center rounded-2xl bg-forest-950 text-sm font-bold font-display text-white shadow-lg ring-4 ring-surface-muted">01</span>
+              <h3 class="mt-2 text-lg font-semibold text-ink">Assess</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-relaxed">Discovery workshop, environment audit and honest risk review.</p>
+            </div>
+            <div class="reveal relative rounded-2xl border border-black/[0.06] bg-white p-7 pt-10" data-delay="200">
+              <span class="absolute -top-px left-7 flex h-14 w-14 -translate-y-1/2 items-center justify-center rounded-2xl bg-forest-950 text-sm font-bold font-display text-white shadow-lg ring-4 ring-surface-muted">02</span>
+              <h3 class="mt-2 text-lg font-semibold text-ink">Design</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-relaxed">Prioritized roadmap balancing quick wins with long-term resilience.</p>
+            </div>
+            <div class="reveal relative rounded-2xl border border-black/[0.06] bg-white p-7 pt-10" data-delay="300">
+              <span class="absolute -top-px left-7 flex h-14 w-14 -translate-y-1/2 items-center justify-center rounded-2xl bg-forest-950 text-sm font-bold font-display text-white shadow-lg ring-4 ring-surface-muted">03</span>
+              <h3 class="mt-2 text-lg font-semibold text-ink">Implement</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-relaxed">Clear communication, minimal disruption, on-scope delivery.</p>
+            </div>
+            <div class="reveal relative rounded-2xl border border-black/[0.06] bg-white p-7 pt-10" data-delay="400">
+              <span class="absolute -top-px left-7 flex h-14 w-14 -translate-y-1/2 items-center justify-center rounded-2xl bg-forest-900 text-sm font-bold font-display text-white shadow-lg ring-4 ring-primary/30 ring-offset-4 ring-offset-surface-muted">04</span>
+              <h3 class="mt-2 text-lg font-semibold text-ink">Support</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-relaxed">Proactive monitoring, reporting and iterative improvement.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- =========================== SSD-ACMIS SPOTLIGHT =========================== -->
-    <section id="ssd-acmis" class="relative py-20 sm:py-24">
-      <div aria-hidden="true" class="pointer-events-none absolute inset-0 bg-grid opacity-25"></div>
-      <div aria-hidden="true" class="pointer-events-none absolute -top-24 -right-24 h-72 w-[36rem] rounded-full bg-primary/15 blur-3xl"></div>
-      <div aria-hidden="true" class="pointer-events-none absolute -bottom-24 -left-24 h-72 w-[36rem] rounded-full bg-emerald-500/10 blur-3xl"></div>
-
+    <section id="ssd-acmis" class="relative py-16 sm:py-24 bg-forest-950">
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="reveal max-w-2xl mb-10">
-          <span class="eyebrow"><i data-feather="award" class="w-3 h-3"></i> Flagship product · in development</span>
-          <h2 class="mt-3 font-display text-3xl sm:text-4xl font-bold text-white">
-            Introducing <span class="text-gradient">SSD-ACMIS</span>
+        <div class="reveal max-w-2xl lg:max-w-3xl mb-8 lg:mb-10 mx-auto lg:mx-0 text-center lg:text-left">
+          <span class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.14em] text-white/90 backdrop-blur-sm">
+            <i data-feather="award" class="w-3 h-3 text-primary"></i> Flagship product · in development
+          </span>
+          <h2 class="mt-5 font-display text-3xl sm:text-4xl lg:text-[2.65rem] font-bold text-white leading-tight">
+            Meet <span class="text-gradient">SSD-ACMIS</span> — built for schools
           </h2>
-          <p class="mt-3 text-slate-300/80">
-            An Academic Management System purpose-built for secondary schools across South Sudan —
-            from student records and grading to attendance, fees and parent communication.
+          <p class="mt-4 text-[15px] sm:text-base text-white/70 leading-relaxed">
+            Student records, grading, attendance, fees and parent comms in one calm, mobile-friendly system — designed for secondary schools in South Sudan.
           </p>
         </div>
 
+        <div class="rounded-[1.75rem] bg-white p-5 sm:p-6 lg:p-9 shadow-[0_28px_65px_-20px_rgba(0,0,0,0.55)] ring-1 ring-white/10">
         <div class="reveal grid lg:grid-cols-12 gap-6 lg:gap-8 items-stretch" data-delay="100">
           <!-- Visual / slider -->
-          <div class="lg:col-span-6 relative rounded-3xl overflow-hidden border border-white/5 bg-gradient-to-br from-forest-900 to-forest-800 min-h-[320px]"
+          <div class="lg:col-span-6 relative rounded-2xl overflow-hidden border border-black/[0.07] bg-surface-muted min-h-[300px] sm:min-h-[320px]"
                data-slider data-slider-interval="4500"
                aria-roledescription="carousel" aria-label="SSD-ACMIS preview screens">
             <img data-slide
@@ -315,7 +262,7 @@
               <span class="inline-flex items-center gap-1.5 rounded-full bg-primary text-white px-3 py-1 text-[10px] font-semibold uppercase tracking-widest shadow-glow">
                 <i data-feather="zap" class="w-3 h-3"></i> Coming soon
               </span>
-              <span class="inline-flex items-center gap-1.5 rounded-full bg-forest-950/85 text-emerald-300 border border-emerald-400/30 px-3 py-1 text-[10px] font-semibold uppercase tracking-widest backdrop-blur">
+              <span class="inline-flex items-center gap-1.5 rounded-full bg-white/95 text-forest-700 border border-accent/25 px-3 py-1 text-[10px] font-semibold uppercase tracking-widest backdrop-blur">
                 <span class="pulse-dot"></span> In active development
               </span>
             </div>
@@ -336,82 +283,82 @@
           </div>
 
           <!-- Content -->
-          <div class="lg:col-span-6 rounded-3xl border border-white/5 bg-forest-900/60 p-7 sm:p-9 flex flex-col">
+          <div class="lg:col-span-6 rounded-2xl border border-black/[0.07] bg-surface-muted/60 p-6 sm:p-8 flex flex-col">
             <div class="flex items-center gap-3 mb-3">
               <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/15 text-primary">
                 <i data-feather="award" class="w-5 h-5"></i>
               </span>
               <div>
-                <h3 class="font-display text-xl font-bold text-white">SSD-ACMIS</h3>
-                <p class="text-[11px] uppercase tracking-wider text-emerald-200/60">Academic Management Information System</p>
+                <h3 class="font-display text-xl font-bold text-ink">SSD-ACMIS</h3>
+                <p class="text-[11px] uppercase tracking-wider text-forest-600">Academic Management Information System</p>
               </div>
             </div>
-            <p class="text-sm text-slate-300/85 mb-5">
+            <p class="text-sm text-slate-600 mb-5">
               One platform for secondary schools to manage everything that matters — replacing paperwork
               and spreadsheets with a clean, modern, mobile-friendly system designed for South Sudan's schools.
             </p>
 
             <!-- Features -->
             <ul class="grid sm:grid-cols-2 gap-3 mb-6">
-              <li class="flex items-start gap-2.5 text-sm text-slate-300">
+              <li class="flex items-start gap-2.5 text-sm text-slate-600">
                 <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-primary/10 text-primary"><i data-feather="users" class="w-3.5 h-3.5"></i></span>
                 <div>
-                  <p class="font-semibold text-white">Student records</p>
-                  <p class="text-xs text-slate-400">Profiles, classes & history</p>
+                  <p class="font-semibold text-ink">Student records</p>
+                  <p class="text-xs text-slate-500">Profiles, classes & history</p>
                 </div>
               </li>
-              <li class="flex items-start gap-2.5 text-sm text-slate-300">
+              <li class="flex items-start gap-2.5 text-sm text-slate-600">
                 <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-primary/10 text-primary"><i data-feather="check-square" class="w-3.5 h-3.5"></i></span>
                 <div>
-                  <p class="font-semibold text-white">Attendance</p>
-                  <p class="text-xs text-slate-400">Daily & per-period tracking</p>
+                  <p class="font-semibold text-ink">Attendance</p>
+                  <p class="text-xs text-slate-500">Daily & per-period tracking</p>
                 </div>
               </li>
-              <li class="flex items-start gap-2.5 text-sm text-slate-300">
+              <li class="flex items-start gap-2.5 text-sm text-slate-600">
                 <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-primary/10 text-primary"><i data-feather="edit-3" class="w-3.5 h-3.5"></i></span>
                 <div>
-                  <p class="font-semibold text-white">Grading & exams</p>
-                  <p class="text-xs text-slate-400">Marks, transcripts, reports</p>
+                  <p class="font-semibold text-ink">Grading & exams</p>
+                  <p class="text-xs text-slate-500">Marks, transcripts, reports</p>
                 </div>
               </li>
-              <li class="flex items-start gap-2.5 text-sm text-slate-300">
+              <li class="flex items-start gap-2.5 text-sm text-slate-600">
                 <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-primary/10 text-primary"><i data-feather="calendar" class="w-3.5 h-3.5"></i></span>
                 <div>
-                  <p class="font-semibold text-white">Timetables</p>
-                  <p class="text-xs text-slate-400">Class & teacher scheduling</p>
+                  <p class="font-semibold text-ink">Timetables</p>
+                  <p class="text-xs text-slate-500">Class & teacher scheduling</p>
                 </div>
               </li>
-              <li class="flex items-start gap-2.5 text-sm text-slate-300">
+              <li class="flex items-start gap-2.5 text-sm text-slate-600">
                 <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-primary/10 text-primary"><i data-feather="credit-card" class="w-3.5 h-3.5"></i></span>
                 <div>
-                  <p class="font-semibold text-white">Fees & payments</p>
-                  <p class="text-xs text-slate-400">Invoices, receipts, balances</p>
+                  <p class="font-semibold text-ink">Fees & payments</p>
+                  <p class="text-xs text-slate-500">Invoices, receipts, balances</p>
                 </div>
               </li>
-              <li class="flex items-start gap-2.5 text-sm text-slate-300">
+              <li class="flex items-start gap-2.5 text-sm text-slate-600">
                 <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-primary/10 text-primary"><i data-feather="message-square" class="w-3.5 h-3.5"></i></span>
                 <div>
-                  <p class="font-semibold text-white">Parent portal</p>
-                  <p class="text-xs text-slate-400">Updates, results & SMS</p>
+                  <p class="font-semibold text-ink">Parent portal</p>
+                  <p class="text-xs text-slate-500">Updates, results & SMS</p>
                 </div>
               </li>
             </ul>
 
             <!-- Tech tags -->
             <div class="flex flex-wrap gap-2 mb-6">
-              <span class="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-forest-950/60 px-2.5 py-1 text-[10px] uppercase tracking-wider text-slate-300"><i data-feather="cloud" class="w-3 h-3 text-primary"></i> Cloud-hosted</span>
-              <span class="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-forest-950/60 px-2.5 py-1 text-[10px] uppercase tracking-wider text-slate-300"><i data-feather="smartphone" class="w-3 h-3 text-primary"></i> Mobile-friendly</span>
-              <span class="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-forest-950/60 px-2.5 py-1 text-[10px] uppercase tracking-wider text-slate-300"><i data-feather="lock" class="w-3 h-3 text-primary"></i> Secure</span>
-              <span class="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-forest-950/60 px-2.5 py-1 text-[10px] uppercase tracking-wider text-slate-300"><i data-feather="globe" class="w-3 h-3 text-primary"></i> Offline-aware</span>
+              <span class="inline-flex items-center gap-1.5 rounded-full border border-black/[0.08] bg-surface-muted px-2.5 py-1 text-[10px] uppercase tracking-wider text-slate-600"><i data-feather="cloud" class="w-3 h-3 text-primary"></i> Cloud-hosted</span>
+              <span class="inline-flex items-center gap-1.5 rounded-full border border-black/[0.08] bg-surface-muted px-2.5 py-1 text-[10px] uppercase tracking-wider text-slate-600"><i data-feather="smartphone" class="w-3 h-3 text-primary"></i> Mobile-friendly</span>
+              <span class="inline-flex items-center gap-1.5 rounded-full border border-black/[0.08] bg-surface-muted px-2.5 py-1 text-[10px] uppercase tracking-wider text-slate-600"><i data-feather="lock" class="w-3 h-3 text-primary"></i> Secure</span>
+              <span class="inline-flex items-center gap-1.5 rounded-full border border-black/[0.08] bg-surface-muted px-2.5 py-1 text-[10px] uppercase tracking-wider text-slate-600"><i data-feather="globe" class="w-3 h-3 text-primary"></i> Offline-aware</span>
             </div>
 
             <!-- Build progress -->
             <div class="mb-6">
               <div class="flex items-center justify-between text-[11px] uppercase tracking-wider mb-1.5">
-                <span class="text-emerald-200/60">Build progress</span>
+                <span class="text-forest-600">Build progress</span>
                 <span class="text-primary font-semibold">65% · Beta with pilot schools</span>
               </div>
-              <div class="h-2 rounded-full bg-white/5 overflow-hidden">
+              <div class="h-2 rounded-full bg-black/[0.06] overflow-hidden">
                 <div class="h-full w-[65%] rounded-full bg-gradient-to-r from-primary to-primary-300"></div>
               </div>
             </div>
@@ -429,228 +376,216 @@
             </div>
           </div>
         </div>
+        </div>
       </div>
     </section>
 
     <!-- =========================== RECENT WORK / WEBSITES =========================== -->
-    <section id="work" class="relative py-20 sm:py-24 bg-forest-900/30 border-y border-white/5">
-      <div aria-hidden="true" class="pointer-events-none absolute inset-0 bg-grid opacity-30"></div>
-      <div aria-hidden="true" class="pointer-events-none absolute -top-32 left-1/3 h-72 w-[40rem] rounded-full bg-primary/10 blur-3xl"></div>
-
+    <section id="work" class="relative py-20 sm:py-28 bg-white border-t border-black/[0.06]">
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="reveal flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">
+        <div class="reveal flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-14">
           <div class="max-w-2xl">
-            <span class="eyebrow"><i data-feather="globe" class="w-3 h-3"></i> Websites &amp; Projects</span>
-            <h2 class="mt-3 font-display text-3xl sm:text-4xl font-bold text-white">
-              Live sites we've <span class="text-gradient">designed, built and shipped</span>
+            <span class="eyebrow"><i data-feather="globe" class="w-3 h-3"></i> Selected work</span>
+            <h2 class="mt-4 font-display text-3xl sm:text-4xl font-bold text-ink leading-tight">
+              Sites we <span class="text-gradient">launched</span> — and run
             </h2>
-            <p class="mt-3 text-slate-300/80">
-              Real, live work across consulting, travel, education and nonprofits — engineered for speed,
-              security and clean content management.
+            <p class="mt-4 text-slate-600 text-[15px] sm:text-base leading-relaxed max-w-xl">
+              Consulting, travel, education and nonprofits — delivered with performance, accessibility and clear handover.
             </p>
           </div>
-          <a href="products.html#websites" class="btn-ghost self-start sm:self-end">
-            View full portfolio <i data-feather="arrow-right" class="w-4 h-4"></i>
+          <a href="products.html#websites" class="btn-ghost self-start lg:self-end shrink-0">
+            Full portfolio <i data-feather="arrow-right" class="w-4 h-4"></i>
           </a>
         </div>
 
-        <div class="grid gap-6 lg:grid-cols-3">
-          <!-- Featured: EAI Consulting -->
+        <div class="flex flex-col gap-8">
+          <!-- Featured: horizontal split -->
           <a href="https://eaiconsultingfirm.com" target="_blank" rel="noopener noreferrer"
-             class="reveal card group lg:col-span-2 lg:row-span-2 rounded-2xl border border-white/5 bg-forest-900/60 overflow-hidden block">
-            <div class="relative aspect-[16/10] w-full overflow-hidden bg-forest-800">
+             class="reveal card group flex flex-col lg:flex-row lg:min-h-[300px] rounded-3xl border border-black/[0.07] bg-surface-muted/30 overflow-hidden hover:bg-white transition-colors">
+            <div class="relative w-full lg:w-[52%] lg:shrink-0 min-h-[220px] sm:min-h-[280px] bg-surface-soft overflow-hidden">
               <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Feaiconsultingfirm.com?w=1400&h=875" alt="EAI Consulting Firm — live website preview"
-                   class="absolute inset-0 h-full w-full object-cover object-top transition duration-700 group-hover:scale-[1.03]"
+                   class="absolute inset-0 h-full w-full object-cover object-top transition duration-700 group-hover:scale-[1.02]"
                    loading="lazy"
                    onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1400&q=80'" />
-              <div class="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-950/30 to-transparent"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/15 to-transparent lg:bg-gradient-to-r lg:from-transparent lg:via-transparent lg:to-transparent"></div>
               <div class="absolute top-4 left-4 flex items-center gap-2">
-                <span class="inline-flex items-center gap-1.5 rounded-full bg-primary/90 text-white px-3 py-1 text-[10px] font-semibold uppercase tracking-widest shadow-glow">
+                <span class="inline-flex items-center gap-1.5 rounded-full bg-primary text-white px-3 py-1 text-[10px] font-semibold uppercase tracking-widest shadow-glow">
                   <i data-feather="star" class="w-3 h-3"></i> Featured
                 </span>
-                <span class="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-400/30 px-3 py-1 text-[10px] font-semibold uppercase tracking-widest">
+                <span class="inline-flex items-center gap-1.5 rounded-full bg-white/95 text-forest-700 border border-accent/20 px-3 py-1 text-[10px] font-semibold uppercase tracking-widest">
                   <span class="pulse-dot"></span> Live
                 </span>
               </div>
             </div>
-            <div class="p-7">
-              <div class="flex items-center gap-3 mb-2">
-                <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+            <div class="flex flex-1 flex-col justify-center p-7 sm:p-9 lg:pl-12">
+              <div class="flex items-center gap-3 mb-3">
+                <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/12 text-primary">
                   <i data-feather="briefcase" class="w-5 h-5"></i>
                 </span>
                 <div>
-                  <h3 class="text-xl font-semibold text-white group-hover:text-primary transition">EAI Consulting Firm</h3>
-                  <p class="text-[11px] uppercase tracking-wider text-emerald-200/60">eaiconsultingfirm.com · Consulting</p>
+                  <h3 class="text-xl font-semibold text-ink group-hover:text-primary transition">EAI Consulting Firm</h3>
+                  <p class="text-[11px] uppercase tracking-wider text-forest-600">eaiconsultingfirm.com</p>
                 </div>
               </div>
-              <p class="text-sm text-slate-300/85 mb-4 max-w-xl">
-                A modern brand site for a consulting firm focused on entrepreneurial innovation, agricultural
-                solutions and impact assessment. Built for speed, accessibility and easy content updates.
+              <p class="text-sm text-slate-600 mb-5 max-w-lg">
+                Entrepreneurial innovation, agricultural solutions and impact assessment — with a fast brand site and easy content workflow.
               </p>
-              <div class="flex flex-wrap gap-2 mb-5">
-                <span class="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-forest-950/60 px-2.5 py-1 text-[10px] uppercase tracking-wider text-slate-300"><i data-feather="layout" class="w-3 h-3 text-primary"></i> UI/UX</span>
-                <span class="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-forest-950/60 px-2.5 py-1 text-[10px] uppercase tracking-wider text-slate-300"><i data-feather="zap" class="w-3 h-3 text-primary"></i> Performance</span>
-                <span class="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-forest-950/60 px-2.5 py-1 text-[10px] uppercase tracking-wider text-slate-300"><i data-feather="shield" class="w-3 h-3 text-primary"></i> Hardened SSL</span>
-                <span class="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-forest-950/60 px-2.5 py-1 text-[10px] uppercase tracking-wider text-slate-300"><i data-feather="search" class="w-3 h-3 text-primary"></i> SEO</span>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="inline-flex items-center gap-1 rounded-full border border-black/[0.08] bg-white/80 px-2.5 py-1 text-[10px] uppercase tracking-wider text-slate-600"><i data-feather="layout" class="w-3 h-3 text-primary"></i> UI/UX</span>
+                <span class="inline-flex items-center gap-1 rounded-full border border-black/[0.08] bg-white/80 px-2.5 py-1 text-[10px] uppercase tracking-wider text-slate-600"><i data-feather="zap" class="w-3 h-3 text-primary"></i> Perf</span>
+                <span class="inline-flex items-center gap-1 rounded-full border border-black/[0.08] bg-white/80 px-2.5 py-1 text-[10px] uppercase tracking-wider text-slate-600"><i data-feather="shield" class="w-3 h-3 text-primary"></i> SSL</span>
+                <span class="inline-flex items-center gap-1 rounded-full border border-black/[0.08] bg-white/80 px-2.5 py-1 text-[10px] uppercase tracking-wider text-slate-600"><i data-feather="search" class="w-3 h-3 text-primary"></i> SEO</span>
               </div>
-              <span class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-3 transition-all">
-                Visit live site <i data-feather="external-link" class="w-3.5 h-3.5"></i>
+              <span class="inline-flex items-center gap-2 text-sm font-semibold text-primary group-hover:gap-3 transition-all">
+                Open live site <i data-feather="external-link" class="w-4 h-4"></i>
               </span>
             </div>
           </a>
 
-          <!-- Card: Honzi Tours & Travel -->
+          <!-- Four-up grid -->
+          <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           <a href="https://honzitoursandtravel.com" target="_blank" rel="noopener noreferrer"
-             class="reveal card group rounded-2xl border border-white/5 bg-forest-900/60 overflow-hidden block" data-delay="100">
-            <div class="relative aspect-video w-full overflow-hidden bg-forest-800">
+             class="reveal card group rounded-2xl border border-black/[0.06] bg-surface-muted/40 hover:bg-white overflow-hidden flex flex-col" data-delay="100">
+            <div class="relative aspect-video w-full overflow-hidden bg-surface-soft">
               <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fhonzitoursandtravel.com?w=900&h=600" alt="Honzi Tours and Travel — live website preview"
                    class="absolute inset-0 h-full w-full object-cover object-top transition duration-700 group-hover:scale-[1.05]"
                    loading="lazy"
                    onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=900&q=80'" />
-              <div class="absolute inset-0 bg-gradient-to-t from-forest-950/90 via-forest-950/30 to-transparent"></div>
-              <span class="absolute top-3 left-3 inline-flex items-center gap-1.5 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-400/30 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest"><span class="pulse-dot"></span> Live</span>
+              <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/15 to-transparent"></div>
+              <span class="absolute top-3 left-3 inline-flex items-center gap-1.5 rounded-full bg-accent/8 text-forest-700 border border-accent/20 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest"><span class="pulse-dot"></span> Live</span>
             </div>
-            <div class="p-5">
+            <div class="p-5 flex flex-col flex-1">
               <div class="flex items-center gap-2.5 mb-1.5">
                 <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary"><i data-feather="compass" class="w-4 h-4"></i></span>
-                <h3 class="text-base font-semibold text-white group-hover:text-primary transition">Honzi Tours &amp; Travel</h3>
+                <h3 class="text-base font-semibold text-ink group-hover:text-primary transition">Honzi Tours &amp; Travel</h3>
               </div>
-              <p class="text-xs text-slate-300/80 mb-3">honzitoursandtravel.com — Travel &amp; tour packages.</p>
-              <div class="flex flex-wrap gap-1.5 mb-3">
-                <span class="text-[10px] text-slate-300 inline-flex items-center gap-1"><i data-feather="image" class="w-3 h-3 text-primary"></i> Gallery</span>
-                <span class="text-[10px] text-slate-300 inline-flex items-center gap-1"><i data-feather="message-square" class="w-3 h-3 text-primary"></i> Inquiries</span>
+              <p class="text-xs text-slate-600 mb-3">honzitoursandtravel.com — Travel &amp; tour packages.</p>
+              <div class="flex flex-wrap gap-1.5 mb-4">
+                <span class="text-[10px] text-slate-600 inline-flex items-center gap-1"><i data-feather="image" class="w-3 h-3 text-primary"></i> Gallery</span>
+                <span class="text-[10px] text-slate-600 inline-flex items-center gap-1"><i data-feather="message-square" class="w-3 h-3 text-primary"></i> Inquiries</span>
               </div>
-              <span class="inline-flex items-center gap-1 text-xs font-semibold text-primary group-hover:gap-2 transition-all">Visit <i data-feather="external-link" class="w-3 h-3"></i></span>
+              <span class="mt-auto inline-flex items-center gap-1 text-xs font-semibold text-primary group-hover:gap-2 transition-all">Visit <i data-feather="external-link" class="w-3 h-3"></i></span>
             </div>
           </a>
 
           <!-- Card: Jdiobe STEM -->
           <a href="https://jdiobestemfoundation.org" target="_blank" rel="noopener noreferrer"
-             class="reveal card group rounded-2xl border border-white/5 bg-forest-900/60 overflow-hidden block" data-delay="200">
-            <div class="relative aspect-video w-full overflow-hidden bg-forest-800">
+             class="reveal card group rounded-2xl border border-black/[0.06] bg-surface-muted/40 hover:bg-white overflow-hidden flex flex-col" data-delay="200">
+            <div class="relative aspect-video w-full overflow-hidden bg-surface-soft">
               <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fjdiobestemfoundation.org?w=900&h=600" alt="Jdiobe STEM Foundation — live website preview"
                    class="absolute inset-0 h-full w-full object-cover object-top transition duration-700 group-hover:scale-[1.05]"
                    loading="lazy"
                    onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=900&q=80'" />
-              <div class="absolute inset-0 bg-gradient-to-t from-forest-950/90 via-forest-950/30 to-transparent"></div>
-              <span class="absolute top-3 left-3 inline-flex items-center gap-1.5 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-400/30 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest"><span class="pulse-dot"></span> Live</span>
+              <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/15 to-transparent"></div>
+              <span class="absolute top-3 left-3 inline-flex items-center gap-1.5 rounded-full bg-accent/8 text-forest-700 border border-accent/20 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest"><span class="pulse-dot"></span> Live</span>
             </div>
-            <div class="p-5">
+            <div class="p-5 flex flex-col flex-1">
               <div class="flex items-center gap-2.5 mb-1.5">
                 <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary"><i data-feather="book-open" class="w-4 h-4"></i></span>
-                <h3 class="text-base font-semibold text-white group-hover:text-primary transition">Jdiobe STEM Foundation</h3>
+                <h3 class="text-base font-semibold text-ink group-hover:text-primary transition">Jdiobe STEM Foundation</h3>
               </div>
-              <p class="text-xs text-slate-300/80 mb-3">jdiobestemfoundation.org — Education &amp; STEM outreach.</p>
-              <div class="flex flex-wrap gap-1.5 mb-3">
-                <span class="text-[10px] text-slate-300 inline-flex items-center gap-1"><i data-feather="users" class="w-3 h-3 text-primary"></i> Nonprofit</span>
-                <span class="text-[10px] text-slate-300 inline-flex items-center gap-1"><i data-feather="smartphone" class="w-3 h-3 text-primary"></i> Mobile-first</span>
+              <p class="text-xs text-slate-600 mb-3">jdiobestemfoundation.org — Education &amp; STEM outreach.</p>
+              <div class="flex flex-wrap gap-1.5 mb-4">
+                <span class="text-[10px] text-slate-600 inline-flex items-center gap-1"><i data-feather="users" class="w-3 h-3 text-primary"></i> Nonprofit</span>
+                <span class="text-[10px] text-slate-600 inline-flex items-center gap-1"><i data-feather="smartphone" class="w-3 h-3 text-primary"></i> Mobile-first</span>
               </div>
-              <span class="inline-flex items-center gap-1 text-xs font-semibold text-primary group-hover:gap-2 transition-all">Visit <i data-feather="external-link" class="w-3 h-3"></i></span>
+              <span class="mt-auto inline-flex items-center gap-1 text-xs font-semibold text-primary group-hover:gap-2 transition-all">Visit <i data-feather="external-link" class="w-3 h-3"></i></span>
             </div>
           </a>
-        </div>
 
-        <!-- Secondary row: Wolayo + Atlas Uganda -->
-        <div class="grid gap-6 sm:grid-cols-2 mt-6">
           <a href="https://wolayochildrestoration.org" target="_blank" rel="noopener noreferrer"
-             class="reveal card group rounded-2xl border border-white/5 bg-forest-900/60 overflow-hidden block" data-delay="100">
-            <div class="grid sm:grid-cols-5">
-              <div class="relative sm:col-span-2 aspect-video sm:aspect-auto overflow-hidden bg-forest-800">
-                <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fwolayochildrestoration.org?w=900&h=600" alt="Wolayo Child Restoration — live website preview"
-                     class="absolute inset-0 h-full w-full object-cover object-top transition duration-700 group-hover:scale-[1.05]"
-                     loading="lazy"
-                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=900&q=80'" />
-                <div class="absolute inset-0 bg-gradient-to-r from-forest-950/40 via-transparent to-transparent"></div>
-                <span class="absolute top-3 left-3 inline-flex items-center gap-1.5 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-400/30 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest"><span class="pulse-dot"></span> Live</span>
+             class="reveal card group rounded-2xl border border-black/[0.06] bg-surface-muted/40 hover:bg-white overflow-hidden flex flex-col" data-delay="300">
+            <div class="relative aspect-video w-full overflow-hidden bg-surface-soft">
+              <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fwolayochildrestoration.org?w=900&h=600" alt="Wolayo Child Restoration — live website preview"
+                   class="absolute inset-0 h-full w-full object-cover object-top transition duration-700 group-hover:scale-[1.05]"
+                   loading="lazy"
+                   onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=900&q=80'" />
+              <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/15 to-transparent"></div>
+              <span class="absolute top-3 left-3 inline-flex items-center gap-1.5 rounded-full bg-accent/8 text-forest-700 border border-accent/20 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest"><span class="pulse-dot"></span> Live</span>
+            </div>
+            <div class="p-5 flex flex-col flex-1">
+              <div class="flex items-center gap-2.5 mb-1.5">
+                <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary"><i data-feather="heart" class="w-4 h-4"></i></span>
+                <h3 class="text-base font-semibold text-ink group-hover:text-primary transition">Wolayo Child Restoration</h3>
               </div>
-              <div class="p-5 sm:col-span-3">
-                <div class="flex items-center gap-2.5 mb-1.5">
-                  <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary"><i data-feather="heart" class="w-4 h-4"></i></span>
-                  <h3 class="text-base font-semibold text-white group-hover:text-primary transition">Wolayo Child Restoration</h3>
-                </div>
-                <p class="text-xs text-slate-300/80 mb-3">wolayochildrestoration.org — Child welfare &amp; restoration.</p>
-                <div class="flex flex-wrap gap-1.5 mb-3">
-                  <span class="text-[10px] text-slate-300 inline-flex items-center gap-1"><i data-feather="users" class="w-3 h-3 text-primary"></i> Nonprofit</span>
-                  <span class="text-[10px] text-slate-300 inline-flex items-center gap-1"><i data-feather="dollar-sign" class="w-3 h-3 text-primary"></i> Donations</span>
-                </div>
-                <span class="inline-flex items-center gap-1 text-xs font-semibold text-primary group-hover:gap-2 transition-all">Visit <i data-feather="external-link" class="w-3 h-3"></i></span>
-              </div>
+              <p class="text-xs text-slate-600 mb-3">Child welfare &amp; restoration nonprofit.</p>
+              <span class="mt-auto inline-flex items-center gap-1 text-xs font-semibold text-primary group-hover:gap-2 transition-all">Visit <i data-feather="external-link" class="w-3 h-3"></i></span>
             </div>
           </a>
 
           <a href="https://nelson211-0ss.github.io/Atlas-Uganda-Explorers/" target="_blank" rel="noopener noreferrer"
-             class="reveal card group rounded-2xl border border-white/5 bg-forest-900/60 overflow-hidden block" data-delay="200">
-            <div class="grid sm:grid-cols-5">
-              <div class="relative sm:col-span-2 aspect-video sm:aspect-auto overflow-hidden bg-forest-800">
-                <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fnelson211-0ss.github.io%2FAtlas-Uganda-Explorers%2F?w=900&h=600" alt="Atlas Uganda Explorers — live website preview"
-                     class="absolute inset-0 h-full w-full object-cover object-top transition duration-700 group-hover:scale-[1.05]"
-                     loading="lazy"
-                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1604537466573-5e94508fd476?auto=format&fit=crop&w=900&q=80'" />
-                <div class="absolute inset-0 bg-gradient-to-r from-forest-950/40 via-transparent to-transparent"></div>
-                <span class="absolute top-3 left-3 inline-flex items-center gap-1.5 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-400/30 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest"><span class="pulse-dot"></span> Live</span>
+             class="reveal card group rounded-2xl border border-black/[0.06] bg-surface-muted/40 hover:bg-white overflow-hidden flex flex-col" data-delay="400">
+            <div class="relative aspect-video w-full overflow-hidden bg-surface-soft">
+              <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fnelson211-0ss.github.io%2FAtlas-Uganda-Explorers%2F?w=900&h=600" alt="Atlas Uganda Explorers — live website preview"
+                   class="absolute inset-0 h-full w-full object-cover object-top transition duration-700 group-hover:scale-[1.05]"
+                   loading="lazy"
+                   onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1604537466573-5e94508fd476?auto=format&fit=crop&w=900&q=80'" />
+              <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/15 to-transparent"></div>
+              <span class="absolute top-3 left-3 inline-flex items-center gap-1.5 rounded-full bg-accent/8 text-forest-700 border border-accent/20 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest"><span class="pulse-dot"></span> Live</span>
+            </div>
+            <div class="p-5 flex flex-col flex-1">
+              <div class="flex items-center gap-2.5 mb-1.5">
+                <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary"><i data-feather="map" class="w-4 h-4"></i></span>
+                <h3 class="text-base font-semibold text-ink group-hover:text-primary transition">Atlas Uganda Explorers</h3>
               </div>
-              <div class="p-5 sm:col-span-3">
-                <div class="flex items-center gap-2.5 mb-1.5">
-                  <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary"><i data-feather="map" class="w-4 h-4"></i></span>
-                  <h3 class="text-base font-semibold text-white group-hover:text-primary transition">Atlas Uganda Explorers</h3>
-                </div>
-                <p class="text-xs text-slate-300/80 mb-3">A travel company in Jinja, Uganda — gateway to nature.</p>
-                <div class="flex flex-wrap gap-1.5 mb-3">
-                  <span class="text-[10px] text-slate-300 inline-flex items-center gap-1"><i data-feather="image" class="w-3 h-3 text-primary"></i> Gallery</span>
-                  <span class="text-[10px] text-slate-300 inline-flex items-center gap-1"><i data-feather="smartphone" class="w-3 h-3 text-primary"></i> Responsive</span>
-                </div>
-                <span class="inline-flex items-center gap-1 text-xs font-semibold text-primary group-hover:gap-2 transition-all">Visit <i data-feather="external-link" class="w-3 h-3"></i></span>
-              </div>
+              <p class="text-xs text-slate-600 mb-3">Travel &amp; tours — Jinja, Uganda.</p>
+              <span class="mt-auto inline-flex items-center gap-1 text-xs font-semibold text-primary group-hover:gap-2 transition-all">Visit <i data-feather="external-link" class="w-3 h-3"></i></span>
             </div>
           </a>
+          </div>
         </div>
 
         <!-- In-progress projects -->
-        <div class="reveal mt-14" data-delay="200">
-          <div class="flex items-center gap-2 mb-5">
-            <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10 text-primary"><i data-feather="clock" class="w-4 h-4"></i></span>
-            <h3 class="text-sm font-semibold text-white uppercase tracking-[0.18em]">Currently in development</h3>
+        <div class="reveal mt-12 rounded-2xl border border-black/[0.06] bg-surface-muted/80 p-6 sm:p-8" data-delay="200">
+          <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:justify-between mb-6">
+            <div class="flex items-center gap-3">
+              <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-white border border-black/[0.06] text-primary shadow-sm"><i data-feather="clock" class="w-5 h-5"></i></span>
+              <div>
+                <h3 class="text-sm font-semibold text-ink">In active development</h3>
+                <p class="text-xs text-slate-600 mt-0.5">Roadmaps tracked with clear milestones.</p>
+              </div>
+            </div>
           </div>
           <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            <div class="card rounded-2xl border border-white/5 bg-forest-900/50 p-5 flex items-start gap-4">
+            <div class="card rounded-2xl border border-black/[0.06] bg-white shadow-sm p-5 flex items-start gap-4">
               <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-primary/30 to-primary/10 text-primary">
                 <i data-feather="award" class="w-5 h-5"></i>
               </div>
               <div class="min-w-0 flex-1">
-                <p class="text-sm font-semibold text-white">SSD-ACMIS</p>
-                <p class="text-[11px] text-emerald-200/60 uppercase tracking-wider">Schools · South Sudan</p>
-                <div class="mt-2 h-1.5 rounded-full bg-white/5 overflow-hidden">
+                <p class="text-sm font-semibold text-ink">SSD-ACMIS</p>
+                <p class="text-[11px] text-forest-600 uppercase tracking-wider">Schools · South Sudan</p>
+                <div class="mt-2 h-1.5 rounded-full bg-black/[0.06] overflow-hidden">
                   <div class="h-full w-[65%] rounded-full bg-gradient-to-r from-primary to-primary-300"></div>
                 </div>
-                <p class="mt-1.5 text-[11px] text-slate-400">65% · Pilot beta</p>
+                <p class="mt-1.5 text-[11px] text-slate-500">65% · Pilot beta</p>
               </div>
             </div>
 
-            <div class="card rounded-2xl border border-white/5 bg-forest-900/50 p-5 flex items-start gap-4">
+            <div class="card rounded-2xl border border-black/[0.06] bg-white shadow-sm p-5 flex items-start gap-4">
               <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-primary/30 to-primary/10 text-primary">
                 <i data-feather="shopping-cart" class="w-5 h-5"></i>
               </div>
               <div class="min-w-0 flex-1">
-                <p class="text-sm font-semibold text-white">E-commerce platform</p>
-                <p class="text-[11px] text-emerald-200/60 uppercase tracking-wider">Storefront · Mobile money</p>
-                <div class="mt-2 h-1.5 rounded-full bg-white/5 overflow-hidden">
+                <p class="text-sm font-semibold text-ink">E-commerce platform</p>
+                <p class="text-[11px] text-forest-600 uppercase tracking-wider">Storefront · Mobile money</p>
+                <div class="mt-2 h-1.5 rounded-full bg-black/[0.06] overflow-hidden">
                   <div class="h-full w-3/4 rounded-full bg-gradient-to-r from-primary to-primary-300"></div>
                 </div>
-                <p class="mt-1.5 text-[11px] text-slate-400">75% · UAT phase</p>
+                <p class="mt-1.5 text-[11px] text-slate-500">75% · UAT phase</p>
               </div>
             </div>
 
-            <div class="card rounded-2xl border border-white/5 bg-forest-900/50 p-5 flex items-start gap-4">
+            <div class="card rounded-2xl border border-black/[0.06] bg-white shadow-sm p-5 flex items-start gap-4">
               <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-primary/30 to-primary/10 text-primary">
                 <i data-feather="bar-chart-2" class="w-5 h-5"></i>
               </div>
               <div class="min-w-0 flex-1">
-                <p class="text-sm font-semibold text-white">Operations dashboard</p>
-                <p class="text-[11px] text-emerald-200/60 uppercase tracking-wider">SaaS · Real-time analytics</p>
-                <div class="mt-2 h-1.5 rounded-full bg-white/5 overflow-hidden">
+                <p class="text-sm font-semibold text-ink">Operations dashboard</p>
+                <p class="text-[11px] text-forest-600 uppercase tracking-wider">SaaS · Real-time analytics</p>
+                <div class="mt-2 h-1.5 rounded-full bg-black/[0.06] overflow-hidden">
                   <div class="h-full w-1/2 rounded-full bg-gradient-to-r from-primary to-primary-300"></div>
                 </div>
-                <p class="mt-1.5 text-[11px] text-slate-400">50% · API integrations</p>
+                <p class="mt-1.5 text-[11px] text-slate-500">50% · API integrations</p>
               </div>
             </div>
           </div>
@@ -659,88 +594,96 @@
     </section>
 
     <!-- =========================== PARTNERS =========================== -->
-    <section id="partners" class="py-20 sm:py-24 bg-forest-900/40 border-y border-white/5">
+    <section id="partners" class="py-16 sm:py-24 bg-white border-y border-black/[0.06]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="reveal text-center mb-12 max-w-2xl mx-auto">
-          <span class="eyebrow"><i data-feather="users" class="w-3 h-3"></i> Partners</span>
-          <h2 class="mt-3 font-display text-3xl sm:text-4xl font-bold text-white">
-            Organizations we've <span class="text-gradient">worked with</span>
-          </h2>
-          <p class="mt-3 text-slate-300/80">
-            From education and nonprofits to consulting and travel — proudly partnering across sectors.
+        <div class="reveal flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-10">
+          <div class="max-w-xl">
+            <span class="eyebrow"><i data-feather="users" class="w-3 h-3"></i> Partners</span>
+            <h2 class="mt-4 font-display text-2xl sm:text-3xl font-bold text-ink leading-tight">
+              Cross-sector teams that <span class="text-gradient">trust us</span> with uptime
+            </h2>
+          </div>
+          <p class="text-sm text-slate-600 max-w-md md:text-right">
+            Education, nonprofits, consulting and tourism — tailored playbooks per industry.
           </p>
         </div>
 
-        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+        <div class="reveal flex flex-wrap justify-center gap-3 md:justify-start md:gap-4" data-delay="100">
           <a href="https://eaiconsultingfirm.com" target="_blank" rel="noopener noreferrer"
-             class="reveal card group flex flex-col items-center justify-center gap-3 rounded-2xl border border-white/5 bg-forest-900/60 p-6 text-center" data-delay="100">
-            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition">
-              <i data-feather="briefcase" class="w-5 h-5"></i>
-            </div>
-            <span class="text-sm font-semibold text-white">EAI Consulting</span>
-            <span class="text-[11px] text-emerald-200/60">Consulting</span>
+             class="inline-flex items-center gap-2.5 rounded-full border border-black/[0.08] bg-surface-muted/60 px-4 py-2.5 text-sm font-medium text-ink hover:border-primary hover:text-primary hover:bg-white transition shadow-sm">
+            <i data-feather="briefcase" class="w-4 h-4 text-primary"></i> EAI Consulting
           </a>
           <a href="https://honzitoursandtravel.com" target="_blank" rel="noopener noreferrer"
-             class="reveal card group flex flex-col items-center justify-center gap-3 rounded-2xl border border-white/5 bg-forest-900/60 p-6 text-center" data-delay="200">
-            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition">
-              <i data-feather="compass" class="w-5 h-5"></i>
-            </div>
-            <span class="text-sm font-semibold text-white">Honzi Tours &amp; Travel</span>
-            <span class="text-[11px] text-emerald-200/60">Travel · Tours</span>
+             class="inline-flex items-center gap-2.5 rounded-full border border-black/[0.08] bg-surface-muted/60 px-4 py-2.5 text-sm font-medium text-ink hover:border-primary hover:text-primary hover:bg-white transition shadow-sm">
+            <i data-feather="compass" class="w-4 h-4 text-primary"></i> Honzi Tours
           </a>
           <a href="https://jdiobestemfoundation.org" target="_blank" rel="noopener noreferrer"
-             class="reveal card group flex flex-col items-center justify-center gap-3 rounded-2xl border border-white/5 bg-forest-900/60 p-6 text-center" data-delay="300">
-            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition">
-              <i data-feather="book-open" class="w-5 h-5"></i>
-            </div>
-            <span class="text-sm font-semibold text-white">Jdiobe STEM</span>
-            <span class="text-[11px] text-emerald-200/60">Education · STEM</span>
+             class="inline-flex items-center gap-2.5 rounded-full border border-black/[0.08] bg-surface-muted/60 px-4 py-2.5 text-sm font-medium text-ink hover:border-primary hover:text-primary hover:bg-white transition shadow-sm">
+            <i data-feather="book-open" class="w-4 h-4 text-primary"></i> Jdiobe STEM
           </a>
           <a href="https://wolayochildrestoration.org" target="_blank" rel="noopener noreferrer"
-             class="reveal card group flex flex-col items-center justify-center gap-3 rounded-2xl border border-white/5 bg-forest-900/60 p-6 text-center" data-delay="400">
-            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition">
-              <i data-feather="heart" class="w-5 h-5"></i>
-            </div>
-            <span class="text-sm font-semibold text-white">Wolayo Restoration</span>
-            <span class="text-[11px] text-emerald-200/60">Nonprofit</span>
+             class="inline-flex items-center gap-2.5 rounded-full border border-black/[0.08] bg-surface-muted/60 px-4 py-2.5 text-sm font-medium text-ink hover:border-primary hover:text-primary hover:bg-white transition shadow-sm">
+            <i data-feather="heart" class="w-4 h-4 text-primary"></i> Wolayo Restoration
           </a>
           <a href="https://nelson211-0ss.github.io/Atlas-Uganda-Explorers/" target="_blank" rel="noopener noreferrer"
-             class="reveal card group flex flex-col items-center justify-center gap-3 rounded-2xl border border-white/5 bg-forest-900/60 p-6 text-center" data-delay="500">
-            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition">
-              <i data-feather="map" class="w-5 h-5"></i>
-            </div>
-            <span class="text-sm font-semibold text-white">Atlas Uganda</span>
-            <span class="text-[11px] text-emerald-200/60">Travel · Tours</span>
+             class="inline-flex items-center gap-2.5 rounded-full border border-black/[0.08] bg-surface-muted/60 px-4 py-2.5 text-sm font-medium text-ink hover:border-primary hover:text-primary hover:bg-white transition shadow-sm">
+            <i data-feather="map" class="w-4 h-4 text-primary"></i> Atlas Uganda
           </a>
+          <span class="inline-flex items-center gap-2 rounded-full border border-dashed border-black/[0.12] px-4 py-2.5 text-sm font-medium text-slate-600">
+            <i data-feather="award" class="w-4 h-4 text-primary"></i> SSD-ACMIS · Schools
+          </span>
         </div>
       </div>
     </section>
 
     <!-- =========================== CTA =========================== -->
-    <section class="relative py-20 sm:py-24">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="reveal relative overflow-hidden rounded-3xl bg-gradient-to-br from-forest-900 via-forest-800 to-forest-950 p-10 sm:p-14 text-center">
-          <div aria-hidden="true" class="absolute -top-20 left-1/2 h-60 w-[34rem] -translate-x-1/2 rounded-full bg-primary/25 blur-3xl"></div>
-          <div aria-hidden="true" class="absolute -bottom-20 right-0 h-60 w-[26rem] rounded-full bg-emerald-500/15 blur-3xl"></div>
-
-          <div class="relative">
-            <span class="eyebrow"><i data-feather="zap" class="w-3 h-3"></i> Ready when you are</span>
-            <h2 class="mt-4 font-display text-3xl sm:text-4xl font-bold text-white">
-              Let's talk about your <span class="text-gradient">IT strategy</span>
-            </h2>
-            <p class="mt-3 max-w-xl mx-auto text-slate-300/80">
-              Tell us about your environment and goals — we'll respond within one business day with a practical
-              starting point.
-            </p>
-            <div class="mt-7 flex flex-wrap justify-center gap-3">
-              <a href="contact.html" class="btn-primary">
-                <i data-feather="send" class="w-4 h-4"></i>
-                Start a conversation
-              </a>
-              <a href="mailto:nelsonochan@gmail.com" class="btn-ghost">
-                <i data-feather="mail" class="w-4 h-4"></i>
-                nelsonochan@gmail.com
-              </a>
+    <section class="relative py-20 sm:py-24 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal rounded-[2rem] overflow-hidden bg-forest-950 text-white shadow-[0_28px_60px_-25px_rgba(3,19,10,0.45)] ring-1 ring-black/10">
+          <div class="grid lg:grid-cols-12 gap-0">
+            <div class="lg:col-span-7 p-10 sm:p-12 lg:p-14">
+              <span class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.14em] text-white/90">
+                <i data-feather="zap" class="w-3 h-3 text-primary"></i> Ready when you are
+              </span>
+              <h2 class="mt-5 font-display text-3xl sm:text-4xl font-bold leading-tight">
+                Let’s clarify your next <span class="text-accent font-normal">technology</span> move
+              </h2>
+              <p class="mt-4 text-[15px] text-white/70 max-w-lg leading-relaxed">
+                Brief us on your setup and goals — you’ll hear back within one business day with a practical path forward.
+              </p>
+              <div class="mt-8 flex flex-wrap gap-3">
+                <a href="contact.html" class="btn-primary">
+                  <i data-feather="send" class="w-4 h-4"></i>
+                  Start a conversation
+                </a>
+                <a href="mailto:nelsonochan@gmail.com" class="btn-ghost !border-white/25 !bg-white/5 !text-white hover:!border-primary hover:!text-primary hover:!bg-white/10">
+                  <i data-feather="mail" class="w-4 h-4"></i>
+                  nelsonochan@gmail.com
+                </a>
+              </div>
+            </div>
+            <div class="lg:col-span-5 border-t lg:border-t-0 lg:border-l border-white/10 bg-black/25 p-10 sm:p-12 flex flex-col justify-center gap-6">
+              <div class="flex gap-4">
+                <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/25 text-white"><i data-feather="message-circle" class="w-5 h-5"></i></span>
+                <div>
+                  <p class="text-[11px] uppercase tracking-[0.12em] text-white/55">Fastest reply</p>
+                  <a href="https://wa.me/211927500585" class="font-semibold text-white hover:text-primary transition">WhatsApp · +211 927 500 585</a>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/10 text-white"><i data-feather="map-pin" class="w-5 h-5 text-primary"></i></span>
+                <div>
+                  <p class="text-[11px] uppercase tracking-[0.12em] text-white/55">Where we operate</p>
+                  <p class="text-sm text-white/85">Juba, South Sudan · Remote across East Africa</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/10 text-white"><i data-feather="clock" class="w-5 h-5 text-primary"></i></span>
+                <div>
+                  <p class="text-[11px] uppercase tracking-[0.12em] text-white/55">Support ethos</p>
+                  <p class="text-sm text-white/85">Straight answers, pragmatic scope, proactive monitoring.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
