@@ -81,6 +81,34 @@ body {
     );
 }
 
+/* ---- Inner pages — hero tech photo + light wash (same asset as home) ---- */
+.page-hero-media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-color: #f5f8f6;
+  background-image: url('hero-tech-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1024px) {
+  .page-hero-media {
+    background-position: 50% 32%;
+  }
+}
+
+.page-hero-scrim-light {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94) 0%, rgba(255, 255, 255, 0.88) 45%, rgba(250, 252, 251, 0.93) 100%),
+    linear-gradient(115deg, rgba(255, 255, 255, 0.86) 0%, transparent 52%);
+}
+
 .btn-ghost-hero {
   display: inline-flex;
   align-items: center;

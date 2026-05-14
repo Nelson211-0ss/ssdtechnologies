@@ -29,11 +29,12 @@
   <main>
     <!-- =========================== HERO =========================== -->
     <!-- Hero: full-bleed tech photo (assets/hero-tech-bg.jpg) + scrim — no grid / fly-in -->
-    <section class="hero-photo relative isolate overflow-hidden min-h-[min(82vh,780px)] sm:min-h-[min(85vh,820px)] flex flex-col pt-[5.25rem] sm:pt-28 lg:pt-32 pb-10 sm:pb-12 lg:pb-14">
+    <section class="hero-photo relative isolate flex flex-col min-h-[100dvh] overflow-hidden pt-[5.25rem] sm:pt-28 lg:pt-32 pb-8 sm:pb-10">
       <div class="hero-photo__media" aria-hidden="true"></div>
       <div class="hero-photo__scrim" aria-hidden="true"></div>
 
-      <div class="relative z-[2] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex-1 flex flex-col justify-center">
+      <div class="relative z-[2] flex flex-1 flex-col min-h-0 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-1 flex-col justify-center py-6 sm:py-10">
         <div class="relative w-full max-w-[34rem] lg:max-w-[36rem] text-left space-y-5 sm:space-y-6">
               <div>
                 <span class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.07] backdrop-blur-md px-3.5 py-1.5 text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.14em] text-white/88 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)]">
@@ -42,14 +43,10 @@
                 </span>
               </div>
 
-              <h1 class="font-display text-[1.85rem] leading-[1.12] sm:text-4xl sm:leading-[1.1] lg:text-[2.5rem] xl:text-[2.75rem] font-bold tracking-[-0.02em]">
-                <span class="block text-white drop-shadow-[0_2px_28px_rgba(0,0,0,0.35)]">Innovative digital solutions</span>
-                <span class="block mt-2 sm:mt-2.5">
-                  <span class="text-white/90 drop-shadow-[0_2px_28px_rgba(0,0,0,0.35)]">for </span>
-                  <span class="relative inline-block">
-                    <span class="text-gradient relative z-[1]">modern business</span>
-                    <span class="absolute inset-x-0 -bottom-1 h-[0.62rem] rounded-full bg-primary/25 blur-2xl -rotate-[1deg] pointer-events-none" aria-hidden="true"></span>
-                  </span>
+              <h1 class="font-display font-bold tracking-[-0.02em] leading-[1.12] text-[clamp(1.25rem,3.6vw+0.65rem,2.75rem)]">
+                <span class="block text-white drop-shadow-[0_2px_28px_rgba(0,0,0,0.35)] whitespace-nowrap">Innovative&nbsp;Digital&nbsp;Solutions</span>
+                <span class="block mt-2 sm:mt-2.5 whitespace-nowrap text-white/90 drop-shadow-[0_2px_28px_rgba(0,0,0,0.35)]">
+                  For <span class="relative inline-block"><span class="text-gradient relative z-[1]">Modern&nbsp;Business</span><span class="absolute inset-x-0 -bottom-1 h-[0.62rem] rounded-full bg-primary/25 blur-2xl -rotate-[1deg] pointer-events-none" aria-hidden="true"></span></span>
                 </span>
               </h1>
 
@@ -68,8 +65,9 @@
                 </a>
               </div>
         </div>
+        </div>
 
-        <div class="mt-8 sm:mt-10 flex justify-start text-white/38">
+        <div class="flex shrink-0 justify-start pt-4 text-white/38">
           <a href="#services" class="group inline-flex flex-col items-start gap-2 text-[10px] uppercase tracking-[0.22em] hover:text-primary transition-colors" aria-label="Scroll to services">
             <span class="opacity-80">Next</span>
             <span class="flex h-10 w-10 items-center justify-center rounded-full border border-white/14 bg-white/5 backdrop-blur-md group-hover:border-primary/50 group-hover:bg-primary/15 transition-all">
@@ -81,7 +79,7 @@
     </section>
 
     <!-- =========================== SERVICES (bento) =========================== -->
-    <section id="services" class="relative py-20 sm:py-24 bg-white">
+    <section id="services" class="relative pt-12 pb-16 sm:pt-14 sm:pb-20 lg:pt-16 lg:pb-24 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="reveal flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 lg:gap-10 mb-12 lg:mb-14">
           <div class="max-w-2xl">
