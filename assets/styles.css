@@ -536,6 +536,70 @@ select.form-input option {
   backdrop-filter: blur(8px);
 }
 
+/* SSD-ACMIS preview — full screenshots, both visible */
+.acmis-preview {
+  margin: 0;
+  border: 1px solid rgba(2, 10, 5, 0.08);
+  border-radius: 4px;
+  background: #fff;
+  overflow: hidden;
+}
+.acmis-preview__frame {
+  padding: 0.75rem;
+  background: linear-gradient(165deg, #f1f5f9 0%, #f8fafc 100%);
+}
+.acmis-preview__frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid rgba(2, 10, 5, 0.06);
+  box-shadow: 0 2px 12px -4px rgba(2, 10, 5, 0.1);
+}
+.acmis-preview__caption {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.8125rem;
+  border-top: 1px solid rgba(2, 10, 5, 0.06);
+}
+@media (min-width: 640px) {
+  .acmis-preview__frame {
+    padding: 1rem;
+  }
+}
+
+/* SSD-ACMIS slider (products page) */
+[data-slider].acmis-slider {
+  padding: 0.875rem;
+  background: linear-gradient(165deg, #f1f5f9 0%, #f8fafc 100%);
+  aspect-ratio: 16 / 10;
+  min-height: 0;
+}
+[data-slider].acmis-slider [data-slide] {
+  inset: 0.875rem;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 0.625rem;
+  background: #fff;
+  box-shadow: 0 2px 12px -4px rgba(2, 10, 5, 0.12);
+  transform: none;
+}
+[data-slider].acmis-slider [data-slide].is-active {
+  transform: none;
+}
+@media (min-width: 640px) {
+  [data-slider].acmis-slider {
+    padding: 1rem;
+    aspect-ratio: 16 / 9;
+  }
+  [data-slider].acmis-slider [data-slide] {
+    inset: 1rem;
+    border-radius: 0.75rem;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
@@ -558,4 +622,32 @@ select.form-input option {
     opacity: 0;
     transform: none;
   }
+}
+
+/* —— Recent work —— */
+#work .work-card {
+  border-radius: 4px;
+  opacity: 1;
+  transform: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+#work .work-card:hover {
+  transform: none;
+  border-color: rgba(241, 90, 41, 0.28);
+  box-shadow: 0 4px 20px -8px rgba(2, 10, 5, 0.12);
+}
+#work .work-card__thumb img {
+  transition: opacity 0.25s ease;
+}
+#work .work-card:hover .work-card__thumb img {
+  opacity: 0.92;
+}
+#work .work-dev {
+  border-radius: 4px;
+}
+#work .work-dev__bar {
+  border-radius: 2px;
+}
+#work .work-dev__fill {
+  border-radius: 2px;
 }

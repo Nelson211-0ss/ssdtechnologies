@@ -70,23 +70,17 @@
 
         <div class="reveal grid lg:grid-cols-12 gap-6 lg:gap-8 items-stretch" data-delay="100">
           <!-- Visual / slider -->
-          <div class="lg:col-span-7 relative rounded-3xl overflow-hidden border border-black/[0.06] bg-gradient-to-br from-surface-soft to-surface-muted min-h-[340px]"
+          <div class="lg:col-span-7 relative rounded-3xl overflow-hidden border border-black/[0.06] acmis-slider"
                data-slider data-slider-interval="4500"
                aria-roledescription="carousel" aria-label="SSD-ACMIS preview screens">
             <img data-slide
-                 src="assets/ssd-acmis-3.png"
-                 alt="SSD-ACMIS marketing preview with dashboard and login"
-                 class="absolute inset-0 h-full w-full object-cover object-center is-active"
+                 src="assets/ssd-acmis-portal.png"
+                 alt="SSD-ACMIS academic management portal landing page"
+                 class="is-active"
                  loading="lazy" />
             <img data-slide
-                 src="assets/ssd-acmis-preview.png"
-                 alt="SSD-ACMIS dashboard and login preview"
-                 class="absolute inset-0 h-full w-full object-cover object-center"
-                 loading="lazy" />
-            <img data-slide
-                 src="assets/ssd-acmis-2.png"
-                 alt="SSD-ACMIS sign-in screen"
-                 class="absolute inset-0 h-full w-full object-cover object-center"
+                 src="assets/ssd-acmis-dashboard.png"
+                 alt="SSD-ACMIS school management dashboard overview"
                  loading="lazy" />
 
             <div class="absolute top-4 left-4 flex flex-wrap gap-2 z-[5]">
@@ -98,7 +92,7 @@
               </span>
             </div>
 
-            <span data-slide-counter aria-hidden="true">1 / 3</span>
+            <span data-slide-counter aria-hidden="true">1 / 2</span>
 
             <button type="button" data-slide-arrow data-slide-prev aria-label="Previous slide">
               <i data-feather="chevron-left" class="w-4 h-4"></i>
@@ -295,12 +289,12 @@
               Live websites we've <span class="text-gradient">designed &amp; shipped</span>
             </h2>
             <p class="mt-3 text-slate-600">
-              Real, live work across consulting, travel, education and nonprofits.
+              Real, live work across consulting, real estate, travel, education and nonprofits.
             </p>
           </div>
           <div class="flex items-center gap-2 text-xs text-forest-600">
             <span class="inline-flex items-center gap-1.5 rounded-full border border-accent/25 bg-accent/8 px-3 py-1.5">
-              <span class="pulse-dot"></span> 5 live sites
+              <span class="pulse-dot"></span> 6 live sites
             </span>
             <span class="inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-3 py-1.5 text-primary">
               <i data-feather="trending-up" class="w-3 h-3"></i> 3 in development
@@ -351,7 +345,36 @@
             </div>
           </a>
 
-          <!-- 2. Honzi Tours & Travel -->
+          <!-- 2. Dealmakers -->
+          <a href="https://www.dealmakersus.com/" target="_blank" rel="noopener noreferrer"
+             class="reveal card group rounded-2xl border border-black/[0.06] bg-white shadow-card overflow-hidden block" data-delay="150">
+            <div class="relative aspect-video w-full overflow-hidden bg-surface-soft">
+              <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fwww.dealmakersus.com%2F?w=900&h=600" alt="Dealmakers — live website preview"
+                   class="absolute inset-0 h-full w-full object-cover object-top transition duration-700 group-hover:scale-105"
+                   loading="lazy"
+                   onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=900&q=80'" />
+              <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/15 to-transparent"></div>
+              <span class="absolute top-3 left-3 inline-flex items-center gap-1.5 rounded-full bg-accent/8 text-forest-700 border border-accent/20 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest"><span class="pulse-dot"></span> Live</span>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary"><i data-feather="home" class="w-4 h-4"></i></span>
+                <div>
+                  <h3 class="text-base font-semibold text-ink group-hover:text-primary transition">Dealmakers</h3>
+                  <p class="text-[10px] uppercase tracking-wider text-forest-600">dealmakersus.com · Real estate · Austin, TX</p>
+                </div>
+              </div>
+              <p class="text-sm text-slate-600 mb-4">A curated real estate community where operators, investors and capital connect — membership, events and sponsorship.</p>
+              <div class="flex flex-wrap gap-1.5 mb-4">
+                <span class="text-[10px] text-slate-600 inline-flex items-center gap-1"><i data-feather="users" class="w-3 h-3 text-primary"></i> Membership</span>
+                <span class="text-[10px] text-slate-600 inline-flex items-center gap-1"><i data-feather="calendar" class="w-3 h-3 text-primary"></i> Events</span>
+                <span class="text-[10px] text-slate-600 inline-flex items-center gap-1"><i data-feather="layout" class="w-3 h-3 text-primary"></i> Multi-page</span>
+              </div>
+              <span class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-3 transition-all">Visit site <i data-feather="external-link" class="w-3.5 h-3.5"></i></span>
+            </div>
+          </a>
+
+          <!-- 3. Honzi Tours & Travel -->
           <a href="https://honzitoursandtravel.com" target="_blank" rel="noopener noreferrer"
              class="reveal card group rounded-2xl border border-black/[0.06] bg-white shadow-card overflow-hidden block" data-delay="200">
             <div class="relative aspect-video w-full overflow-hidden bg-surface-soft">
