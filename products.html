@@ -56,117 +56,133 @@
     </section>
 
     <!-- ========================== SSD-ACMIS Flagship ========================== -->
-    <section id="ssd-acmis" class="relative py-20 sm:py-24">
+    <section id="ssd-acmis" class="relative py-16 sm:py-20 bg-surface-muted border-y border-black/[0.06]">
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="reveal max-w-2xl mb-10">
-          <span class="eyebrow"><i data-feather="award" class="w-3 h-3"></i> Flagship product</span>
-          <h2 class="mt-3 font-display text-3xl sm:text-4xl font-bold text-ink">
+
+        <!-- Header -->
+        <div class="reveal max-w-3xl mb-8 sm:mb-10">
+          <p class="text-[11px] font-semibold uppercase tracking-[0.16em] text-forest-600">Flagship product · in development</p>
+          <h2 class="mt-2 font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-ink leading-tight tracking-tight">
             <span class="text-gradient">SSD-ACMIS</span> — Academic Management for schools
           </h2>
-          <p class="mt-3 text-slate-600">
-            Our first internal product, currently in active development for secondary schools across South Sudan.
+          <p class="mt-3 text-sm sm:text-[15px] text-slate-600 leading-relaxed">
+            Our first internal product, currently in active development — student records, grading, attendance, fees and parent comms for secondary schools in South Sudan.
           </p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="inline-flex items-center gap-1.5 rounded-sm bg-primary text-white px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider">
+              <i data-feather="zap" class="w-3 h-3"></i> Coming soon
+            </span>
+            <span class="inline-flex items-center gap-1.5 rounded-sm border border-black/[0.08] bg-white px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-forest-700">
+              <span class="pulse-dot"></span> Beta with pilot schools
+            </span>
+          </div>
         </div>
 
-        <div class="reveal grid lg:grid-cols-12 gap-6 lg:gap-8 items-stretch" data-delay="100">
-          <!-- Visual / slider -->
-          <div class="lg:col-span-7 relative rounded-3xl overflow-hidden border border-black/[0.06] acmis-slider"
-               data-slider data-slider-interval="4500"
-               aria-roledescription="carousel" aria-label="SSD-ACMIS preview screens">
-            <img data-slide
-                 src="assets/ssd-acmis-portal.png"
-                 alt="SSD-ACMIS academic management portal landing page"
-                 class="is-active"
-                 loading="lazy" />
-            <img data-slide
-                 src="assets/ssd-acmis-dashboard.png"
-                 alt="SSD-ACMIS school management dashboard overview"
-                 loading="lazy" />
-
-            <div class="absolute top-4 left-4 flex flex-wrap gap-2 z-[5]">
-              <span class="inline-flex items-center gap-1.5 rounded-full bg-primary text-white px-3 py-1 text-[10px] font-semibold uppercase tracking-widest shadow-glow">
-                <i data-feather="zap" class="w-3 h-3"></i> Coming soon
-              </span>
-              <span class="inline-flex items-center gap-1.5 rounded-full bg-white/95 text-forest-700 border border-accent/25 px-3 py-1 text-[10px] font-semibold uppercase tracking-widest backdrop-blur">
-                <span class="pulse-dot"></span> Beta with pilot schools
-              </span>
+        <!-- Product previews — both screens visible -->
+        <div class="reveal grid md:grid-cols-2 gap-4 sm:gap-5 mb-8 sm:mb-10" data-delay="100">
+          <figure class="acmis-preview">
+            <div class="acmis-preview__frame">
+              <img src="assets/ssd-acmis-portal.png"
+                   alt="SSD-ACMIS academic management portal landing page"
+                   loading="lazy" />
             </div>
-
-            <span data-slide-counter aria-hidden="true">1 / 2</span>
-
-            <button type="button" data-slide-arrow data-slide-prev aria-label="Previous slide">
-              <i data-feather="chevron-left" class="w-4 h-4"></i>
-            </button>
-            <button type="button" data-slide-arrow data-slide-next aria-label="Next slide">
-              <i data-feather="chevron-right" class="w-4 h-4"></i>
-            </button>
-
-            <div data-slide-dots aria-hidden="true"></div>
-          </div>
-
-          <!-- Content -->
-          <div class="lg:col-span-5 rounded-3xl border border-black/[0.06] bg-white shadow-card p-7 sm:p-9 flex flex-col">
-            <div class="flex items-center gap-3 mb-3">
-              <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/15 text-primary">
-                <i data-feather="award" class="w-5 h-5"></i>
-              </span>
-              <div>
-                <h3 class="font-display text-xl font-bold text-ink">SSD-ACMIS</h3>
-                <p class="text-[11px] uppercase tracking-wider text-forest-600">Academic Management Information System</p>
-              </div>
+            <figcaption class="acmis-preview__caption">
+              <span class="font-semibold text-ink">Academic portal</span>
+              <span class="text-slate-500">Public landing &amp; sign-in</span>
+            </figcaption>
+          </figure>
+          <figure class="acmis-preview">
+            <div class="acmis-preview__frame">
+              <img src="assets/ssd-acmis-dashboard.png"
+                   alt="SSD-ACMIS school management dashboard overview"
+                   loading="lazy" />
             </div>
-            <p class="text-sm text-slate-600 mb-5">
-              One platform for secondary schools to manage everything that matters — replacing paperwork
-              and spreadsheets with a clean, modern, mobile-friendly system designed for South Sudan.
-            </p>
+            <figcaption class="acmis-preview__caption">
+              <span class="font-semibold text-ink">Admin dashboard</span>
+              <span class="text-slate-500">Overview, analytics &amp; management</span>
+            </figcaption>
+          </figure>
+        </div>
 
-            <ul class="grid sm:grid-cols-2 gap-3 mb-6">
-              <li class="flex items-start gap-2.5 text-sm text-slate-600">
-                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-primary/10 text-primary"><i data-feather="users" class="w-3.5 h-3.5"></i></span>
-                <div><p class="font-semibold text-ink">Student records</p><p class="text-xs text-slate-500">Profiles &amp; classes</p></div>
+        <!-- Features + sidebar -->
+        <div class="reveal grid lg:grid-cols-12 gap-6 lg:gap-8" data-delay="150">
+          <div class="lg:col-span-8 rounded-sm border border-black/[0.08] bg-white p-6 sm:p-8">
+            <h3 class="font-display text-lg font-bold text-ink mb-1">What it covers</h3>
+            <p class="text-sm text-slate-600 mb-6">One platform replacing paperwork and spreadsheets across the school day.</p>
+            <ul class="grid sm:grid-cols-2 gap-x-6 gap-y-4">
+              <li class="flex gap-3 text-sm">
+                <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-sm bg-primary/10 text-primary"><i data-feather="users" class="w-4 h-4"></i></span>
+                <div>
+                  <p class="font-semibold text-ink">Student records</p>
+                  <p class="text-xs text-slate-500 mt-0.5">Profiles, classes &amp; history</p>
+                </div>
               </li>
-              <li class="flex items-start gap-2.5 text-sm text-slate-600">
-                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-primary/10 text-primary"><i data-feather="check-square" class="w-3.5 h-3.5"></i></span>
-                <div><p class="font-semibold text-ink">Attendance</p><p class="text-xs text-slate-500">Daily tracking</p></div>
+              <li class="flex gap-3 text-sm">
+                <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-sm bg-primary/10 text-primary"><i data-feather="check-square" class="w-4 h-4"></i></span>
+                <div>
+                  <p class="font-semibold text-ink">Attendance</p>
+                  <p class="text-xs text-slate-500 mt-0.5">Daily &amp; per-period tracking</p>
+                </div>
               </li>
-              <li class="flex items-start gap-2.5 text-sm text-slate-600">
-                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-primary/10 text-primary"><i data-feather="edit-3" class="w-3.5 h-3.5"></i></span>
-                <div><p class="font-semibold text-ink">Grading &amp; reports</p><p class="text-xs text-slate-500">Exams, marks, transcripts</p></div>
+              <li class="flex gap-3 text-sm">
+                <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-sm bg-primary/10 text-primary"><i data-feather="edit-3" class="w-4 h-4"></i></span>
+                <div>
+                  <p class="font-semibold text-ink">Grading &amp; exams</p>
+                  <p class="text-xs text-slate-500 mt-0.5">Marks, transcripts, reports</p>
+                </div>
               </li>
-              <li class="flex items-start gap-2.5 text-sm text-slate-600">
-                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-primary/10 text-primary"><i data-feather="credit-card" class="w-3.5 h-3.5"></i></span>
-                <div><p class="font-semibold text-ink">Fees &amp; payments</p><p class="text-xs text-slate-500">Invoices &amp; balances</p></div>
+              <li class="flex gap-3 text-sm">
+                <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-sm bg-primary/10 text-primary"><i data-feather="calendar" class="w-4 h-4"></i></span>
+                <div>
+                  <p class="font-semibold text-ink">Timetables</p>
+                  <p class="text-xs text-slate-500 mt-0.5">Class &amp; teacher scheduling</p>
+                </div>
               </li>
-              <li class="flex items-start gap-2.5 text-sm text-slate-600">
-                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-primary/10 text-primary"><i data-feather="calendar" class="w-3.5 h-3.5"></i></span>
-                <div><p class="font-semibold text-ink">Timetables</p><p class="text-xs text-slate-500">Class scheduling</p></div>
+              <li class="flex gap-3 text-sm">
+                <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-sm bg-primary/10 text-primary"><i data-feather="credit-card" class="w-4 h-4"></i></span>
+                <div>
+                  <p class="font-semibold text-ink">Fees &amp; payments</p>
+                  <p class="text-xs text-slate-500 mt-0.5">Invoices, receipts, balances</p>
+                </div>
               </li>
-              <li class="flex items-start gap-2.5 text-sm text-slate-600">
-                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-primary/10 text-primary"><i data-feather="message-square" class="w-3.5 h-3.5"></i></span>
-                <div><p class="font-semibold text-ink">Parent portal</p><p class="text-xs text-slate-500">Updates &amp; SMS</p></div>
+              <li class="flex gap-3 text-sm">
+                <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-sm bg-primary/10 text-primary"><i data-feather="message-square" class="w-4 h-4"></i></span>
+                <div>
+                  <p class="font-semibold text-ink">Parent portal</p>
+                  <p class="text-xs text-slate-500 mt-0.5">Updates, results &amp; SMS</p>
+                </div>
               </li>
             </ul>
-
-            <div class="mb-6">
-              <div class="flex items-center justify-between text-[11px] uppercase tracking-wider mb-1.5">
-                <span class="text-forest-600">Build progress</span>
-                <span class="text-primary font-semibold">65% · Pilot beta</span>
-              </div>
-              <div class="h-2 rounded-full bg-black/[0.06] overflow-hidden">
-                <div class="h-full w-[65%] rounded-full bg-gradient-to-r from-primary to-primary-300"></div>
-              </div>
-            </div>
-
-            <div class="mt-auto flex flex-wrap gap-3">
-              <a href="quote.html?subject=SSD-ACMIS%20pilot%20interest" class="btn-primary">
-                <i data-feather="send" class="w-4 h-4"></i> Become a pilot school
-              </a>
-              <a href="contact.html?subject=SSD-ACMIS%20demo" class="btn-ghost">
-                <i data-feather="play-circle" class="w-4 h-4"></i> Request a demo
-              </a>
-            </div>
           </div>
+
+          <aside class="lg:col-span-4 flex flex-col gap-5">
+            <div class="rounded-sm border border-black/[0.08] bg-white p-6 sm:p-7 flex flex-col flex-1">
+              <p class="text-[11px] font-semibold uppercase tracking-[0.16em] text-forest-600">Build progress</p>
+              <p class="mt-2 font-display text-3xl font-bold text-ink tabular-nums">65%</p>
+              <p class="text-sm text-slate-600 mt-1">Beta with pilot schools in South Sudan</p>
+              <div class="mt-4 h-1.5 rounded-sm bg-black/[0.06] overflow-hidden">
+                <div class="h-full w-[65%] rounded-sm bg-primary"></div>
+              </div>
+              <ul class="mt-6 space-y-2 text-xs text-slate-600">
+                <li class="flex items-center gap-2"><i data-feather="cloud" class="w-3.5 h-3.5 text-primary shrink-0"></i> Cloud-hosted</li>
+                <li class="flex items-center gap-2"><i data-feather="smartphone" class="w-3.5 h-3.5 text-primary shrink-0"></i> Mobile-friendly</li>
+                <li class="flex items-center gap-2"><i data-feather="lock" class="w-3.5 h-3.5 text-primary shrink-0"></i> Secure &amp; role-based access</li>
+                <li class="flex items-center gap-2"><i data-feather="globe" class="w-3.5 h-3.5 text-primary shrink-0"></i> Offline-aware</li>
+              </ul>
+            </div>
+            <div class="flex flex-col gap-3">
+              <a href="quote.html?subject=SSD-ACMIS%20pilot%20interest" class="btn-primary w-full justify-center">
+                <i data-feather="send" class="w-4 h-4"></i>
+                Become a pilot school
+              </a>
+              <a href="contact.html?subject=SSD-ACMIS%20demo" class="btn-ghost w-full justify-center">
+                <i data-feather="play-circle" class="w-4 h-4"></i>
+                Request a demo
+              </a>
+            </div>
+          </aside>
         </div>
+
       </div>
     </section>
 
@@ -280,264 +296,177 @@
     </section>
 
     <!-- ========================== Websites & Projects ========================== -->
-    <section id="websites" class="relative py-20 sm:py-24 bg-surface-soft border-y border-black/[0.06]">
+    <section id="websites" class="relative py-16 sm:py-20 bg-white border-y border-black/[0.06]">
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="reveal flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">
-          <div class="max-w-2xl">
-            <span class="eyebrow"><i data-feather="globe" class="w-3 h-3"></i> Recent work</span>
-            <h2 class="mt-3 font-display text-3xl sm:text-4xl font-bold text-ink">
+        <div class="reveal flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
+          <div class="max-w-xl">
+            <p class="text-[11px] font-semibold uppercase tracking-[0.16em] text-forest-600">Recent work</p>
+            <h2 class="mt-2 font-display text-2xl sm:text-3xl font-bold text-ink leading-tight tracking-tight">
               Live websites we've <span class="text-gradient">designed &amp; shipped</span>
             </h2>
-            <p class="mt-3 text-slate-600">
-              Real, live work across consulting, real estate, travel, education and nonprofits.
+            <p class="mt-2 text-sm text-slate-600 leading-relaxed max-w-lg">
+              Consulting, real estate, travel, education and nonprofits.
             </p>
           </div>
-          <div class="flex items-center gap-2 text-xs text-forest-600">
-            <span class="inline-flex items-center gap-1.5 rounded-full border border-accent/25 bg-accent/8 px-3 py-1.5">
-              <span class="pulse-dot"></span> 6 live sites
-            </span>
-            <span class="inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-3 py-1.5 text-primary">
-              <i data-feather="trending-up" class="w-3 h-3"></i> 3 in development
-            </span>
-          </div>
+          <p class="text-sm font-medium text-forest-600 shrink-0">
+            <span class="inline-flex items-center gap-1.5"><span class="h-1.5 w-1.5 rounded-full bg-emerald-500"></span> 6 live sites</span>
+          </p>
         </div>
 
-        <!-- Project cards -->
-        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-
-          <!-- 1. EAI Consulting (Featured) -->
-          <a href="https://eaiconsultingfirm.com" target="_blank" rel="noopener noreferrer"
-             class="reveal card group sm:col-span-2 rounded-2xl border border-black/[0.06] bg-white shadow-card overflow-hidden block" data-delay="100">
-            <div class="grid sm:grid-cols-2">
-              <div class="relative aspect-[4/3] sm:aspect-auto overflow-hidden bg-surface-soft">
-                <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Feaiconsultingfirm.com?w=1200&h=900" alt="EAI Consulting Firm — live website preview"
-                     class="absolute inset-0 h-full w-full object-cover object-top transition duration-700 group-hover:scale-105"
-                     loading="lazy"
-                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80'" />
-                <div class="absolute inset-0 bg-gradient-to-t from-ink/75 via-transparent to-transparent"></div>
-                <div class="absolute top-3 left-3 flex items-center gap-2">
-                  <span class="inline-flex items-center gap-1.5 rounded-full bg-primary/90 text-white px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest"><i data-feather="star" class="w-3 h-3"></i> Featured</span>
-                  <span class="inline-flex items-center gap-1.5 rounded-full bg-accent/8 text-forest-700 border border-accent/20 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest"><span class="pulse-dot"></span> Live</span>
-                </div>
-              </div>
-              <div class="p-6 sm:p-7 flex flex-col">
-                <div class="flex items-center gap-3 mb-2">
-                  <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary"><i data-feather="briefcase" class="w-5 h-5"></i></span>
-                  <div>
-                    <h3 class="text-lg font-semibold text-ink group-hover:text-primary transition">EAI Consulting Firm</h3>
-                    <p class="text-[11px] uppercase tracking-wider text-forest-600">eaiconsultingfirm.com</p>
-                  </div>
-                </div>
-                <p class="text-sm text-slate-600 mb-4">
-                  Brand site for a consulting firm focused on entrepreneurial innovation, agricultural
-                  solutions and impact assessment.
-                </p>
-                <div class="flex flex-wrap gap-1.5 mb-5">
-                  <span class="inline-flex items-center gap-1 rounded-full border border-black/[0.08] bg-surface-muted px-2 py-0.5 text-[10px] uppercase tracking-wider text-slate-600"><i data-feather="layout" class="w-3 h-3 text-primary"></i> UI/UX</span>
-                  <span class="inline-flex items-center gap-1 rounded-full border border-black/[0.08] bg-surface-muted px-2 py-0.5 text-[10px] uppercase tracking-wider text-slate-600"><i data-feather="zap" class="w-3 h-3 text-primary"></i> Fast</span>
-                  <span class="inline-flex items-center gap-1 rounded-full border border-black/[0.08] bg-surface-muted px-2 py-0.5 text-[10px] uppercase tracking-wider text-slate-600"><i data-feather="shield" class="w-3 h-3 text-primary"></i> SSL</span>
-                  <span class="inline-flex items-center gap-1 rounded-full border border-black/[0.08] bg-surface-muted px-2 py-0.5 text-[10px] uppercase tracking-wider text-slate-600"><i data-feather="search" class="w-3 h-3 text-primary"></i> SEO</span>
-                </div>
-                <span class="mt-auto inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-3 transition-all">
-                  Visit live site <i data-feather="external-link" class="w-3.5 h-3.5"></i>
-                </span>
-              </div>
-            </div>
-          </a>
-
-          <!-- 2. Dealmakers -->
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <a href="https://www.dealmakersus.com/" target="_blank" rel="noopener noreferrer"
-             class="reveal card group rounded-2xl border border-black/[0.06] bg-white shadow-card overflow-hidden block" data-delay="150">
-            <div class="relative aspect-video w-full overflow-hidden bg-surface-soft">
-              <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fwww.dealmakersus.com%2F?w=900&h=600" alt="Dealmakers — live website preview"
-                   class="absolute inset-0 h-full w-full object-cover object-top transition duration-700 group-hover:scale-105"
+             class="work-card group block bg-white border border-black/[0.08]">
+            <div class="work-card__thumb aspect-[16/10] overflow-hidden bg-slate-100">
+              <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fwww.dealmakersus.com%2F?w=1200&h=750" alt="Dealmakers"
+                   class="h-full w-full object-cover object-top"
                    loading="lazy"
-                   onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=900&q=80'" />
-              <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/15 to-transparent"></div>
-              <span class="absolute top-3 left-3 inline-flex items-center gap-1.5 rounded-full bg-accent/8 text-forest-700 border border-accent/20 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest"><span class="pulse-dot"></span> Live</span>
+                   onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80'" />
             </div>
-            <div class="p-6">
-              <div class="flex items-center gap-3 mb-2">
-                <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary"><i data-feather="home" class="w-4 h-4"></i></span>
-                <div>
-                  <h3 class="text-base font-semibold text-ink group-hover:text-primary transition">Dealmakers</h3>
-                  <p class="text-[10px] uppercase tracking-wider text-forest-600">dealmakersus.com · Real estate · Austin, TX</p>
-                </div>
+            <div class="flex items-center justify-between gap-3 px-4 py-3.5 border-t border-black/[0.06]">
+              <div class="min-w-0">
+                <h3 class="text-sm font-semibold text-ink group-hover:text-primary transition truncate">Dealmakers</h3>
+                <p class="text-xs text-slate-500 mt-0.5 truncate">dealmakersus.com · Real estate</p>
               </div>
-              <p class="text-sm text-slate-600 mb-4">A curated real estate community where operators, investors and capital connect — membership, events and sponsorship.</p>
-              <div class="flex flex-wrap gap-1.5 mb-4">
-                <span class="text-[10px] text-slate-600 inline-flex items-center gap-1"><i data-feather="users" class="w-3 h-3 text-primary"></i> Membership</span>
-                <span class="text-[10px] text-slate-600 inline-flex items-center gap-1"><i data-feather="calendar" class="w-3 h-3 text-primary"></i> Events</span>
-                <span class="text-[10px] text-slate-600 inline-flex items-center gap-1"><i data-feather="layout" class="w-3 h-3 text-primary"></i> Multi-page</span>
-              </div>
-              <span class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-3 transition-all">Visit site <i data-feather="external-link" class="w-3.5 h-3.5"></i></span>
+              <span class="shrink-0 inline-flex items-center gap-1.5 text-[10px] font-medium uppercase tracking-wide text-emerald-700">
+                <span class="h-1.5 w-1.5 rounded-full bg-emerald-500" aria-hidden="true"></span> Live
+              </span>
             </div>
           </a>
 
-          <!-- 3. Honzi Tours & Travel -->
           <a href="https://honzitoursandtravel.com" target="_blank" rel="noopener noreferrer"
-             class="reveal card group rounded-2xl border border-black/[0.06] bg-white shadow-card overflow-hidden block" data-delay="200">
-            <div class="relative aspect-video w-full overflow-hidden bg-surface-soft">
-              <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fhonzitoursandtravel.com?w=900&h=600" alt="Honzi Tours and Travel — live website preview"
-                   class="absolute inset-0 h-full w-full object-cover object-top transition duration-700 group-hover:scale-105"
+             class="work-card group block bg-white border border-black/[0.08]">
+            <div class="work-card__thumb aspect-[16/10] overflow-hidden bg-slate-100">
+              <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fhonzitoursandtravel.com?w=1200&h=750" alt="Honzi Tours and Travel"
+                   class="h-full w-full object-cover object-top"
                    loading="lazy"
-                   onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=900&q=80'" />
-              <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/15 to-transparent"></div>
-              <span class="absolute top-3 left-3 inline-flex items-center gap-1.5 rounded-full bg-accent/8 text-forest-700 border border-accent/20 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest"><span class="pulse-dot"></span> Live</span>
+                   onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80'" />
             </div>
-            <div class="p-6">
-              <div class="flex items-center gap-3 mb-2">
-                <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary"><i data-feather="compass" class="w-4 h-4"></i></span>
-                <div>
-                  <h3 class="text-base font-semibold text-ink group-hover:text-primary transition">Honzi Tours &amp; Travel</h3>
-                  <p class="text-[10px] uppercase tracking-wider text-forest-600">honzitoursandtravel.com · Travel</p>
-                </div>
+            <div class="flex items-center justify-between gap-3 px-4 py-3.5 border-t border-black/[0.06]">
+              <div class="min-w-0">
+                <h3 class="text-sm font-semibold text-ink group-hover:text-primary transition truncate">Honzi Tours &amp; Travel</h3>
+                <p class="text-xs text-slate-500 mt-0.5 truncate">honzitoursandtravel.com · Travel</p>
               </div>
-              <p class="text-sm text-slate-600 mb-4">A modern brochure site for a travel and tour company — packages, gallery and booking inquiries.</p>
-              <div class="flex flex-wrap gap-1.5 mb-4">
-                <span class="text-[10px] text-slate-600 inline-flex items-center gap-1"><i data-feather="image" class="w-3 h-3 text-primary"></i> Gallery</span>
-                <span class="text-[10px] text-slate-600 inline-flex items-center gap-1"><i data-feather="smartphone" class="w-3 h-3 text-primary"></i> Responsive</span>
-                <span class="text-[10px] text-slate-600 inline-flex items-center gap-1"><i data-feather="message-square" class="w-3 h-3 text-primary"></i> Inquiries</span>
-              </div>
-              <span class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-3 transition-all">Visit site <i data-feather="external-link" class="w-3.5 h-3.5"></i></span>
+              <span class="shrink-0 inline-flex items-center gap-1.5 text-[10px] font-medium uppercase tracking-wide text-emerald-700">
+                <span class="h-1.5 w-1.5 rounded-full bg-emerald-500" aria-hidden="true"></span> Live
+              </span>
             </div>
           </a>
 
-          <!-- 3. Atlas Uganda Explorers -->
-          <a href="https://nelson211-0ss.github.io/Atlas-Uganda-Explorers/" target="_blank" rel="noopener noreferrer"
-             class="reveal card group rounded-2xl border border-black/[0.06] bg-white shadow-card overflow-hidden block" data-delay="300">
-            <div class="relative aspect-video w-full overflow-hidden bg-surface-soft">
-              <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fnelson211-0ss.github.io%2FAtlas-Uganda-Explorers%2F?w=900&h=600" alt="Atlas Uganda Explorers — live website preview"
-                   class="absolute inset-0 h-full w-full object-cover object-top transition duration-700 group-hover:scale-105"
-                   loading="lazy"
-                   onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1604537466573-5e94508fd476?auto=format&fit=crop&w=900&q=80'" />
-              <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/15 to-transparent"></div>
-              <span class="absolute top-3 left-3 inline-flex items-center gap-1.5 rounded-full bg-accent/8 text-forest-700 border border-accent/20 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest"><span class="pulse-dot"></span> Live</span>
-            </div>
-            <div class="p-6">
-              <div class="flex items-center gap-3 mb-2">
-                <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary"><i data-feather="map" class="w-4 h-4"></i></span>
-                <div>
-                  <h3 class="text-base font-semibold text-ink group-hover:text-primary transition">Atlas Uganda Explorers</h3>
-                  <p class="text-[10px] uppercase tracking-wider text-forest-600">Tour &amp; travel · Jinja</p>
-                </div>
-              </div>
-              <p class="text-sm text-slate-600 mb-4">A travel company in Jinja, Uganda — your gateway to nature's wonders.</p>
-              <div class="flex flex-wrap gap-1.5 mb-4">
-                <span class="text-[10px] text-slate-600 inline-flex items-center gap-1"><i data-feather="image" class="w-3 h-3 text-primary"></i> Gallery</span>
-                <span class="text-[10px] text-slate-600 inline-flex items-center gap-1"><i data-feather="smartphone" class="w-3 h-3 text-primary"></i> Responsive</span>
-                <span class="text-[10px] text-slate-600 inline-flex items-center gap-1"><i data-feather="message-square" class="w-3 h-3 text-primary"></i> Contact</span>
-              </div>
-              <span class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-3 transition-all">Visit site <i data-feather="external-link" class="w-3.5 h-3.5"></i></span>
-            </div>
-          </a>
-
-          <!-- 4. Jdiobe STEM -->
           <a href="https://jdiobestemfoundation.org" target="_blank" rel="noopener noreferrer"
-             class="reveal card group rounded-2xl border border-black/[0.06] bg-white shadow-card overflow-hidden block" data-delay="100">
-            <div class="relative aspect-video w-full overflow-hidden bg-surface-soft">
-              <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fjdiobestemfoundation.org?w=900&h=600" alt="Jdiobe STEM Foundation — live website preview"
-                   class="absolute inset-0 h-full w-full object-cover object-top transition duration-700 group-hover:scale-105"
+             class="work-card group block bg-white border border-black/[0.08]">
+            <div class="work-card__thumb aspect-[16/10] overflow-hidden bg-slate-100">
+              <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fjdiobestemfoundation.org?w=1200&h=750" alt="Jdiobe STEM Foundation"
+                   class="h-full w-full object-cover object-top"
                    loading="lazy"
-                   onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=900&q=80'" />
-              <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/15 to-transparent"></div>
-              <span class="absolute top-3 left-3 inline-flex items-center gap-1.5 rounded-full bg-accent/8 text-forest-700 border border-accent/20 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest"><span class="pulse-dot"></span> Live</span>
+                   onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=1200&q=80'" />
             </div>
-            <div class="p-6">
-              <div class="flex items-center gap-3 mb-2">
-                <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary"><i data-feather="book-open" class="w-4 h-4"></i></span>
-                <div>
-                  <h3 class="text-base font-semibold text-ink group-hover:text-primary transition">Jdiobe STEM Foundation</h3>
-                  <p class="text-[10px] uppercase tracking-wider text-forest-600">Education · Nonprofit</p>
-                </div>
+            <div class="flex items-center justify-between gap-3 px-4 py-3.5 border-t border-black/[0.06]">
+              <div class="min-w-0">
+                <h3 class="text-sm font-semibold text-ink group-hover:text-primary transition truncate">Jdiobe STEM Foundation</h3>
+                <p class="text-xs text-slate-500 mt-0.5 truncate">jdiobestemfoundation.org · Education</p>
               </div>
-              <p class="text-sm text-slate-600 mb-4">Education and STEM outreach platform — programs, news and donations.</p>
-              <div class="flex flex-wrap gap-1.5 mb-4">
-                <span class="text-[10px] text-slate-600 inline-flex items-center gap-1"><i data-feather="users" class="w-3 h-3 text-primary"></i> Nonprofit</span>
-                <span class="text-[10px] text-slate-600 inline-flex items-center gap-1"><i data-feather="dollar-sign" class="w-3 h-3 text-primary"></i> Donations</span>
-                <span class="text-[10px] text-slate-600 inline-flex items-center gap-1"><i data-feather="file-text" class="w-3 h-3 text-primary"></i> Blog</span>
-              </div>
-              <span class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-3 transition-all">Visit site <i data-feather="external-link" class="w-3.5 h-3.5"></i></span>
+              <span class="shrink-0 inline-flex items-center gap-1.5 text-[10px] font-medium uppercase tracking-wide text-emerald-700">
+                <span class="h-1.5 w-1.5 rounded-full bg-emerald-500" aria-hidden="true"></span> Live
+              </span>
             </div>
           </a>
 
-          <!-- 5. Wolayo Child Restoration -->
           <a href="https://wolayochildrestoration.org" target="_blank" rel="noopener noreferrer"
-             class="reveal card group rounded-2xl border border-black/[0.06] bg-white shadow-card overflow-hidden block" data-delay="200">
-            <div class="relative aspect-video w-full overflow-hidden bg-surface-soft">
-              <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fwolayochildrestoration.org?w=900&h=600" alt="Wolayo Child Restoration — live website preview"
-                   class="absolute inset-0 h-full w-full object-cover object-top transition duration-700 group-hover:scale-105"
+             class="work-card group block bg-white border border-black/[0.08]">
+            <div class="work-card__thumb aspect-[16/10] overflow-hidden bg-slate-100">
+              <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fwolayochildrestoration.org?w=1200&h=750" alt="Wolayo Child Restoration"
+                   class="h-full w-full object-cover object-top"
                    loading="lazy"
-                   onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=900&q=80'" />
-              <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/15 to-transparent"></div>
-              <span class="absolute top-3 left-3 inline-flex items-center gap-1.5 rounded-full bg-accent/8 text-forest-700 border border-accent/20 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest"><span class="pulse-dot"></span> Live</span>
+                   onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1200&q=80'" />
             </div>
-            <div class="p-6">
-              <div class="flex items-center gap-3 mb-2">
-                <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary"><i data-feather="heart" class="w-4 h-4"></i></span>
-                <div>
-                  <h3 class="text-base font-semibold text-ink group-hover:text-primary transition">Wolayo Child Restoration</h3>
-                  <p class="text-[10px] uppercase tracking-wider text-forest-600">Child welfare · Nonprofit</p>
-                </div>
+            <div class="flex items-center justify-between gap-3 px-4 py-3.5 border-t border-black/[0.06]">
+              <div class="min-w-0">
+                <h3 class="text-sm font-semibold text-ink group-hover:text-primary transition truncate">Wolayo Child Restoration</h3>
+                <p class="text-xs text-slate-500 mt-0.5 truncate">wolayochildrestoration.org · Nonprofit</p>
               </div>
-              <p class="text-sm text-slate-600 mb-4">Child welfare and restoration organization — programs, stories, and giving.</p>
-              <div class="flex flex-wrap gap-1.5 mb-4">
-                <span class="text-[10px] text-slate-600 inline-flex items-center gap-1"><i data-feather="users" class="w-3 h-3 text-primary"></i> Nonprofit</span>
-                <span class="text-[10px] text-slate-600 inline-flex items-center gap-1"><i data-feather="image" class="w-3 h-3 text-primary"></i> Stories</span>
-                <span class="text-[10px] text-slate-600 inline-flex items-center gap-1"><i data-feather="dollar-sign" class="w-3 h-3 text-primary"></i> Donate</span>
+              <span class="shrink-0 inline-flex items-center gap-1.5 text-[10px] font-medium uppercase tracking-wide text-emerald-700">
+                <span class="h-1.5 w-1.5 rounded-full bg-emerald-500" aria-hidden="true"></span> Live
+              </span>
+            </div>
+          </a>
+
+          <a href="https://nelson211-0ss.github.io/Atlas-Uganda-Explorers/" target="_blank" rel="noopener noreferrer"
+             class="work-card group block bg-white border border-black/[0.08]">
+            <div class="work-card__thumb aspect-[16/10] overflow-hidden bg-slate-100">
+              <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fnelson211-0ss.github.io%2FAtlas-Uganda-Explorers%2F?w=1200&h=750" alt="Atlas Uganda Explorers"
+                   class="h-full w-full object-cover object-top"
+                   loading="lazy"
+                   onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1604537466573-5e94508fd476?auto=format&fit=crop&w=1200&q=80'" />
+            </div>
+            <div class="flex items-center justify-between gap-3 px-4 py-3.5 border-t border-black/[0.06]">
+              <div class="min-w-0">
+                <h3 class="text-sm font-semibold text-ink group-hover:text-primary transition truncate">Atlas Uganda Explorers</h3>
+                <p class="text-xs text-slate-500 mt-0.5 truncate">Atlas Uganda · Travel</p>
               </div>
-              <span class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-3 transition-all">Visit site <i data-feather="external-link" class="w-3.5 h-3.5"></i></span>
+              <span class="shrink-0 inline-flex items-center gap-1.5 text-[10px] font-medium uppercase tracking-wide text-emerald-700">
+                <span class="h-1.5 w-1.5 rounded-full bg-emerald-500" aria-hidden="true"></span> Live
+              </span>
+            </div>
+          </a>
+
+          <a href="https://eaiconsultingfirm.com" target="_blank" rel="noopener noreferrer"
+             class="work-card group block bg-white border border-black/[0.08]">
+            <div class="work-card__thumb aspect-[16/10] overflow-hidden bg-slate-100">
+              <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Feaiconsultingfirm.com?w=1200&h=750" alt="EAI Consulting Firm"
+                   class="h-full w-full object-cover object-top"
+                   loading="lazy"
+                   onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80'" />
+            </div>
+            <div class="flex items-center justify-between gap-3 px-4 py-3.5 border-t border-black/[0.06]">
+              <div class="min-w-0">
+                <h3 class="text-sm font-semibold text-ink group-hover:text-primary transition truncate">EAI Consulting Firm</h3>
+                <p class="text-xs text-slate-500 mt-0.5 truncate">eaiconsultingfirm.com · Consulting</p>
+              </div>
+              <span class="shrink-0 inline-flex items-center gap-1.5 text-[10px] font-medium uppercase tracking-wide text-emerald-700">
+                <span class="h-1.5 w-1.5 rounded-full bg-emerald-500" aria-hidden="true"></span> Live
+              </span>
             </div>
           </a>
         </div>
 
-        <!-- ========================== Currently in development ========================== -->
-        <div class="reveal mt-16" data-delay="200">
-          <div class="flex items-center gap-2 mb-5">
-            <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10 text-primary"><i data-feather="clock" class="w-4 h-4"></i></span>
-            <h3 class="text-sm font-semibold text-ink uppercase tracking-[0.18em]">Currently in development</h3>
-          </div>
-
-          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            <div class="card rounded-2xl border border-primary/30 bg-gradient-to-br from-primary/10 via-forest-900/60 to-forest-900/60 p-5 flex items-start gap-4">
-              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/20 text-primary">
-                <i data-feather="award" class="w-5 h-5"></i>
+        <!-- In development -->
+        <div class="reveal mt-10" data-delay="200">
+          <p class="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500 mb-3">In development</p>
+          <div class="work-dev divide-y divide-black/[0.06] border border-black/[0.08] rounded-sm bg-white overflow-hidden">
+            <div class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 px-4 py-3.5">
+              <div class="flex-1 min-w-0">
+                <p class="text-sm font-medium text-ink">SSD-ACMIS</p>
+                <p class="text-xs text-slate-500">Schools · South Sudan</p>
               </div>
-              <div class="min-w-0 flex-1">
-                <p class="text-sm font-semibold text-ink">SSD-ACMIS</p>
-                <p class="text-[11px] text-forest-600 uppercase tracking-wider">Schools · South Sudan</p>
-                <div class="mt-2 h-1.5 rounded-full bg-black/[0.06] overflow-hidden">
-                  <div class="h-full w-[65%] rounded-full bg-gradient-to-r from-primary to-primary-300"></div>
+              <div class="sm:w-40 shrink-0">
+                <div class="work-dev__bar h-1 bg-black/[0.06] overflow-hidden">
+                  <div class="work-dev__fill h-full w-[65%] bg-primary"></div>
                 </div>
-                <p class="mt-1.5 text-[11px] text-slate-500">65% · Pilot beta</p>
+                <p class="text-[11px] text-slate-500 mt-1">65% · Pilot beta</p>
               </div>
             </div>
-
-            <div class="card rounded-2xl border border-black/[0.06] bg-white shadow-sm p-5 flex items-start gap-4">
-              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-primary/30 to-primary/10 text-primary">
-                <i data-feather="shopping-cart" class="w-5 h-5"></i>
+            <div class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 px-4 py-3.5">
+              <div class="flex-1 min-w-0">
+                <p class="text-sm font-medium text-ink">E-commerce platform</p>
+                <p class="text-xs text-slate-500">Storefront · Mobile money</p>
               </div>
-              <div class="min-w-0 flex-1">
-                <p class="text-sm font-semibold text-ink">E-commerce platform</p>
-                <p class="text-[11px] text-forest-600 uppercase tracking-wider">Storefront · Mobile money</p>
-                <div class="mt-2 h-1.5 rounded-full bg-black/[0.06] overflow-hidden">
-                  <div class="h-full w-3/4 rounded-full bg-gradient-to-r from-primary to-primary-300"></div>
+              <div class="sm:w-40 shrink-0">
+                <div class="work-dev__bar h-1 bg-black/[0.06] overflow-hidden">
+                  <div class="work-dev__fill h-full w-3/4 bg-primary"></div>
                 </div>
-                <p class="mt-1.5 text-[11px] text-slate-500">75% · UAT phase</p>
+                <p class="text-[11px] text-slate-500 mt-1">75% · UAT phase</p>
               </div>
             </div>
-
-            <div class="card rounded-2xl border border-black/[0.06] bg-white shadow-sm p-5 flex items-start gap-4">
-              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-primary/30 to-primary/10 text-primary">
-                <i data-feather="bar-chart-2" class="w-5 h-5"></i>
+            <div class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 px-4 py-3.5">
+              <div class="flex-1 min-w-0">
+                <p class="text-sm font-medium text-ink">Operations dashboard</p>
+                <p class="text-xs text-slate-500">SaaS · Real-time analytics</p>
               </div>
-              <div class="min-w-0 flex-1">
-                <p class="text-sm font-semibold text-ink">Operations dashboard</p>
-                <p class="text-[11px] text-forest-600 uppercase tracking-wider">SaaS · Real-time analytics</p>
-                <div class="mt-2 h-1.5 rounded-full bg-black/[0.06] overflow-hidden">
-                  <div class="h-full w-1/2 rounded-full bg-gradient-to-r from-primary to-primary-300"></div>
+              <div class="sm:w-40 shrink-0">
+                <div class="work-dev__bar h-1 bg-black/[0.06] overflow-hidden">
+                  <div class="work-dev__fill h-full w-1/2 bg-primary"></div>
                 </div>
-                <p class="mt-1.5 text-[11px] text-slate-500">50% · API integrations</p>
+                <p class="text-[11px] text-slate-500 mt-1">50% · API integrations</p>
               </div>
             </div>
           </div>

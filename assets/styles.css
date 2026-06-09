@@ -625,29 +625,36 @@ select.form-input option {
 }
 
 /* —— Recent work —— */
-#work .work-card {
+#work .work-card,
+#websites .work-card {
   border-radius: 4px;
   opacity: 1;
   transform: none;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
-#work .work-card:hover {
+#work .work-card:hover,
+#websites .work-card:hover {
   transform: none;
   border-color: rgba(241, 90, 41, 0.28);
   box-shadow: 0 4px 20px -8px rgba(2, 10, 5, 0.12);
 }
-#work .work-card__thumb img {
+#work .work-card__thumb img,
+#websites .work-card__thumb img {
   transition: opacity 0.25s ease;
 }
-#work .work-card:hover .work-card__thumb img {
+#work .work-card:hover .work-card__thumb img,
+#websites .work-card:hover .work-card__thumb img {
   opacity: 0.92;
 }
-#work .work-dev {
+#work .work-dev,
+#websites .work-dev {
   border-radius: 4px;
 }
-#work .work-dev__bar {
+#work .work-dev__bar,
+#websites .work-dev__bar {
   border-radius: 2px;
 }
-#work .work-dev__fill {
+#work .work-dev__fill,
+#websites .work-dev__fill {
   border-radius: 2px;
 }
